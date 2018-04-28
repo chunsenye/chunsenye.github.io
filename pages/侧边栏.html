@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>侧边栏</title>
+    <script src="../js/jquery.min.js"></script>
+</head>
+<style>
+    html,body{
+        height: 100%;
+        margin: 0;
+    }
+    #left{
+        width: 300px;
+        height: 100%;
+        background: rgba(150,210,100,0.5);
+        position: absolute;
+        left: -290px;
+        top:0px;
+    }
+    #right{
+        width: 300px;
+        height: 100%;
+        background: rgba(150,210,100,0.5);
+        position: absolute;
+        right: -290px;
+        top: 0px;
+    }
+    #navbar{
+        width: 100%;
+        height: 100px;
+        background: #5bc0de;
+        position: absolute;
+    }
+    #box,#bottom{
+        width: 100%;
+        height: 200%;
+        background: #999999;
+    }
+    #bottom{
+        background: #2b542c;
+    }
+</style>
+<body>
+    <div id="navbar">
+
+    </div>
+    <div id="left">
+
+    </div>
+    <div id="right">
+
+    </div>
+    <div id="box">
+
+    </div>
+    <div id="bottom">
+
+    </div>
+</body>
+<script>
+    left.onmouseover=function () {
+        // left.style.left='0px';
+        $('#left').animate({
+            left:'0px',
+            opacity:1
+        },400);
+    }
+    left.onmouseout=function (e) {
+        if(e.clientX>=300) {
+            $('#left').animate({
+                left:'-290px',
+                opacity:0.3
+            },400);
+        }
+    }
+
+
+    right.onmouseover=function () {
+        // left.style.left='0px';
+        $('#right').animate({
+            right:'0px',
+            opacity:1
+        },400);
+    }
+    right.onmouseout=function (e) {
+        // console.log(window.innerWidth);
+        if(e.clientX<=(window.innerWidth-300)) {
+            $('#right').animate({
+                right:'-290px',
+                opacity:0.3
+            },400);
+            // console.log(1);
+        }
+    }
+    $(window).scroll(function () {
+        // navbar.offsetTop='1000px';
+        // navbar=$('#navbar');
+        navbar.style.top=$(window).scrollTop()+'px';
+        // console.log(navbar.style.top)
+        left.style.top=$(window).scrollTop()+'px';
+    });
+</script>
+</html>

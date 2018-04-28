@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YE|book_api</title>
+    <script src="../js/jquery.min.js"></script>
+</head>
+<style>
+    #book_head{
+        width: 500px;
+    }
+    input{
+        width: 300px;
+    }
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0 0;
+    }
+    textarea{
+        width: 500px;
+        height: auto;
+    }
+</style>
+<body>
+    <div id="book_head">
+        <ul>
+            <li><span>图书内容url：</span> <input type="text" value="http://apis.juhe.cn/goodbook/query"></li>
+            <li><span>请求方式：</span> <input type="text" value="GET"></li>
+            <li><span>请求参数：</span> <input type="text" value="dtype=&key=ab998bf4d11fcd641e552013828424c7"></li>
+            <button id="btn1">请求</button>
+            <hr>
+            <li><span>图书分类目录url：</span> <input type="text" value="http://apis.juhe.cn/goodbook/catalog"></li>
+            <li><span>请求方式：</span> <input type="text" value="GET"></li>
+            <li><span>请求参数：</span> <input type="text" value="dtype=&key=ab998bf4d11fcd641e552013828424c7"></li>
+            <button id="btn2">请求</button>
+        </ul>
+        <h6>请求结果</h6>
+        <textarea></textarea>
+    </div>
+</body>
+<script>
+    $('btn1').click(function () {
+        $.get()
+    });
+</script>
+</html>
