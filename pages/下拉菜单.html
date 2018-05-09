@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉菜单</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    a{
+        text-decoration: none;
+        color: rgba(255,255,255,.8);
+    }
+    #nav{
+        width: 80%;
+        height: 100px;
+        margin: 0 auto;
+        background-color: #5bc0de;
+    }
+    #menu{
+        font-size: 50px;
+        color: #ffffff;
+        list-style: none;
+    }
+
+    #menu li{
+        float: left;
+        width: 30%;
+        line-height: 100px;
+        text-align: center;
+        /*position: relative;*/
+    }
+    ul li:first-child{
+        color: black;
+    }
+    ul{
+        list-style: none;
+    }
+    #qd_select{
+        position: absolute;
+        left: 34%;
+        top: 100px;
+        width: 24%;
+        display: none;
+    }
+    #ht_select{
+        position: absolute;
+        left: 58%;
+        top: 100px;
+        width: 24%;
+        display: none;
+    }
+    #qd_select li,
+    #ht_select li{
+        background-color: rgba(77,77,77,.4);
+        text-align: center;
+        font-size: 20px;
+        padding: 10px;
+    }
+    #ht_select li {
+        background-color: rgba(99, 99, 99, .4);
+    }
+
+</style>
+<body>
+    <div id="nav">
+        <ul id="menu">
+            <li><a href="#">首页</a></li>
+            <li id="qd"><a href="#">前端</a></li>
+            <li id="ht"><a href="#">后台</a></li>
+        </ul>
+        <ul id="qd_select">
+            <li><a href="#">web前端</a></li>
+            <li><a href="#">小程序</a></li>
+            <li><a href="#">webApp</a></li>
+            <li><a href="#">App</a></li>
+        </ul>
+        <ul id="ht_select">
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">JSP</a></li>
+            <li><a href="#">.net</a></li>
+        </ul>
+    </div>
+<h1 align="center" style="position: absolute;width:80%;left: 10%;bottom: 10px;text-align: center;background: #5bc0de">这是一个失败的下拉菜单</h1>
+</body>
+<script>
+    qd.onmouseover=function () {
+        qd_select.style.display='block';
+    }
+    qd.onmouseout=function () {
+        qd_select.onmouseout=function() {
+            qd_select.style.display = 'none';
+        }
+    }
+    ht.onmouseover=function () {
+        ht_select.style.display='block';
+    }
+    ht.onmouseout=function () {
+        ht_select.style.display='none';
+    }
+</script>
+</html>
