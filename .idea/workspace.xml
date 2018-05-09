@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5951f240-7544-411a-a041-2afbde04b0ca" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/下拉菜单.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/Desert.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/Lighthouse.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/Penguins.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/Tulips.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/game1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/画板.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/计算器.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/图片展示.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/p_4_21.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/p_4_21.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/下拉菜单.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/下拉菜单.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,20 +28,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="vuetest.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/vuetest.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="100" column="19" lean-forward="true" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="19" />
+            <state relative-caret-position="15">
+              <caret line="19" column="153" selection-start-line="19" selection-start-column="153" selection-end-line="19" selection-end-column="153" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vuetest.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/vuetest.html">
+      <file leaf-file-name="图片展示.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/图片展示.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="153" selection-start-line="19" selection-start-column="153" selection-end-line="19" selection-end-column="153" />
+            <state relative-caret-position="89">
+              <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -39,17 +49,66 @@
       <file leaf-file-name="mooning.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/mooning.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+            <state relative-caret-position="90">
+              <caret line="6" column="72" lean-forward="true" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="p_4_21.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/p_4_21.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rainText.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/rainText.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="tictactoe.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/tictactoe.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="下拉菜单.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/下拉菜单.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="85" column="55" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
+            <state relative-caret-position="75">
+              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="63" />
+              <folding>
+                <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="画板.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/画板.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="计算器.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/计算器.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="63" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -73,8 +132,14 @@
         <option value="$PROJECT_DIR$/pages/mooning.html" />
         <option value="$PROJECT_DIR$/pages/book_api.html" />
         <option value="$PROJECT_DIR$/pages/侧边栏.html" />
-        <option value="$PROJECT_DIR$/pages/下拉菜单.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/图片展示.html" />
+        <option value="$PROJECT_DIR$/pages/下拉菜单.html" />
+        <option value="$PROJECT_DIR$/pages/game1.html" />
+        <option value="$PROJECT_DIR$/pages/home.html" />
+        <option value="$PROJECT_DIR$/pages/p_4_21.html" />
+        <option value="$PROJECT_DIR$/pages/画板.html" />
+        <option value="$PROJECT_DIR$/pages/计算器.html" />
       </list>
     </option>
   </component>
@@ -90,7 +155,9 @@
     <option name="width" value="1280" />
     <option name="height" value="709" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -129,6 +196,13 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/image" />
+      <recent name="$PROJECT_DIR$/pages" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -157,12 +231,12 @@
       <workItem from="1524908086326" duration="4931000" />
       <workItem from="1525676357575" duration="470000" />
       <workItem from="1525780130788" duration="5235000" />
-      <workItem from="1525842110355" duration="445000" />
+      <workItem from="1525842110355" duration="2378000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19487000" />
+    <option name="totallyTimeSpent" value="21420000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="23" width="1280" height="709" extended-state="0" />
@@ -230,6 +304,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
           <caret line="85" column="55" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -345,13 +422,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/vuetest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="153" selection-start-line="19" selection-start-column="153" selection-end-line="19" selection-end-column="153" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/侧边栏.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-473">
@@ -366,24 +436,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="12" column="60" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/图片展示.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/game1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="63" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pages/mooning.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        <state relative-caret-position="90">
+          <caret line="6" column="72" lean-forward="true" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/p_4_21.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/rainText.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/tictactoe.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/vuetest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="19" column="153" selection-start-line="19" selection-start-column="153" selection-end-line="19" selection-end-column="153" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/下拉菜单.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="85" column="55" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
+        <state relative-caret-position="75">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/pages/画板.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="100" column="19" lean-forward="true" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="19" />
+        <state relative-caret-position="75">
+          <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/计算器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
         </state>
       </provider>
     </entry>

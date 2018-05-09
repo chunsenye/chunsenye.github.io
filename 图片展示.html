@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手风琴特效</title>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <link rel="shortcut icon" href="css/images/favicon.ico">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .box{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url("image/Desert.jpg") no-repeat center/cover ;
+        }
+        .box:nth-of-type(2){
+            /*left: 50px;*/
+            background: url("image/Lighthouse.jpg") no-repeat center/cover ;
+        }
+        .box:nth-of-type(3){
+            /*left: 100px;*/
+            background: url("image/Penguins.jpg") no-repeat center/cover ;
+        }
+        .box:nth-of-type(4){
+            /*left: 150px;*/
+            background: url("image/Tulips.jpg") no-repeat center/cover ;
+        }
+        #content{
+            position: absolute;
+            width: 1024px;
+            height: 500px;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            background: url("image/Desert.jpg") no-repeat center/cover ;
+        }
+        #content ul li{
+            list-style: none;
+            width: 100px;
+            height: 500px;
+            /*background: #4e7d0e;*/
+            float: left;
+            /*background: url("image/Desert.jpg") no-repeat center/cover ;*/
+        }
+        #content ul li:nth-of-type(2){
+            background: url("image/Lighthouse.jpg") no-repeat center/cover ;
+        }
+        #content ul li:nth-of-type(3){
+            background: url("image/Penguins.jpg") no-repeat center/cover ;
+        }
+        #content ul li:nth-of-type(4){
+            width: 724px;
+            background: url("image/Tulips.jpg") no-repeat center/cover ;
+        }
+        #content ul li div{
+            width: 100px;
+            height: 500px;
+            background: rgba(0,0,0,.5);
+        }
+        #content ul li div p{
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <div id="content">
+        <ul>
+            <li>
+                <div>
+                    <p>待在酷码的三百六十五天</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>待在酷码的三百六十五天</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>待在酷码的三百六十五天</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>待在酷码的三百六十五天</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!--<div id="box">-->
+        <!--<div id="paper"></div>-->
+        <!--<div id="glass">-->
+            <!--<div id="context"  class="container">-->
+                <!--<div class="row" id="nr">-->
+                    <!--<div class="col-sm-12">-->
+                        <!--<img id="goutou" src="image/myhead.jpg" style="width: 100px; height: 100px;border-radius: 50%">-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-12" >-->
+                        <!--<h2 id="jname">姓名：叶春森</h2>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-12">-->
+                        <!--<h2 id="jzy">专业:计算机科学与技术</h2>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-12" id="js">-->
+                        <!--<h2>毕业院校：广东金融学院(17届)</h2>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-12" id="jqz">-->
+                        <!--<h2>求职意向：web前端开发(无项目经验)</h2>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-12" id="jqr">-->
+                        <!--<h2>前任工作：少儿编程讲师(JS、H5、CSS)</h2>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    <script>
+        var li=$('#content ul li');
+        li.mouseover(function(){
+            var index=$(this).index();
+            $(this).stop().animate({
+                width:'724px'
+            },500).siblings('li').stop().animate({
+                width:'100px'
+            },500)
+            $('.box').eq(index).fadeIn().siblings('.box').fadeOut();
+        });
+
+
+        // $('#goutou').hide();
+        // $('#jname').hide();
+        // $('#jzy').hide();
+        // $('#js').hide();
+        // $('#jqz').hide();
+        // $('#jqr').hide();
+        // $('#goutou').show(1500);
+        // setTimeout(function () {
+        //     $('#jname').show(500);
+        //     setTimeout(function () {
+        //         $('#jzy').show(500);
+        //         setTimeout(function () {
+        //             $('#js').show(500);
+        //             setTimeout(function () {
+        //                 $('#jqz').show(500);
+        //                 setTimeout(function () {
+        //                     $('#jqr').show( 500);
+        //                     // home.style.font="30px 宋体";
+        //                     setTimeout(function () {
+        //                         $('#box').fadeOut(1000);
+        //                     },500)
+        //                 },500)
+        //             },500)
+        //         },500)
+        //     },500)
+        // },500)
+        // // })
+    </script>
+</body>
+</html>
