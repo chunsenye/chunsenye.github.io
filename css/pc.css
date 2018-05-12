@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#side_nav {
+    position: fixed;
+    left: -20%;
+    top: 2px;
+    width: 20%;
+    height: 100%;
+    background: rgba(240, 246, 255, 0.3);
+}
+
+#about {
+    width: 2%;
+    height: 100%;
+    /*background: url("./image/about.jpeg") no-repeat;*/
+    background-size: 100% 100%;
+    position: fixed;
+    right: 0;
+    top: 2px;
+    font-size: 150%;
+    padding: 10% 0;
+    display: block;
+    background-color: #d4677a;
+}
+
+/*.muban {*/
+    /*width: 2%;*/
+    /*height: 100%;*/
+    /*background: url("./image/about.jpeg") no-repeat;*/
+    /*background-size: 100% 100%;*/
+/*}*/
+
+.info_name {
+    font-size: 30px;
+    line-height: 50px;
+}
+
+h2, h4 {
+    margin: 10px;
+    text-align: left;
+}
+
+.skill {
+    background-color: #d4677a;
+    width: 80%;
+    height: 24px;
+    margin: 10px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+#menu {
+    position: fixed;
+    right: 0px;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    /*width: 2%;*/
+    /*height: 20px;*/
+    /*background:url("./image/font-8193.png") ;*/
+    /*display: block;*/
+}
