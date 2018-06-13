@@ -1,219 +1,191 @@
 <!DOCTYPE html>
-<html lang=en>
-<head>
-    <!-- so meta -->
-    <meta charset="utf-8">
-    <!-- 编码 -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--  IE=edge告诉IE使用最新的引擎渲染网页-->
-    <meta name="HandheldFriendly" content="True">
-    <!--  针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <!-- 缩放值 -->
-    <link rel="shortcut icon" href="css/images/favicon.ico">
-    <title>YE|Home</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="(max-width:1000px)" href="css/mobile.css">
-    <link rel="stylesheet" media="(min-width:1000px)" href="css/pc.css">
+<html lang="en">
 
-    <script src="./js/jquery.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="css/images/favicon.ico">
+    <!-- <script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script> -->
+    <!-- <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script> -->
+    <!-- <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.css" rel="stylesheet"> -->
+    <!-- <script src="https://cdn.bootcss.com/bootstrap/4.1.1/js/bootstrap.js"></script> -->
+    <!-- <script src="https://cdn.bootcss.com/element-ui/2.4.0/index.js"></script> -->
+    <!-- <link href="https://cdn.bootcss.com/element-ui/2.4.0/theme-chalk/index.css" rel="stylesheet"> -->
+    <title>ChunsenYe.home</title>
 </head>
 <style>
+    body,
+    html {
+        height: 100%;
+        overflow: hidden;
+    }
 
+    #app {
+        cursor: pointer;
+    }
+
+    #canvas {
+        background-color: #fff;
+        cursor: url("./image/毛笔.png"), auto;
+    }
 </style>
-<body class="max-width mx-auto px3">
-<div class="content index my4">
-    <header id="header">
-        <a href="#header">
-            <div id="logo" style="background-image: url(css/images/logo.png)"></div>
-            <div id="title">
-                <h1>Ye|Home</h1>
-            </div>
-        </a>
-        <div id="nav">
-            <ul>
-                <li class="icon">
-                    <a href="#"><i class="fas fa-bars fa-2x"></i></a>
-                </li>
-                <li><a href="#home">主页</a></li>
-                <li><a href="#about">小练习</a></li>
-                <li><a href="#writing">项目</a></li>
-                <li><a href="#">关于</a></li>
-            </ul>
-        </div>
-    </header>
-    <section>
-        <p>Hi,朋友 ! </p>
-        <p>这是我的小窝!</p>
-        <p>之前的主页换了，把整个项目重新删了再做过，想做的更好一些。</p>
-        <p>需要慢慢改进，有想和我交流、提提意见的朋友可以联系我。微信和QQ:1604980041</p>
-    </section>
-    <section>
-        <span class="h1"><a href="#"></a></span>
-        <span class="h1"><a href="#">小练习</a></span>
-        <ul class="post-list">
-            <li class="post-item">
-                <div class="meta">
-                    <time>2018-4-2</time>
-                </div>
-                <span>
-                        <a href="pages/画板.html">简易的画板工具：canvas</a>
-                    <!--<a  href="pages/home.html">具体的步骤</a>-->
-                    </span>
-            </li>
-            <li class="post-item">
-                <div class="meta">
-                    <time>2018-4-6</time>
-                </div>
-                <span>
-                        <a href="pages/home.html">普通网站的一个首页：bootstrap(还没做手机版的样式，在1000px以下会有排版的问题)</a>
-                    <!--<a  href="pages/home.html">具体的步骤</a>-->
-                    </span>
-            </li>
 
-            <li class="post-item">
-                <div class="meta">
-                    <time>2018-4-12</time>
-                </div>
-                <span>
-                        <a href="pages/计算器.html">简易的计算器：很久之前做的了，很多bug</a>
-                    <!--<a  href="pages/home.html">具体的步骤</a>-->
-                    </span>
-            </li>
-            <li class="post-item">
-                <div class="meta">
-                    <time>2018-4-20</time>
-                </div>
-                <span>
-                        <a href="图片展示.html">图片展示效果：手风琴</a>
-                    </span>
-            </li>
-        </ul>
-    </section>
-    <section>
-        <span class="h1"><a href="#">项目</a></span>
+<body oncontextmenu="return false" onselectstart="return false">
+    <div id="app">
+        <canvas id="canvas"></canvas>
+    </div>
+    <script>
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+        var cw = canvas.width = window.innerWidth;
+        var ch = canvas.height = window.innerHeight;
+        //分区域
+        window.onload = function () {
+            var hw = new Handwriting("canvas");
+            hw.lineMax = 40;
+            hw.lineMin = 5;
+            hw.linePressure = 2.5;
+            hw.smoothness = 100;
+            // ctx.strokeRect(100, 100, cw - 200, ch - 200);
+            // ctx.strokeRect(100, 100, cw * 0.4 - 200, ch - 200);
+            // ctx.strokeRect(cw * 0.4 - 100, 100, (cw - 200) * 0.6 + 120, ch - 200);
+            // ctx.strokeRect(cw * 0.4 - 100, 100, (cw - 200) * 0.6 + 120, (ch - 200) * 0.3);
+            drawDragon();
+            drawMenu();
+        }
 
-        <ul class="project-list">
-            <li class="project-item">
-                <a href="#">vue-感觉商城</a>：售卖感觉，一份喜悦，一份悲伤（尚未完成）
-            </li>
-            <li class="project-item">
-                <a href="#">仿爱范儿--官网</a>: （尚未完成）
-            </li>
-            <li class="project-item">
-                <!--<a href="#">仿知晓程序&#45;&#45;微信小程序</a>: （尚未完成）-->
-            </li>
-            <li class="project-item">
-                <!--<a href="#">仿appso&#45;&#45;webApp</a>: （尚未完成）-->
-            </li>
-        </ul>
-    </section>
-    <section>
-        <span class="h1"><a href="#">周六的课</a></span>
-        <ul class="project-list">
-            <li class="project-item">
-                2018-4-20 <a href="pages/p_4_21.html">原生js代码实现简单动画</a>
-            </li>
-        </ul>
-    </section>
-</div>
-<div id="side_nav">
-    <div>
-        <!--<img src="./css/images/favicon.ico" style="width: 20%;height: 20%;border-radius: 50%;margin: 0 auto">-->
-        <h1 align="center">叶春森</h1>
-        <hr>
-        <h2>技能:</h2>
-        <div class="skill">
-            HTML
-        </div>
-        <div class="skill" style="width: 70%">
-            CSS
-        </div>
-        <div class="skill" style="width: 60%">
-            JavaScript
-        </div>
-        <div class="skill" style="width: 50%">
-            JQuery
-        </div>
-        <div class="skill" style="width: 30%">
-            ajax
-        </div>
-        <div class="skill" style="width: 60%">
-            bootstrap
-        </div>
-        <div class="skill" style="width: 40%">
-            vue
-        </div>
-        <h2>了解:</h2>
-        <div class="skill" style="width: 80% ;height: auto;text-align: left;padding: 10px;background-color: #999999">
-            webpack node.js <br> java python 安卓App
-        </div>
-        <hr>
-        <h2>爱好:</h2>
-        <div class="skill" style="width: 80% ;height: auto;text-align: left;padding: 10px;background-color: #999999">
-            敲代码 打篮球 游戏(手游) 撸猫
-        </div>
-    </div>
+        function Handwriting(id) {
+            this.canvas = document.getElementById(id);
+            this.ctx = this.canvas.getContext("2d");
+            this.ctx.fillStyle = "rgba(0,0,0,0.25)";
+            var _this = this;
+            this.canvas.onmousedown = function (e) {
+                _this.downEvent(e)
+            };
+            this.canvas.onmousemove = function (e) {
+                _this.moveEvent(e)
+            };
+            this.canvas.onmouseup = function (e) {
+                _this.upEvent(e)
+            };
+            this.canvas.onmouseout = function (e) {
+                _this.upEvent(e)
+            };
+            this.moveFlag = false;
+            this.upof = {};
+            this.radius = 0;
+            this.has = [];
+            this.lineMax = 30;
+            this.lineMin = 3;
+            this.linePressure = 1;
+            this.smoothness = 80;
+        }
 
-    <div id="about">
-        <p id="about_p">隐藏我的信息</p>
-    </div>
-    <div id="menu">
-        <h5 id="menu_flag">收起</h5>
-    </div>
-</div>
-<footer id="footer">
-    <div class="footer-left">
-        Copyright &copy; 2018 yechunsen|Home
-        <!-- <a href="https://probberechts.github.io/hexo-theme-cactus/cactus-classic/public/">hexo:cactus-classic</a> -->
-    </div>
-    <div class="footer-right">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Writing</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
-    </div>
-</footer>
-<script>
-    //鼠标移入与移出时展示个人信息
-    $('#side_nav').animate({
-        left: '0px',
-    });
-    var flag = 0;
-    about.onclick = function () {
-        if (flag) {
-            $('#side_nav').animate({
-                left: '0px',
+        Handwriting.prototype.clear = function () {
+            this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        }
+
+        Handwriting.prototype.downEvent = function (e) {
+            this.moveFlag = true;
+            this.has = [];
+            this.upof = this.getXY(e);
+        }
+
+        Handwriting.prototype.moveEvent = function (e) {
+            if (!this.moveFlag)
+                return;
+            var of = this.getXY(e);
+            var up = this.upof;
+            var ur = this.radius;
+            this.has.unshift({
+                time: new Date().getTime(),
+                dis: this.distance(up, of )
             });
-            about_p.innerHTML = "隐藏我的信息";
-        } else {
-            $('#side_nav').animate({
-                left: '-20%',
-            })
-            about_p.innerHTML = "展示我的信息";
+            var dis = 0;
+            var time = 0;
+            for (var n = 0; n < this.has.length - 1; n++) {
+                dis += this.has[n].dis;
+                time += this.has[n].time - this.has[n + 1].time;
+                if (dis > this.smoothness)
+                    break;
+            }
+            var or = Math.min(time / dis * this.linePressure + this.lineMin, this.lineMax) / 2;
+            this.radius = or;
+            this.upof = of ;
+            if (this.has.length <= 4)
+                return;
+            var len = Math.round(this.has[0].dis / 2) + 1;
+            for (var i = 0; i < len; i++) {
+                var x = up.x + ( of .x - up.x) / len * i;
+                var y = up.y + ( of .y - up.y) / len * i;
+                var r = ur + (or - ur) / len * i;
+                this.ctx.beginPath();
+                this.ctx.arc(x, y, r, 0, 2 * Math.PI, true);
+                this.ctx.fill();
+            }
         }
-        flag = !flag;
-    }
-    // about.onmouseout = function () {
-    //     $('#side_nav').animate({
-    //         left: '-20%',
-    //     })
-    // }
-    var flag_menu=1;
-    menu.onclick = function () {
-        // alert(1);
-        $('#about').slideToggle(1000);
-        if(flag_menu){
-            menu_flag.innerHTML="展开";
-        }else{
-            menu_flag.innerHTML="收起";
+
+        Handwriting.prototype.upEvent = function (e) {
+            this.moveFlag = false;
         }
-        flag_menu=!flag_menu;
-    }
-</script>
+
+        Handwriting.prototype.getXY = function (e) {
+            return {
+                x: e.clientX - this.canvas.offsetLeft + (document.body.scrollLeft || document.documentElement.scrollLeft),
+                y: e.clientY - this.canvas.offsetTop + (document.body.scrollTop || document.documentElement.scrollTop)
+            }
+        }
+
+        Handwriting.prototype.distance = function (a, b) {
+            var x = b.x - a.x,
+                y = b.y - a.y;
+            return Math.sqrt(x * x + y * y);
+        }
+
+        function drawDragon() {
+            ctx.strokeStyle = "#333";
+            ctx.beginPath();
+            ctx.moveTo(100, 250);
+            ctx.bezierCurveTo(119, 304, 321, 134, 400, 250);
+            ctx.stroke();
+            ctx.moveTo(250, 300);
+            ctx.bezierCurveTo(106, 528, 416, 340, 141, 648);
+            ctx.stroke();
+            ctx.moveTo(197, 173);
+            ctx.bezierCurveTo(189, -81, 224, -97, 227, 174);
+            ctx.stroke();
+            ctx.moveTo(297, 173);
+            ctx.bezierCurveTo(289, -81, 324, -97, 327, 174);
+            ctx.stroke();
+            ctx.moveTo(274, 283);
+            ctx.bezierCurveTo(213, 203, 330, 208, 278, 282);
+            ctx.stroke();
+            ctx.moveTo(171, 87);
+            ctx.bezierCurveTo(30, 362, 475, 379, 353, 87);
+            ctx.stroke();
+            ctx.closePath();
+        }
+        function drawMenu(){
+            ctx.fillStyle='black' 
+            ctx.font='30px 宋体'
+            ctx.fillText('水龙头',750,30);
+            ctx.fillText('学识',600,70);
+            ctx.fillText('格物',700,70);
+            ctx.fillText('致知',800,70);
+            ctx.fillText('风流',900,70);
+            ctx.beginPath();
+            ctx.moveTo(600, 90);
+            ctx.lineTo(960, 90);
+            ctx.strokeStyle = "rgba(0,0,0,0.25)";
+            ctx.lineWidth=10; 
+            ctx.stroke();
+            ctx.closePath();
+            ctx.fillStyle = "rgba(0,0,0,0.25)";
+            ctx.strokeStyle = "rgb(0,0,0)";
+            ctx.lineWidth=1;
+        }
+    </script>
 </body>
+
 </html>
