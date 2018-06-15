@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- 编码 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--  IE=edge告诉IE使用最新的引擎渲染网页-->
+    <meta name="HandheldFriendly" content="True">
+    <!--  针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- 缩放值 -->
+    <link rel="shortcut icon" href="../css/images/favicon.ico">
+    <title>YE|Home</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/element-ui/2.3.7/theme-chalk/index.css">
+    <!-- 引入组件库 -->
+    <script src="https://cdn.bootcss.com/element-ui/2.4.0/index.js"></script>
+    <title>book</title>
+</head>
+<style>
+</style>
+
+<body>
+    <div id="app">
+        <el-table :data="list" stripe style="width: 300px;" @cell-click="cellclick" height='900'>
+            <el-table-column prop="catalog" label="分类" width="200">
+            </el-table-column>
+        </el-table>
+        <!-- <el-button round @click='getBooks'>请求菜单</el-button> -->
+        <div style="position: absolute; left: 300px; top: 0px;width: 1200px;">
+            <el-table :data="booklist" style="width: 1200px;" stripe border height='900'>
+                <el-table-column prop="title" label="标题" width="200">
+                </el-table-column>
+                <el-table-column prop="catalog" label="分类" width="200">
+                </el-table-column>
+                <el-table-column prop="img" label="图片" width="200">
+                </el-table-column>
+                <!-- <el-table-column prop="online" label="标题" width="100">
+                </el-table-column> -->
+                <el-table-column prop="reading" label="热度" width="100">
+                </el-table-column>
+                <el-table-column prop="sub1" label="描述1" width="100">
+                </el-table-column>
+                <!-- <el-table-column prop="sub2" label="描述2" width="200">
+                </el-table-column> -->
+                <el-table-column prop="tags" label="标签" width="200">
+                </el-table-column>
+                <el-table-column prop="bytime" label="发行时间" width="200">
+                </el-table-column>
+
+            </el-table>
+        </div>
+    </div>
+</body>
+<script>
+    //获取数据
+    var catalog = []
+    var catalogurl = 'http://apis.juhe.cn/goodbook/catalog?dtype=&key=ab998bf4d11fcd641e552013828424c7'
+    new Vue({
+        el: '#app',
+        data: {
+            bookid: 240,
+            list: [],
+            booklist: []
+        },
+        methods: {
+            getCatalog() {
+                var td = this.list;
+                $.ajax({
+                    type: "GET",
+                    url: 'http://apis.juhe.cn/goodbook/catalog?dtype=&key=ab998bf4d11fcd641e552013828424c7',
+                    dataType: 'jsonp',
+                    success: function (response) {
+                        //console.log(response.result[0].id);
+                        //展示在列表中
+                        // td[0] = response.result[0];
+                        console.log(response);
+                        if (response.resultcode == 112) {
+                            alert(response.reason);
+                        } else if (response.resultcode == 200) {
+                            for (i in response.result) {
+                                Vue.set(td, i, response.result[i])
+                            }
+                        }
+                    },
+                    error: function (r) {
+
+                    }
+                })
+            },
+            getBooks() {
+                var book = this.booklist;
+                var getUrl = 'http://apis.juhe.cn/goodbook/query?catalog_id=' + this.bookid +
+                    '&pn=&rn=&dtype=&key=ab998bf4d11fcd641e552013828424c7'
+                $.ajax({
+                    type: "GET",
+                    url: getUrl,
+                    dataType: 'jsonp',
+                    success: function (response) {
+                        // console.log(response.result.data[0]);
+                        //展示在列表中
+                        var s = document.getElementById('books')
+                        this.booklist = response.result.data;
+                        // s.innerHTML = JSON.stringify();
+                        console.log(response.result.data);
+                        console.log(this.booklist);
+                        if (response.resultcode == 112) {
+                            alert(response.reason);
+                        } else if (response.resultcode == 200) {
+                            for (i in response.result.data) {
+                                Vue.set(book, i, response.result.data[i])
+                            }
+                        }
+                    }
+                })
+            },
+            cellclick(row, column, cell, event) {
+                console.log(row.id);
+                //
+                this.bookid = row.id;
+                this.getBooks();
+            }
+        },
+        created: function () {
+            this.getCatalog()
+        }
+    })
+</script>
+
+</html>
