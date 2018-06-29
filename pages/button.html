@@ -92,21 +92,17 @@
     #btn4:hover {
         width: 400px;
     }
-
-    #d{
+    #d,#e{
         width: 100px;
         height: 100px;
         background: blue;
         transition: width 2s;
-        -moz-transition: width 2s;
-        /* Firefox 4 */
-        -webkit-transition: width 2s;
-        /* Safari and Chrome */
-        -o-transition: width 2s;
-        /* Opera */
     }
-
-    #d:hover {
+    #e{
+        margin-top: 20px;
+        transform: rotateX(45deg) perspective(1000);
+    }
+    #d:hover,#e:hover {
         width: 300px;
     }
 </style>
@@ -147,7 +143,9 @@
             <button class="mei" id="btn4">
                 <span>按钮动画 </span>
             </button>
+            <div id="e"></div>
             <div id="d"></div>
+            
         </div>
         
     </div>

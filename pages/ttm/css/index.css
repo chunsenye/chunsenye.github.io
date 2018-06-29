@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+{
+    width: 100%;
+    height: 100%;
+    background-color: #e2dadb;
+    overflow: hidden;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    width: 100%;
+    height: 40px;
+    background-color: #e2dadb;
+}
+
+canvas {
+    position: absolute;
+    /* border: 1px solid red; */
+}
+
+#Aside {
+    float: left;
+    background-color: #e2dadb;
+}
+
+#footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #e2dadb;
+    text-align: center;
+    line-height: 40px;
+}
+
+#navBar,
+#navBar2 {
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    height: 100%;
+}
+
+#navBar2 li a:hover {
+    background-color: #fff;
+    /* border-radius: 50%; */
+}
+
+#navBar li {
+    text-align: center;
+    line-height: 40px;
+    width: 100px;
+    float: left;
+    font-size: 20px;
+    margin: auto 10px;
+}
+
+#navBar2 li {
+    text-align: center;
+    line-height: 40px;
+    width: 100px;
+    float: left;
+    font-size: 20px;
+    margin: 0px 10px;
+}
+
+
+#changeProperty {
+    position: absolute;
+    left: 300px;
+    top: 200px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 1px black;
+    /* border-radius: 3%; */
+}
+
+#glass {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#p_left ul,
+#p_right ul {
+    list-style: none;
+}
+
+#p_left li,
+#p_right li {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#p_left span,
+#p_right span {
+    margin-right: 20px;
+}
+
+#p_left input {
+    font-size: 20px;
+    width: 60%;
+}
+
+.cbox {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
+#canvasBox{
+    /* position: absolute;
+    left: 10%;
+    top: 10%; */
+    width: 400px;
+    height: 100%;
+    background-color: #fff;
+    /* display: none; */
+    float: left;
+}
+#spaceContainer{
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.2);
+    display: none;
+}
+#space{
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    width:300px;
+    height: 200px;
+    background: #999;
+    box-shadow: 0px 0px 10px 1px black;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+   
+}
+#space input{
+    width: 100px;
+    margin-left: 30px;
+    height: 20px;
+}
+#spaceEdit{
+    position: absolute;
+    background-color: #999;
+    width: 150px;
+    height:300px;
+    display: none;
+}
+#spaceEdit ul{
+    list-style: none; 
+}
+#spaceEdit ul li:hover{
+    background-color: #ccc;
+}
