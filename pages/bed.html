@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../css/images/favicon.ico">
+    <script src="./lib/three.js"></script>
+    <script src="./lib/OrbitControls.js"></script>
+    <title>孤单的床</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        overflow: hidden;
+    }
+
+    canvas {
+        width: 100%;
+        height: 100%;
+        background: #eee;
+    }
+</style>
+
+<body>
+    <script>
+        var scene = new THREE.Scene();
+        var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.01, 1000);
+        var renderer = new THREE.WebGLRenderer({
+            antialias: true
+        });
+        var mouse = new THREE.Vector2(),
+            INTERSECTED;
+        // renderer.setSize(window.innerWidth / 2, window.innerHeight / 2, false);
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+        var geometry = new THREE.BoxGeometry(10, 1, 6);
+        var geometry2 = new THREE.BoxGeometry(0.2, 3, 6);
+        var geometry3 = new THREE.BoxGeometry(9.8, 0.1, 5.8);
+        var geometry4 = new THREE.BoxGeometry(0.5, 10, 30);
+        var geometry5 = new THREE.BoxGeometry(0.5, 10, 30);
+        var geometry6 = new THREE.BoxGeometry(16, 0.5, 30);
+        var geometry7 = new THREE.BoxGeometry(16, 10, 0.5);
+        var material4 = new THREE.MeshBasicMaterial({
+            color: 0xffffff,
+            opacity: 1,
+            transparent: true, //开启透明度计算
+            flatShading: true,
+            // vertexColors:THREE.VertexColors
+        });
+        var material = new THREE.MeshBasicMaterial({
+            color: 0x666666,
+            opacity: 1,
+            transparent: true, //开启透明度计算
+            flatShading: true,
+            // vertexColors:THREE.VertexColors
+        });
+        var material2 = new THREE.MeshBasicMaterial({
+            color: 0xdddddd,
+            opacity: 1,
+            transparent: true, //开启透明度计算
+            flatShading: true,
+            // vertexColors:THREE.VertexColors
+        });
+        var material3 = new THREE.MeshBasicMaterial({
+            color: 0x333333,
+            opacity: 1,
+            transparent: true, //开启透明度计算
+            flatShading: true,
+            // vertexColors:THREE.VertexColors
+        });
+        var material5 = new THREE.MeshBasicMaterial({
+            color: 0xaaaaaa,
+            opacity: 1,
+            transparent: true, //开启透明度计算
+            flatShading: true,
+            // vertexColors:THREE.VertexColors
+        });
+        // var material=new THREE.MeshLambertMaterial({color:0xffffff});//材质对象
+        var cube = new THREE.Mesh(geometry, material);
+        var cube2 = new THREE.Mesh(geometry2, material3);
+        var cube3 = new THREE.Mesh(geometry3, material2);
+        var cube4 = new THREE.Mesh(geometry4, material4);
+        var cube5 = new THREE.Mesh(geometry5, material4);
+        var cube6 = new THREE.Mesh(geometry6, material5);
+        var cube7 = new THREE.Mesh(geometry7, material2);
+        cube.position.y = 0.5;
+        cube3.position.y = 1;
+        cube4.position.y = 5;
+        cube4.position.x = 5.5;
+        cube5.position.y = 5;
+        cube5.position.x = -10;
+        cube2.position.y = 1.5;
+        cube2.position.x = 5.1;
+        cube6.position.x = -2.25;
+        cube7.position.x = -2.25;
+        cube7.position.y = 5;
+        cube7.position.z = -15;
+        scene.add(cube);
+        scene.add(cube2);
+        scene.add(cube3);
+        scene.add(cube4);
+        scene.add(cube5);
+        scene.add(cube6);
+        scene.add(cube7);
+        camera.position.z = 30;
+        camera.position.y = 30;
+        var point = new THREE.PointLight(0x00ffff);
+        point.position.set(1, 1, -35); //点光源位置
+        scene.add(point); //点光源添加到场景中
+        //环境光
+        // var ambient = new THREE.AmbientLight(0xffff00);
+        // scene.add(ambient);
+        renderer.setPixelRatio( window.devicePixelRatio );
+        renderer.setClearColor(0xaaaaaa, 1); //设置背景颜色
+
+        var gridHelper = new THREE.GridHelper(100, 100)
+        scene.add(gridHelper)
+        var controls = new THREE.OrbitControls(camera, renderer.domElement)
+        // controls.enableDamping = true
+        // controls.dampingFactor = 0.25
+        // controls.rotateSpeed = 0.35
+        var axes = new THREE.AxesHelper(1);
+        scene.add(axes);
+        var raycaster = new THREE.Raycaster();
+        
+        var radius = 100,
+            theta = 0;
+        document.addEventListener('mousemove', onDocumentMouseMove, false);
+        //
+        window.addEventListener('resize', onWindowResize, false);
+
+        function onWindowResize() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        }
+
+        function onDocumentMouseMove(event) {
+            event.preventDefault();
+            mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+            mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+            renderer.render(scene, camera);
+            raycaster.setFromCamera(mouse, camera);
+            var intersects = raycaster.intersectObjects(scene.children);
+            if (intersects.length > 0) {
+                if (INTERSECTED != intersects[0].object) {
+                    // if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
+                    // INTERSECTED = intersects[0].object;
+                    // INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
+                    // INTERSECTED.material.emissive.setHex(0xff0000);
+                    console.log(mouse.x+':'+mouse.y)
+                    // console.log()
+                }
+            } else {
+                // if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
+                // INTERSECTED = null;
+            }
+        }
+        animate();
+    </script>
+</body>
+
+</html>

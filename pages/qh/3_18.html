@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>晚安</title>
+        <link rel="shortcut icon" href="../../css/images/favicon.ico">
+        <script src="js/bootstrap.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="../../js/jquery.min.js"></script>
+	</head>
+	<style>
+        .night{
+            width:100px;
+            height: 100px;
+            background-color: pink;
+            border-radius: 50%;
+            text-align: center;
+            float: left;
+            font: 80px '宋体';
+        }
+	</style>
+	<body>
+        <div>
+            <h1 id="time">生活总是充满惊喜~</h1>
+            <h1 id="lisa1">我觉得只要坚持心中所想</h1>
+            <h1 id="lisa2">总能从中得到些什么</h1>
+            <h1 id="lisa3">我也会继续前行</h1>
+            <h1 id="lisa4">为了一个美好的未来</h1>
+            <h1 id="lisa5">我，是你今天最大的烦恼吧</h1>
+            <h1 id="lisa6">你，是我今天最大的意外啊</h1>
+            <h1 id="lisa7">我也不敢希望明天</h1>
+            <h1 id="lisa8">只希望你能开心如故，日日如花</h1>
+        </div>
+        <div class="night">
+            晚
+        </div>
+        <div style="width: 30px;height: 100px;float: left">
+
+        </div>
+        <div class="night">
+            安
+        </div>
+	</body>
+	<script>
+        $('#lisa1').hide();
+        $('#lisa2').hide();
+        $('#lisa3').hide();
+        $('#lisa4').hide();
+        $('#lisa5').hide();
+        $('#lisa6').hide();
+        $('#lisa7').hide();
+        $('#lisa8').hide();
+        $('.night').hide();
+        setTimeout(function () {
+            $('#lisa1').show(1500);
+            setTimeout(function () {
+                $('#lisa2').show(1500);
+                setTimeout(function () {
+                    $('#lisa3').show(1500);
+                    setTimeout(function () {
+                        $('#lisa4').show(1500);
+                        setTimeout(function () {
+                            $('#lisa5').show(1500);
+                            setTimeout(function () {
+                                $('#lisa6').show(1500);
+                                setTimeout(function () {
+                                    $('#lisa7').show(1500);
+                                    setTimeout(function () {
+                                        $('#lisa8').show(1500);
+                                        setTimeout(function () {
+                                            $('.night').show(1500);
+                                        },2000)
+                                    },2000)
+                                },2000)
+                            },2000)
+                        },2000)
+                    },2000)
+                },2000)
+            },2000)
+        },2000)
+	</script>
+</html>
