@@ -42,7 +42,7 @@
             opacity: 0.8,
             transparent: true, //开启透明度计算
             flatShading: true,
-            // wireframe: true,
+            wireframe: true,
             // vertexColors:THREE.VertexColors
         });
 
@@ -107,6 +107,8 @@
 
         function animate() {
             requestAnimationFrame(animate);
+            circle.rotation.z+=0.3;
+            cone.rotation.y+=0.3;
             renderer.render(scene, camera);
         }
         animate();
