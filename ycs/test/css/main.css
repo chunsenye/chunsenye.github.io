@@ -1,0 +1,509 @@
+*{ margin: 0; padding: 0; }
+html { -webkit-tap-highlight-color: transparent; height: 100%; font-size:100px; background-color: #ebebeb; margin: 0 auto; padding: 0 }
+body { color: #666; font-size: 0.24rem; line-height: 1.5; font-family: Microsoft Yahei,arial }
+ul, ol, li {list-style: none;}
+em,i {font-style: normal}
+img {border: none;vertical-align: top;}
+input[type="submit"],input[type="text"],input[type="button"],button,select {-webkit-appearance: none;border-radius:0; -webkit-tap-highlight-color:rgba(255,0,0,0);outline:none;outline:0;blr:expression(this.onFocus=this.blur()); border:none;}
+input[type="submit"],input[type="button"]{ cursor:pointer;} 
+input { width:100%;}
+textarea:focus { outline: 0 }
+a { color: #6E7D8B; text-decoration: none; outline: 0 }
+a:active, a:hover, a.current { outline: 0 }
+
+body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
+.header{
+    width: 100%;
+    height: 0.95rem;
+}
+.header div{
+    float: left;
+}
+.header_left{
+    position: relative;
+    left: 0.2rem;
+    top: 0.3rem;
+    
+}
+.header_left img{
+    width: 0.5rem;
+    height: 0.4rem;
+}
+.header_center{
+    position: relative;
+    left: 1.3rem;
+    top: 0.2rem;
+}
+.header_center img{
+    width: 3rem;
+    height: 0.6rem;
+}
+.header_right{
+    position: relative;
+    left: 2.2rem;
+    top:0.25rem;
+}
+.header_right img{
+    width: 0.6rem;
+    height: 0.6rem;
+}
+.babypicture img{
+    width:100%;
+}
+.babypicture a{
+    height: 3.2rem;
+}
+.navBar{
+    width: 6.4rem;
+    height: 3.5rem;
+    /* background: #ddd; */
+}
+
+.navBox{
+    width: 1.6rem;
+    height: 1.5rem;
+    /* background: #fff; */
+    float: left;
+    margin-bottom: 0.1rem;    
+}
+.circleBox a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.circleBox{
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+    margin-left: 0.4rem;
+    margin-top: 0.3rem;
+}
+.text1{
+    position: relative;
+    top: 0.1rem;
+    left: 0.5rem;
+    font-size: 0.18rem;
+}
+.navBar .navBox:nth-child(1) .circleBox{
+    background: url('../images/navBar1.png') no-repeat #ffc7e0 0 0/100% 100%;
+}
+.navBar .navBox:nth-child(2) .circleBox{
+    background: url('../images/navBar2.png') no-repeat #ffe89b 0 0/100% 100%;
+}
+.navBar .navBox:nth-child(3) .circleBox{
+    background: url('../images/navBar3.png') no-repeat #ffd9c0 0 0/100% 100%;
+}
+.navBar .navBox:nth-child(4) .circleBox{
+    background: url('../images/navBar4.png') no-repeat #83ead9 0 0/100% 100%;
+}
+.navBar .navBox:nth-child(5) .circleBox{
+    background: url('../images/navBar5.png') no-repeat #ffd9c0 0 0/100% 100%;
+}
+.navBar .navBox:nth-child(6) .circleBox{
+    background: url('../images/navBar6.png') no-repeat #aacef9 0 0/100% 100%;
+}
+.navBar .navBox:nth-child(7) .circleBox{
+    background: url('../images/navBar7.png') no-repeat #dcc5fc 0 0/100% 100%;
+}
+.navBar .navBox:nth-child(8) .circleBox{
+    background: url('../images/navBar8.png') no-repeat #ffc7e0 0 0/100% 100%;
+}
+.news{
+    width: 6.4rem;
+    height: 1rem;
+    /* background-color: #ddd; */
+}
+.newsLogo{
+    position: relative;
+    top: 0.1rem;
+    left: 0.2rem;
+}
+.newsLogo img{
+    width: 1.3rem;
+    height: 0.6rem;
+}
+.line{
+    font-size: 0.3rem;
+    position: relative;
+    top: 0.05rem;
+    height: 0.6rem;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.newText{
+    position: relative;
+    left: 0.2rem;
+    font-size: 0.22rem;
+}
+.introduce{
+    width: 6.4rem;
+    height: 3.3rem;
+    /* background-color: #ddd; */
+}
+.introduceChild{
+    position: relative;
+    margin-left: 0.2rem;
+    margin-bottom: 0.2rem;
+    width: 2.9rem;
+    height: 1.5rem;
+    background: #f7f7f7;
+    float: left;
+}
+.introduceTitle{
+    width: 1.7rem;
+}
+.introduceChild div{
+    float: left;
+}
+.introduceLogo{
+    width: 0.9rem;
+    height: 1.4rem;
+    /* background: #f9f9f9; */
+}
+.introduceLogo img{
+    position: relative;
+    left: 0.2rem;
+    top: 0.3rem;
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+.introduceTitle h1{
+    position: relative;
+    left: 0.2rem;
+    top: 0.1rem;
+    font-size: 0.3rem;
+}
+.introduceTitle span{
+    position: relative;
+    left: 0.2rem;
+    top: 0.3rem;
+    font-size: 0.15rem;
+    color: #999;
+}
+.profersor{
+    width: 100%;
+    height: 0.6rem;
+}
+.profersor h3{
+    line-height: 0.3rem;
+    position: relative;
+    left: 0.2rem;
+    width: 50%;
+    font-size: 0.3rem;
+  
+}
+.line2{
+    color: #199475;
+    margin-right: 0.1rem;
+}
+.zj{
+    position: relative;
+    left: 0.2rem;
+    width: 6rem;
+}
+.zj img{
+    width: 6rem;
+}
+.doctors{
+    /* float: left; */
+    /* margin-left: 0.2rem; */
+    margin: 0.2rem auto 0.2rem auto;
+    width: 6rem;
+    height: 4.2rem;
+    /* background-color: #ddd; */
+    /* border: 0.01rem solid gray; */
+    margin-top: 0.3rem;
+    /* border-top-left-radius: 0.2rem;
+    border-top-right-radius: 0.2rem; */
+}
+
+.doctor img{
+    /* margin-left: 0.2rem; */
+    float: left;
+    width: 2.8rem;
+    margin-bottom: 0.05rem;
+}
+.doctorInfo{
+    margin-top: 0.05rem;
+    float: left;
+    width: 3rem;
+}
+.doctorInfo p{
+    font-size: 0.15rem;
+    margin: 0.05rem 0;
+}
+
+.doctorInfo h2{
+    font-size: 0.3rem;
+}
+.doctorInfo h2 span{
+    font-size: 0.22rem;
+    font-weight: normal;
+}
+.doctorInfo h2 i{
+    font-weight: normal;
+}
+.doctorInfo h2 strong{
+    color: #199475;
+}
+
+.tag{
+    margin-left: 0.2rem;
+    width: 2.6rem;
+    height: 1.5rem;
+    /* background-color: #ddd; */
+    margin-top: 0.07rem;
+}
+.tag span{
+    border:0.01rem solid #199475;
+    padding: 0.02rem 0.1rem;
+    border-radius: 0.15rem;
+    font-size: 0.15rem;
+}
+.tagchild{
+    margin: 0.1rem 0;
+}
+.yuyue{
+    position: relative;
+    left: -2.6rem;
+    top: -0.2rem;
+   
+  
+   
+    cursor: pointer;
+}
+.yuyue img{
+    width: 0.25rem;
+}
+.yuyue button{
+    background-color: #f86455;
+    color: #fff;
+    font-size: 0.2rem;
+    padding: 0.05rem 0.2rem;
+    border-radius: 0.2rem;
+}
+.circleyue{
+    position: relative;
+    top: -0.3rem;
+    left: -1.4rem;
+}
+.p{
+    margin: 0.1rem 0;
+    font-size: 0.2rem;
+}
+.p img{
+    width: 0.25rem;
+}
+.goodIn{
+    margin-top: 0.1rem;
+    font-size: 0.20rem;
+}
+.goodIn img{
+    width: 0.3rem;
+    height: 0.3rem;
+}
+.star{
+    margin-top: 0.05rem;
+    float: right;
+    margin-right: 0.2rem;
+}
+.star img{
+    width: 0.25rem;
+}
+.video{
+    width: 100%;
+    height: 2rem;
+    /* background-color: #ccc; */
+    clear: both;
+}
+.videochild{
+    float: left;
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+}
+.videochild img{
+    width: 2.9rem;
+    margin-bottom: 0.3rem;
+}
+.newsList{
+    width: 6rem;
+    height: 4.6rem;
+    margin-left: 0.2rem;
+    /* background-color: #ddd; */
+}
+.shebao img{
+    width: 6.4rem;
+    /* height: 2rem; */
+    margin-bottom: 0.2rem;
+}
+.evm{
+    width: 6rem;
+    margin-left: 0.20rem;
+    height: 4.3rem;
+    /* background-color: #ddd;  */
+}
+.evmBox{
+    float: left;
+    margin-left: 0.06rem;
+    margin-bottom: 0.1rem;
+}
+.evmBox img{
+    width: 1.90rem;
+}
+.info{
+    margin-left: 0.2rem;
+    width: 6rem;
+    height: 5.8rem;
+    /* background-color: #ccc;  */
+}
+.info img{
+    width: 6rem;
+}
+.info2{
+    position: relative;
+    top: -0.65rem;
+}
+.bottomNav{
+    position: fixed;
+    bottom: 0rem;
+    left: 50%;
+    width: 6.4rem;
+    margin-left: -3.2rem;
+    height: 1rem;
+    background-color: #f3f3f3; 
+}
+.bottomNavbar{
+    width: 19.9%;
+    overflow: hidden;
+    float: left;
+    /* margin: 0.1rem 0.15rem; */
+    text-align: center;
+}
+.bottomNavbar img{
+    width: 0.5rem;
+    margin:0.05rem  0;
+}
+.gtext{
+    color: #199475;
+}
+.news{
+    width: 6rem;
+}
+.newsItem{
+    width: 100%;
+    height: 1.5rem;
+    background-color: #fff;
+}
+.newsItemLeft{
+    float: left;
+    width: 3.4rem;
+    height: 1.5rem;
+    /* background: #ccc; */
+    border-bottom: 0.01rem solid gainsboro;
+}
+.newsItemRight{
+    float: left;
+    width: 2.2rem;
+    height: 1.5rem;
+    /* background: #aaa; */
+    margin-left: 0.4rem;
+}
+.newsItemRight img{
+    position: relative;
+    top: 0.1rem;
+    width: 2.2rem;
+    height: 1.4rem;
+}
+.anli{
+    position: relative;
+    left: 0.1rem;
+    top: 0.3rem;
+    border: 0.01rem solid red;
+    color: red;
+    padding:0 0.05rem; 
+}
+.newsText{
+    position: relative;
+    font-size: 0.25rem;
+    left: 0.1rem;
+    top: 0.3rem;
+}
+.readers{
+    position: relative;
+    font-size: 0.2rem;
+    left: 0.1rem;
+    top: 0.3rem;
+    color: #ccc;
+}
+.readMore{
+    position: relative;
+    left: 2.5rem;
+    width: 6em;
+    height: 0.8rem;
+    text-align: center;
+    line-height: 0.8rem;
+   
+}
+.readMore a{
+     color: #8bd5c1;
+}
+.readMoreText{
+    text-align: center;
+}
+
+
+/* .footcss {
+    background: url(../images/footbg.png) no-repeat 0 0.55rem/100% auto;
+    padding: 0.3rem 0 0.7rem 0;
+} */
+#btn_road{
+    position: relative;
+    left: 2.2rem;
+    top: -2.2rem;
+    width: 1.4rem;
+    height: 0.4rem;
+    border: 0;
+    color: #fff;
+    background-color: #3c875b;
+    font-size: 0.2rem;
+}
+.tabBox .hd{
+      height:0.2rem; 
+      line-height:0.2rem;
+      font-size:0.2rem;
+       position:relative;  }
+.tabBox .hd ul{
+    position: relative; 
+    height:0.41rem;
+    overflow:hidden;
+    margin: 0.1rem 2rem;
+    top: -0.1rem; 
+    }
+.tabBox .hd ul li{
+    float:left;
+    padding:0 0.1rem;
+    color:#666;
+    height: 0.2rem;
+    border-radius: 50%;
+    border: 0.01rem solid gray;
+    margin: 0 0.03rem;
+}
+.tabBox .hd ul .on{background:#199475; border-color:#199475; }
+.tabBox .bd ul{ padding:0.1rem 0 0.1rem 0.1rem;  }
+.tabBox .bd li{ height:0.33rem; line-height:0.33rem;   }
+.tabBox .bd li a{ color:#666; }
+/* footer 手机站新尾部 */
+.footcss{background:url(../images/footbg.png) no-repeat 0 0.55rem/100% auto;padding:0.3rem 0 0.7rem 0;}
+.footcss .fttxt{padding:0.9rem 0.2rem 0.2rem 2.4rem;font-size:0.2rem;line-height:0.3rem;color:#333;}
+.footcss .fttxt p{margin-bottom:0.1rem;}
+.footcss .fttxt p strong{color:#296642;}
+.footcss .fttxt p a{display:block;width:1.5rem;text-align:center;height:0.42rem;line-height:0.42rem;background:#3c875b;color:#fff;}
+
+.footcss .flogo{text-align:center;padding-bottom:0.1rem;}
+.footcss .flogo img{width:3rem;}
+.footcss h3{font-size:0.36rem;line-height:0.5rem;color:#333;text-align:center;padding-bottom:0.3rem;}
+.footcss .tcp{font-size:0.2rem;line-height:0.3rem;color:#333;text-align:center;}
+.box{
+    width: 100%;
+    height: 0.6rem;
+}
