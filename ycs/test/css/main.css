@@ -249,7 +249,7 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
 }
 
 .tag{
-    margin-left: 0.2rem;
+    margin-left: 0.05rem;
     width: 2.6rem;
     height: 1.5rem;
     /* background-color: #ddd; */
@@ -258,7 +258,7 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
 .tag span{
     border:1px solid #199475;
     padding: 0.02rem 0.1rem;
-    border-radius: 0.15rem;
+    /* border-radius: 0.15rem; */
     font-size: 0.15rem;
 }
 .tagchild{
@@ -267,7 +267,7 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
 .yuyue{
     position: relative;
     left: -2.6rem;
-    top: -0.1rem; 
+    top: -0.18rem; 
     cursor: pointer;
 }
 .yuyue img{
@@ -283,7 +283,7 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
 .circleyue{
     position: relative;
     top: -0.25rem;
-    left: -1.2rem;
+    left: -1.1rem;
 }
 .p{
     margin: 0.1rem 0;
@@ -293,12 +293,12 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
     width: 0.25rem;
 }
 .goodIn{
-    margin-top: 0.25rem;
+    margin-top: 0.28rem;
     font-size: 0.20rem;
 }
 
 .goodIn img:nth-child(3){
-    margin-left: 0.3rem;
+    margin-left: 0.5rem;
 }
 .goodIn img{
     margin: 0.05rem 0;
@@ -428,11 +428,11 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
 .anli{
     position: relative;
     left: 0.1rem;
-    top: 0.3rem;
+    top: 0.28rem;
     border: 1px solid red;
     color: red;
     padding:0 0.05rem; 
-    font-size: 0.18rem;
+    font-size: 0.16rem;
     line-height: 0.3rem;
 }
 .newsText{
