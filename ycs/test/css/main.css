@@ -81,8 +81,8 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
 .text1{
     position: relative;
     top: 0.1rem;
-    left: 0.5rem;
-    font-size: 0.18rem;
+    left: 0.45rem;
+    font-size: 0.2rem;
 }
 .navBar .navBox:nth-child(1) .circleBox{
     background: url('../images/navBar1.png') no-repeat #ffc7e0 0 0/100% 100%;
@@ -170,14 +170,15 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
 .introduceTitle h1{
     position: relative;
     left: 0.2rem;
-    top: 0.1rem;
-    font-size: 0.3rem;
+    top: 0.3rem;
+    font-size: 0.26rem;
+    font-weight: normal;
 }
 .introduceTitle span{
     position: relative;
     left: 0.2rem;
-    top: 0.3rem;
-    font-size: 0.15rem;
+    top: 0.35rem;
+    font-size: 0.2rem;
     color: #999;
 }
 .profersor{
@@ -255,7 +256,7 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
     margin-top: 0.07rem;
 }
 .tag span{
-    border:0.01rem solid #199475;
+    border:1px solid #199475;
     padding: 0.02rem 0.1rem;
     border-radius: 0.15rem;
     font-size: 0.15rem;
@@ -266,10 +267,7 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
 .yuyue{
     position: relative;
     left: -2.6rem;
-    top: -0.2rem;
-   
-  
-   
+    top: -0.1rem; 
     cursor: pointer;
 }
 .yuyue img{
@@ -284,8 +282,8 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
 }
 .circleyue{
     position: relative;
-    top: -0.3rem;
-    left: -1.4rem;
+    top: -0.25rem;
+    left: -1.2rem;
 }
 .p{
     margin: 0.1rem 0;
@@ -295,12 +293,22 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
     width: 0.25rem;
 }
 .goodIn{
-    margin-top: 0.1rem;
+    margin-top: 0.25rem;
     font-size: 0.20rem;
 }
+
+.goodIn img:nth-child(3){
+    margin-left: 0.3rem;
+}
 .goodIn img{
+    margin: 0.05rem 0;
+    width: 0.2rem;
+    height: 0.2rem;
+}
+.goodIn img:nth-child(1){
     width: 0.3rem;
     height: 0.3rem;
+    margin: 0;
 }
 .star{
     margin-top: 0.05rem;
@@ -339,7 +347,7 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
 .evm{
     width: 6rem;
     margin-left: 0.20rem;
-    height: 4.3rem;
+    height: 4rem;
     /* background-color: #ddd;  */
 }
 .evmBox{
@@ -381,7 +389,10 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
 }
 .bottomNavbar img{
     width: 0.5rem;
-    margin:0.05rem  0;
+    margin:0.1rem  0 0 0;
+}
+.bottomNavbar span{
+    font-size: 0.18rem;
 }
 .gtext{
     color: #199475;
@@ -399,7 +410,7 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
     width: 3.4rem;
     height: 1.5rem;
     /* background: #ccc; */
-    border-bottom: 0.01rem solid gainsboro;
+    border-bottom: 1px solid #f5f5f5;
 }
 .newsItemRight{
     float: left;
@@ -418,15 +429,18 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
     position: relative;
     left: 0.1rem;
     top: 0.3rem;
-    border: 0.01rem solid red;
+    border: 1px solid red;
     color: red;
     padding:0 0.05rem; 
+    font-size: 0.18rem;
+    line-height: 0.3rem;
 }
 .newsText{
     position: relative;
     font-size: 0.25rem;
     left: 0.1rem;
     top: 0.3rem;
+    font-weight: normal;
 }
 .readers{
     position: relative;
@@ -474,19 +488,20 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
        position:relative;  }
 .tabBox .hd ul{
     position: relative; 
-    height:0.41rem;
+    /* height:0.41rem; */
     overflow:hidden;
-    margin: 0.1rem 2rem;
+    margin: 0.1rem 2.2rem;
     top: -0.1rem; 
+    /* text-align: center; */
     }
 .tabBox .hd ul li{
     float:left;
-    padding:0 0.1rem;
+    padding:0.05rem 0.05rem;
     color:#666;
-    height: 0.2rem;
+    /* height: 0.2rem; */
     border-radius: 50%;
-    border: 0.01rem solid gray;
-    margin: 0 0.03rem;
+    border: 1px solid gray;
+    margin: 0 0.05rem;
 }
 .tabBox .hd ul .on{background:#199475; border-color:#199475; }
 .tabBox .bd ul{ padding:0.1rem 0 0.1rem 0.1rem;  }
@@ -503,6 +518,14 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
 .footcss .flogo img{width:3rem;}
 .footcss h3{font-size:0.36rem;line-height:0.5rem;color:#333;text-align:center;padding-bottom:0.3rem;}
 .footcss .tcp{font-size:0.2rem;line-height:0.3rem;color:#333;text-align:center;}
+.zhibuyun{
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.zhibuyun img{
+    width: 2.9rem;
+}
+
 .box{
     width: 100%;
     height: 0.6rem;
