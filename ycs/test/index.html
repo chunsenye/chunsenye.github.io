@@ -14,6 +14,7 @@
 <body>
     <script type="text/javascript" src="./js/waprem.js"></script>
     <script type="text/javascript" src="./js/TouchSlide.1.1.js"></script>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
     <div class="header">
         <div class="header_left">
             <a href="#">
@@ -104,13 +105,64 @@
     </div>
     <div class="news">
         <div class="newsLogo">
-            <a href="#">
-                <img src="./images/news.png" alt="最新资讯">
-            </a>
-            <span class="line"></span>
-            <a href="#">
-                <span class="newText">3.15焦点事件：不孕名医联合国际孕育专家</span>
-            </a>
+            <div style="float: left;">
+                <a href="#">
+                    <img src="./images/news.png" alt="最新资讯">
+                </a>
+                <span class="line">| &nbsp;</span>
+            </div>
+
+            <div id="news">
+                <ul style="margin-top:0!important" id="list">
+                    <li>
+                        <a href="#">1.15焦点事件：不孕名医联合国际孕育专家</a>
+                    </li>
+                    <li>
+                        <a href="#">2.15焦点事件：不孕名医联合国际孕育专家</a>
+                    </li>
+                    <li>
+                        <a href="#">3.15焦点事件：不孕名医联合国际孕育专家</a>
+                    </li>
+                    <li>
+                        <a href="#">4.15焦点事件：不孕名医联合国际孕育专家</a>
+                    </li>
+                    <li>
+                        <a href="#">5.15焦点事件：不孕名医联合国际孕育专家</a>
+                    </li>
+                    <li>
+                        <a href="#">6.15焦点事件：不孕名医联合国际孕育专家</a>
+                    </li>
+                </ul>
+                <!-- <a href="#">
+                    <span class="newText">3.15焦点事件：不孕名医联合国际孕育专家</span>
+                </a> -->
+                <!-- <a href="#">
+                    <span class="newText">3.15焦点事件：不孕名医联合国际孕育专家</span>
+                </a> -->
+            </div>
+
+            <!-- <div id="news" style="background-color: pink;height: 2.8rem;">
+                <ul style="margin-top:0!important">
+                    <li>
+                        <a href="#">1首页</a>
+                    </li>
+                    <li>
+                        <a href="#">2产品</a>
+                    </li>
+                    <li>
+                        <a href="#">3联系我们</a>
+                    </li>
+                    <li>
+                        <a href="#">4支付方式</a>
+                    </li>
+                    <li>
+                        <a href="#">5销售QQ</a>
+                    </li>
+                    <li>
+                        <a href="#">6售后服务</a>
+                    </li>
+                </ul>
+            </div> -->
         </div>
     </div>
     <div class="introduce">
@@ -167,6 +219,7 @@
             </div>
         </div>
     </div>
+    <!-- <div class="zj"> -->
     <div class="profersor">
         <h3>
             <span class="line2">|</span>长安专家</h3>
@@ -180,408 +233,420 @@
         <div id="leftTabBox" class="tabBox">
             <div class="bd">
                 <ul>
-                    <div class="doctor">
-                        <img src="./images/doctor1.png" alt="医生1">
-                    </div>
-                    <div class="doctorInfo">
-                        <h2>
-                            <strong>刘海鹃</strong>
-                            <i>/</i>
-                            <span>副主任医师</span>
-                        </h2>
-                        <div class="p">
-                            <img src="./images/doc_ex.png">&nbsp;
-                            <span>25年经验&nbsp;&nbsp;</span>
-                            <img src="./images/doc_school.png">&nbsp;
-                            <span>医学硕士</span>
+                    <div class="doctorBox">
+                        <div class="doctor">
+                            <img src="./images/doctor1.png" alt="医生1">
                         </div>
-                        <p>· 不孕不育问题特邀研究员</p>
-                        <p>· 生殖医学学会中国大陆代表</p>
-                        <p>· 治疗不孕不育患者累计3562例</p>
-                        <div class="goodIn">
-                            <div>
-                                <img src="images/jiangbei.png" alt="奖杯">
-                                <span>擅长</span>
-                                <!-- <div class="star"> -->
-                                <img src="./images/star.png" alt="星星">
-                                <img src="./images/star.png" alt="星星">
-                                <img src="./images/star.png" alt="星星">
-                                <img src="./images/star.png" alt="星星">
-                                <img src="./images/star.png" alt="星星">
-                                <!-- </div> -->
+                        <div class="doctorInfo">
+                            <h2>
+                                <strong>刘海鹃</strong>
+                                <i>/</i>
+                                <span>副主任医师</span>
+                            </h2>
+                            <div class="p">
+                                <img src="./images/doc_ex.png">&nbsp;
+                                <span>25年经验&nbsp;&nbsp;</span>
+                                <img src="./images/doc_school.png">&nbsp;
+                                <span>医学硕士</span>
                             </div>
-                            <div class="tag">
-                                <div class="tagchild">
-                                    <a href="#">
-                                        <span>复通</span>
-                                    </a>
-                                    <a href="#">
-                                        <span>不孕不育检查</span>
-                                    </a>
+                            <p>· 不孕不育问题特邀研究员</p>
+                            <p>· 生殖医学学会中国大陆代表</p>
+                            <p>· 治疗不孕不育患者累计3562例</p>
+                            <div class="goodIn">
+                                <div>
+                                    <img src="images/jiangbei.png" alt="奖杯">
+                                    <span>擅长</span>
+                                    <!-- <div class="star"> -->
+                                    <img src="./images/star.png" alt="星星">
+                                    <img src="./images/star.png" alt="星星">
+                                    <img src="./images/star.png" alt="星星">
+                                    <img src="./images/star.png" alt="星星">
+                                    <img src="./images/star.png" alt="星星">
+                                    <!-- </div> -->
                                 </div>
-                                <div class="tagchild">
-                                    <a href="#">
-                                        <span>输卵管堵塞</span>
-                                    </a>
-                                    <a href="#">
-                                        <span>排卵障碍</span>
-                                    </a>
-                                </div>
-                                <div class="tagchild">
-                                    <a href="#">
-                                        <span>多囊卵巢</span>
-                                    </a>
-                                    <a href="#">
-                                        <span style="color: #199475;">了解详情>></span>
-                                    </a>
-                                </div>
-                                <div  class="yuyue">
-                                    <a href="#">
-                                        <button>
-                                            <img src="./images/click.png" alt="点击">点击立即预约</button>
-                                    </a>
-                                    <img src="./images/yue.png" alt="圆点" class="circleyue">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </ul>
-                <ul>
-                    <div class="doctor">
-                        <img src="./images/doctor1.png" alt="医生1">
-                    </div>
-                    <div class="doctorInfo">
-                        <h2>
-                            <strong>刘海鹃</strong>
-                            <i>/</i>
-                            <span>副主任医师</span>
-                        </h2>
-                        <div class="p">
-                            <img src="./images/doc_ex.png">&nbsp;
-                            <span>25年经验&nbsp;&nbsp;</span>
-                            <img src="./images/doc_school.png">&nbsp;
-                            <span>医学硕士</span>
-                        </div>
-                        <p>· 不孕不育问题特邀研究员</p>
-                        <p>· 生殖医学学会中国大陆代表</p>
-                        <p>· 治疗不孕不育患者累计3562例</p>
-                        <div class="goodIn">
-                            <div>
-                                <img src="images/jiangbei.png" alt="奖杯">
-                                <span>擅长</span>
-                                <!-- <div class="star"> -->
-                                <img src="./images/star.png" alt="星星">
-                                <img src="./images/star.png" alt="星星">
-                                <img src="./images/star.png" alt="星星">
-                                <img src="./images/star.png" alt="星星">
-                                <img src="./images/star.png" alt="星星">
-                                <!-- </div> -->
-                            </div>
-                            <div class="tag">
-                                <div class="tagchild">
-                                    <a href="#">
-                                        <span>复通</span>
-                                    </a>
-                                    <a href="#">
-                                        <span>不孕不育检查</span>
-                                    </a>
-                                </div>
-                                <div class="tagchild">
-                                    <a href="#">
-                                        <span>输卵管堵塞</span>
-                                    </a>
-                                    <a href="#">
-                                        <span>排卵障碍</span>
-                                    </a>
-                                </div>
-                                <div class="tagchild">
-                                    <a href="#">
-                                        <span>多囊卵巢</span>
-                                    </a>
-                                    <a href="#">
-                                        <span style="color: #199475;">了解详情>></span>
-                                    </a>
-                                </div>
-                                <div  class="yuyue">
-                                    <a href="#">
-                                        <button>
-                                            <img src="./images/click.png" alt="点击">点击立即预约</button>
-                                    </a>
-                                    <img src="./images/yue.png" alt="圆点" class="circleyue">
+                                <div class="tag">
+                                    <div class="tagchild">
+                                        <a href="#">
+                                            <span>复通</span>
+                                        </a>
+                                        <a href="#">
+                                            <span>不孕不育检查</span>
+                                        </a>
+                                    </div>
+                                    <div class="tagchild">
+                                        <a href="#">
+                                            <span>输卵管堵塞</span>
+                                        </a>
+                                        <a href="#">
+                                            <span>排卵障碍</span>
+                                        </a>
+                                    </div>
+                                    <div class="tagchild">
+                                        <a href="#">
+                                            <span>多囊卵巢</span>
+                                        </a>
+                                        <a href="#">
+                                            <span style="color: #199475;">了解详情>></span>
+                                        </a>
+                                    </div>
+                                    <div class="yuyue">
+                                        <a href="#">
+                                            <button>
+                                                <img src="./images/click.png" alt="点击" class="click">点击立即预约</button>
+                                        </a>
+                                        <img src="./images/yue.png" alt="圆点" class="circleyue">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </ul>
                 <ul>
-                    <div class="doctor">
-                        <img src="./images/doctor1.png" alt="医生1">
-                    </div>
-                    <div class="doctorInfo">
-                        <h2>
-                            <strong>刘海鹃</strong>
-                            <i>/</i>
-                            <span>副主任医师</span>
-                        </h2>
-                        <div class="p">
-                            <img src="./images/doc_ex.png">&nbsp;
-                            <span>25年经验&nbsp;&nbsp;</span>
-                            <img src="./images/doc_school.png">&nbsp;
-                            <span>医学硕士</span>
+                    <div class="doctorBox">
+                        <div class="doctor">
+                            <img src="./images/doctor1.png" alt="医生1">
                         </div>
-                        <p>· 不孕不育问题特邀研究员</p>
-                        <p>· 生殖医学学会中国大陆代表</p>
-                        <p>· 治疗不孕不育患者累计3562例</p>
-                        <div class="goodIn">
-                            <div>
-                                <img src="images/jiangbei.png" alt="奖杯">
-                                <span>擅长</span>
-                                <!-- <div class="star"> -->
-                                <img src="./images/star.png" alt="星星">
-                                <img src="./images/star.png" alt="星星">
-                                <img src="./images/star.png" alt="星星">
-                                <img src="./images/star.png" alt="星星">
-                                <img src="./images/star.png" alt="星星">
-                                <!-- </div> -->
+                        <div class="doctorInfo">
+                            <h2>
+                                <strong>刘海鹃</strong>
+                                <i>/</i>
+                                <span>副主任医师</span>
+                            </h2>
+                            <div class="p">
+                                <img src="./images/doc_ex.png">&nbsp;
+                                <span>25年经验&nbsp;&nbsp;</span>
+                                <img src="./images/doc_school.png">&nbsp;
+                                <span>医学硕士</span>
                             </div>
-                            <div class="tag">
-                                <div class="tagchild">
-                                    <a href="#">
-                                        <span>复通</span>
-                                    </a>
-                                    <a href="#">
-                                        <span>不孕不育检查</span>
-                                    </a>
+                            <p>· 不孕不育问题特邀研究员</p>
+                            <p>· 生殖医学学会中国大陆代表</p>
+                            <p>· 治疗不孕不育患者累计3562例</p>
+                            <div class="goodIn">
+                                <div>
+                                    <img src="images/jiangbei.png" alt="奖杯">
+                                    <span>擅长</span>
+                                    <!-- <div class="star"> -->
+                                    <img src="./images/star.png" alt="星星">
+                                    <img src="./images/star.png" alt="星星">
+                                    <img src="./images/star.png" alt="星星">
+                                    <img src="./images/star.png" alt="星星">
+                                    <img src="./images/star.png" alt="星星">
+                                    <!-- </div> -->
                                 </div>
-                                <div class="tagchild">
-                                    <a href="#">
-                                        <span>输卵管堵塞</span>
-                                    </a>
-                                    <a href="#">
-                                        <span>排卵障碍</span>
-                                    </a>
-                                </div>
-                                <div class="tagchild">
-                                    <a href="#">
-                                        <span>多囊卵巢</span>
-                                    </a>
-                                    <a href="#">
-                                        <span style="color: #199475;">了解详情>></span>
-                                    </a>
-                                </div>
-                                <div  class="yuyue">
-                                    <a href="#">
-                                        <button>
-                                            <img src="./images/click.png" alt="点击">点击立即预约</button>
-                                    </a>
-                                    <img src="./images/yue.png" alt="圆点" class="circleyue">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </ul>
-                <ul>
-                    <div class="doctor">
-                        <img src="./images/doctor1.png" alt="医生1">
-                    </div>
-                    <div class="doctorInfo">
-                        <h2>
-                            <strong>刘海鹃</strong>
-                            <i>/</i>
-                            <span>副主任医师</span>
-                        </h2>
-                        <div class="p">
-                            <img src="./images/doc_ex.png">&nbsp;
-                            <span>25年经验&nbsp;&nbsp;</span>
-                            <img src="./images/doc_school.png">&nbsp;
-                            <span>医学硕士</span>
-                        </div>
-                        <p>· 不孕不育问题特邀研究员</p>
-                        <p>· 生殖医学学会中国大陆代表</p>
-                        <p>· 治疗不孕不育患者累计3562例</p>
-                        <div class="goodIn">
-                            <div>
-                                <img src="images/jiangbei.png" alt="奖杯">
-                                <span>擅长</span>
-                                <!-- <div class="star"> -->
-                                <img src="./images/star.png" alt="星星">
-                                <img src="./images/star.png" alt="星星">
-                                <img src="./images/star.png" alt="星星">
-                                <img src="./images/star.png" alt="星星">
-                                <img src="./images/star.png" alt="星星">
-                                <!-- </div> -->
-                            </div>
-                            <div class="tag">
-                                <div class="tagchild">
-                                    <a href="#">
-                                        <span>复通</span>
-                                    </a>
-                                    <a href="#">
-                                        <span>不孕不育检查</span>
-                                    </a>
-                                </div>
-                                <div class="tagchild">
-                                    <a href="#">
-                                        <span>输卵管堵塞</span>
-                                    </a>
-                                    <a href="#">
-                                        <span>排卵障碍</span>
-                                    </a>
-                                </div>
-                                <div class="tagchild">
-                                    <a href="#">
-                                        <span>多囊卵巢</span>
-                                    </a>
-                                    <a href="#">
-                                        <span style="color: #199475;">了解详情>></span>
-                                    </a>
-                                </div>
-                                <div  class="yuyue">
-                                    <a href="#">
-                                        <button>
-                                            <img src="./images/click.png" alt="点击">点击立即预约</button>
-                                    </a>
-                                    <img src="./images/yue.png" alt="圆点" class="circleyue">
+                                <div class="tag">
+                                    <div class="tagchild">
+                                        <a href="#">
+                                            <span>复通</span>
+                                        </a>
+                                        <a href="#">
+                                            <span>不孕不育检查</span>
+                                        </a>
+                                    </div>
+                                    <div class="tagchild">
+                                        <a href="#">
+                                            <span>输卵管堵塞</span>
+                                        </a>
+                                        <a href="#">
+                                            <span>排卵障碍</span>
+                                        </a>
+                                    </div>
+                                    <div class="tagchild">
+                                        <a href="#">
+                                            <span>多囊卵巢</span>
+                                        </a>
+                                        <a href="#">
+                                            <span style="color: #199475;">了解详情>></span>
+                                        </a>
+                                    </div>
+                                    <div class="yuyue">
+                                        <a href="#">
+                                            <button>
+                                                <img src="./images/click.png" alt="点击" class="click">点击立即预约</button>
+                                        </a>
+                                        <img src="./images/yue.png" alt="圆点" class="circleyue">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </ul>
                 <ul>
-                    <div class="doctor">
-                        <img src="./images/doctor1.png" alt="医生1">
-                    </div>
-                    <div class="doctorInfo">
-                        <h2>
-                            <strong>刘海鹃</strong>
-                            <i>/</i>
-                            <span>副主任医师</span>
-                        </h2>
-                        <div class="p">
-                            <img src="./images/doc_ex.png">&nbsp;
-                            <span>25年经验&nbsp;&nbsp;</span>
-                            <img src="./images/doc_school.png">&nbsp;
-                            <span>医学硕士</span>
+                    <div class="doctorBox">
+                        <div class="doctor">
+                            <img src="./images/doctor1.png" alt="医生1">
                         </div>
-                        <p>· 不孕不育问题特邀研究员</p>
-                        <p>· 生殖医学学会中国大陆代表</p>
-                        <p>· 治疗不孕不育患者累计3562例</p>
-                        <div class="goodIn">
-                            <div>
-                                <img src="images/jiangbei.png" alt="奖杯">
-                                <span>擅长</span>
-                                <!-- <div class="star"> -->
-                                <img src="./images/star.png" alt="星星">
-                                <img src="./images/star.png" alt="星星">
-                                <img src="./images/star.png" alt="星星">
-                                <img src="./images/star.png" alt="星星">
-                                <img src="./images/star.png" alt="星星">
-                                <!-- </div> -->
+                        <div class="doctorInfo">
+                            <h2>
+                                <strong>刘海鹃</strong>
+                                <i>/</i>
+                                <span>副主任医师</span>
+                            </h2>
+                            <div class="p">
+                                <img src="./images/doc_ex.png">&nbsp;
+                                <span>25年经验&nbsp;&nbsp;</span>
+                                <img src="./images/doc_school.png">&nbsp;
+                                <span>医学硕士</span>
                             </div>
-                            <div class="tag">
-                                <div class="tagchild">
-                                    <a href="#">
-                                        <span>复通</span>
-                                    </a>
-                                    <a href="#">
-                                        <span>不孕不育检查</span>
-                                    </a>
+                            <p>· 不孕不育问题特邀研究员</p>
+                            <p>· 生殖医学学会中国大陆代表</p>
+                            <p>· 治疗不孕不育患者累计3562例</p>
+                            <div class="goodIn">
+                                <div>
+                                    <img src="images/jiangbei.png" alt="奖杯">
+                                    <span>擅长</span>
+                                    <!-- <div class="star"> -->
+                                    <img src="./images/star.png" alt="星星">
+                                    <img src="./images/star.png" alt="星星">
+                                    <img src="./images/star.png" alt="星星">
+                                    <img src="./images/star.png" alt="星星">
+                                    <img src="./images/star.png" alt="星星">
+                                    <!-- </div> -->
                                 </div>
-                                <div class="tagchild">
-                                    <a href="#">
-                                        <span>输卵管堵塞</span>
-                                    </a>
-                                    <a href="#">
-                                        <span>排卵障碍</span>
-                                    </a>
-                                </div>
-                                <div class="tagchild">
-                                    <a href="#">
-                                        <span>多囊卵巢</span>
-                                    </a>
-                                    <a href="#">
-                                        <span style="color: #199475;">了解详情>></span>
-                                    </a>
-                                </div>
-                                <div  class="yuyue">
-                                    <a href="#">
-                                        <button>
-                                            <img src="./images/click.png" alt="点击">点击立即预约</button>
-                                    </a>
-                                    <img src="./images/yue.png" alt="圆点" class="circleyue">
+                                <div class="tag">
+                                    <div class="tagchild">
+                                        <a href="#">
+                                            <span>复通</span>
+                                        </a>
+                                        <a href="#">
+                                            <span>不孕不育检查</span>
+                                        </a>
+                                    </div>
+                                    <div class="tagchild">
+                                        <a href="#">
+                                            <span>输卵管堵塞</span>
+                                        </a>
+                                        <a href="#">
+                                            <span>排卵障碍</span>
+                                        </a>
+                                    </div>
+                                    <div class="tagchild">
+                                        <a href="#">
+                                            <span>多囊卵巢</span>
+                                        </a>
+                                        <a href="#">
+                                            <span style="color: #199475;">了解详情>></span>
+                                        </a>
+                                    </div>
+                                    <div class="yuyue">
+                                        <a href="#">
+                                            <button>
+                                                <img src="./images/click.png" alt="点击" class="click">点击立即预约</button>
+                                        </a>
+                                        <img src="./images/yue.png" alt="圆点" class="circleyue">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </ul>
                 <ul>
-                    <div class="doctor">
-                        <img src="./images/doctor1.png" alt="医生1">
-                    </div>
-                    <div class="doctorInfo">
-                        <h2>
-                            <strong>刘海鹃</strong>
-                            <i>/</i>
-                            <span>副主任医师</span>
-                        </h2>
-                        <div class="p">
-                            <img src="./images/doc_ex.png">&nbsp;
-                            <span>25年经验&nbsp;&nbsp;</span>
-                            <img src="./images/doc_school.png">&nbsp;
-                            <span>医学硕士</span>
+                    <div class="doctorBox">
+                        <div class="doctor">
+                            <img src="./images/doctor1.png" alt="医生1">
                         </div>
-                        <p>· 不孕不育问题特邀研究员</p>
-                        <p>· 生殖医学学会中国大陆代表</p>
-                        <p>· 治疗不孕不育患者累计3562例</p>
-                        <div class="goodIn">
-                            <div>
-                                <img src="images/jiangbei.png" alt="奖杯">
-                                <span>擅长</span>
-                                <!-- <div class="star"> -->
-                                <img src="./images/star.png" alt="星星">
-                                <img src="./images/star.png" alt="星星">
-                                <img src="./images/star.png" alt="星星">
-                                <img src="./images/star.png" alt="星星">
-                                <img src="./images/star.png" alt="星星">
-                                <!-- </div> -->
+                        <div class="doctorInfo">
+                            <h2>
+                                <strong>刘海鹃</strong>
+                                <i>/</i>
+                                <span>副主任医师</span>
+                            </h2>
+                            <div class="p">
+                                <img src="./images/doc_ex.png">&nbsp;
+                                <span>25年经验&nbsp;&nbsp;</span>
+                                <img src="./images/doc_school.png">&nbsp;
+                                <span>医学硕士</span>
                             </div>
-                            <div class="tag">
-                                <div class="tagchild">
-                                    <a href="#">
-                                        <span>复通</span>
-                                    </a>
-                                    <a href="#">
-                                        <span>不孕不育检查</span>
-                                    </a>
+                            <p>· 不孕不育问题特邀研究员</p>
+                            <p>· 生殖医学学会中国大陆代表</p>
+                            <p>· 治疗不孕不育患者累计3562例</p>
+                            <div class="goodIn">
+                                <div>
+                                    <img src="images/jiangbei.png" alt="奖杯">
+                                    <span>擅长</span>
+                                    <!-- <div class="star"> -->
+                                    <img src="./images/star.png" alt="星星">
+                                    <img src="./images/star.png" alt="星星">
+                                    <img src="./images/star.png" alt="星星">
+                                    <img src="./images/star.png" alt="星星">
+                                    <img src="./images/star.png" alt="星星">
+                                    <!-- </div> -->
                                 </div>
-                                <div class="tagchild">
-                                    <a href="#">
-                                        <span>输卵管堵塞</span>
-                                    </a>
-                                    <a href="#">
-                                        <span>排卵障碍</span>
-                                    </a>
-                                </div>
-                                <div class="tagchild">
-                                    <a href="#">
-                                        <span>多囊卵巢</span>
-                                    </a>
-                                    <a href="#">
-                                        <span style="color: #199475;">了解详情>></span>
-                                    </a>
-                                </div>
-                                <div  class="yuyue">
-                                    <a href="#">
-                                        <button>
-                                            <img src="./images/click.png" alt="点击">点击立即预约</button>
-                                    </a>
-                                    <img src="./images/yue.png" alt="圆点" class="circleyue">
+                                <div class="tag">
+                                    <div class="tagchild">
+                                        <a href="#">
+                                            <span>复通</span>
+                                        </a>
+                                        <a href="#">
+                                            <span>不孕不育检查</span>
+                                        </a>
+                                    </div>
+                                    <div class="tagchild">
+                                        <a href="#">
+                                            <span>输卵管堵塞</span>
+                                        </a>
+                                        <a href="#">
+                                            <span>排卵障碍</span>
+                                        </a>
+                                    </div>
+                                    <div class="tagchild">
+                                        <a href="#">
+                                            <span>多囊卵巢</span>
+                                        </a>
+                                        <a href="#">
+                                            <span style="color: #199475;">了解详情>></span>
+                                        </a>
+                                    </div>
+                                    <div class="yuyue">
+                                        <a href="#">
+                                            <button>
+                                                <img src="./images/click.png" alt="点击" class="click">点击立即预约</button>
+                                        </a>
+                                        <img src="./images/yue.png" alt="圆点" class="circleyue">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </ul>
-              
+                <ul>
+                    <div class="doctorBox">
+                        <div class="doctor">
+                            <img src="./images/doctor1.png" alt="医生1">
+                        </div>
+                        <div class="doctorInfo">
+                            <h2>
+                                <strong>刘海鹃</strong>
+                                <i>/</i>
+                                <span>副主任医师</span>
+                            </h2>
+                            <div class="p">
+                                <img src="./images/doc_ex.png">&nbsp;
+                                <span>25年经验&nbsp;&nbsp;</span>
+                                <img src="./images/doc_school.png">&nbsp;
+                                <span>医学硕士</span>
+                            </div>
+                            <p>· 不孕不育问题特邀研究员</p>
+                            <p>· 生殖医学学会中国大陆代表</p>
+                            <p>· 治疗不孕不育患者累计3562例</p>
+                            <div class="goodIn">
+                                <div>
+                                    <img src="images/jiangbei.png" alt="奖杯">
+                                    <span>擅长</span>
+                                    <!-- <div class="star"> -->
+                                    <img src="./images/star.png" alt="星星">
+                                    <img src="./images/star.png" alt="星星">
+                                    <img src="./images/star.png" alt="星星">
+                                    <img src="./images/star.png" alt="星星">
+                                    <img src="./images/star.png" alt="星星">
+                                    <!-- </div> -->
+                                </div>
+                                <div class="tag">
+                                    <div class="tagchild">
+                                        <a href="#">
+                                            <span>复通</span>
+                                        </a>
+                                        <a href="#">
+                                            <span>不孕不育检查</span>
+                                        </a>
+                                    </div>
+                                    <div class="tagchild">
+                                        <a href="#">
+                                            <span>输卵管堵塞</span>
+                                        </a>
+                                        <a href="#">
+                                            <span>排卵障碍</span>
+                                        </a>
+                                    </div>
+                                    <div class="tagchild">
+                                        <a href="#">
+                                            <span>多囊卵巢</span>
+                                        </a>
+                                        <a href="#">
+                                            <span style="color: #199475;">了解详情>></span>
+                                        </a>
+                                    </div>
+                                    <div class="yuyue">
+                                        <a href="#">
+                                            <button>
+                                                <img src="./images/click.png" alt="点击" class="click">点击立即预约</button>
+                                        </a>
+                                        <img src="./images/yue.png" alt="圆点" class="circleyue">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+                <ul>
+                    <div class="doctorBox">
+                        <div class="doctor">
+                            <img src="./images/doctor1.png" alt="医生1">
+                        </div>
+                        <div class="doctorInfo">
+                            <h2>
+                                <strong>刘海鹃</strong>
+                                <i>/</i>
+                                <span>副主任医师</span>
+                            </h2>
+                            <div class="p">
+                                <img src="./images/doc_ex.png">&nbsp;
+                                <span>25年经验&nbsp;&nbsp;</span>
+                                <img src="./images/doc_school.png">&nbsp;
+                                <span>医学硕士</span>
+                            </div>
+                            <p>· 不孕不育问题特邀研究员</p>
+                            <p>· 生殖医学学会中国大陆代表</p>
+                            <p>· 治疗不孕不育患者累计3562例</p>
+                            <div class="goodIn">
+                                <div>
+                                    <img src="images/jiangbei.png" alt="奖杯">
+                                    <span>擅长</span>
+                                    <!-- <div class="star"> -->
+                                    <img src="./images/star.png" alt="星星">
+                                    <img src="./images/star.png" alt="星星">
+                                    <img src="./images/star.png" alt="星星">
+                                    <img src="./images/star.png" alt="星星">
+                                    <img src="./images/star.png" alt="星星">
+                                    <!-- </div> -->
+                                </div>
+                                <div class="tag">
+                                    <div class="tagchild">
+                                        <a href="#">
+                                            <span>复通</span>
+                                        </a>
+                                        <a href="#">
+                                            <span>不孕不育检查</span>
+                                        </a>
+                                    </div>
+                                    <div class="tagchild">
+                                        <a href="#">
+                                            <span>输卵管堵塞</span>
+                                        </a>
+                                        <a href="#">
+                                            <span>排卵障碍</span>
+                                        </a>
+                                    </div>
+                                    <div class="tagchild">
+                                        <a href="#">
+                                            <span>多囊卵巢</span>
+                                        </a>
+                                        <a href="#">
+                                            <span style="color: #199475;">了解详情>></span>
+                                        </a>
+                                    </div>
+                                    <div class="yuyue">
+                                        <a href="#">
+                                            <button>
+                                                <img src="./images/click.png" alt="点击" class="click">点击立即预约</button>
+                                        </a>
+                                        <img src="./images/yue.png" alt="圆点" class="circleyue">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+
             </div>
             <div class="hd">
                 <ul>
@@ -607,101 +672,114 @@
             </a>
         </div>
     </div>
-    <div class="profersor">
-        <h3>
-            <span class="line2">|</span>长安报喜</h3>
-    </div>
-    <div class="newsList">
-        <div class="newsItem">
-            <div class="newsItemLeft">
-                <a href="#">
-                    <span class="anli">案例</span>
-                    <span class="newsText">
-                        6年心酸求子路，多囊患者终得好孕！
-                    </span>
-                </a>
-                <br>
-                <span class="readers">555阅读</span>
-            </div>
-            <div class="newsItemRight">
-                <a href="#">
-                    <img src="./images/news1.jpg" alt="新闻1">
-                </a>
-            </div>
+    <!-- </div> -->
+    <div class="baoxi">
+        <div class="profersor" style="padding:0.4rem 0 0 0 ;">
+            <h3>
+                <span class="line2">|</span>长安报喜</h3>
         </div>
-        <a href="#">
+        <div class="newsList">
             <div class="newsItem">
                 <div class="newsItemLeft">
-                    <span class="anli">案例</span>
-                    <span class="newsText">
-                        7年噩梦，夫妻同心终获好孕，今携宝宝来院报喜。
-                    </span>
+                    <a href="#">
+                        <span class="anli">案例</span>
+                        <span class="newsText">
+                            6年心酸求子路，多囊患者终得好孕！
+                        </span>
+                    </a>
+                    <br>
+                    <span class="readers">555阅读</span>
+                </div>
+                <div class="newsItemRight">
+                    <a href="#">
+                        <img src="./images/news1.jpg" alt="新闻1">
+                    </a>
+                </div>
+            </div>
+
+            <div class="newsItem">
+                <div class="newsItemLeft">
+                    <a href="#">
+                        <span class="anli">案例</span>
+                        <span class="newsText">
+                            7年噩梦，夫妻同心终获好孕，今携宝宝来院报喜。
+                        </span>
+                    </a>
                     <br>
                     <span class="readers">827阅读</span>
                 </div>
                 <div class="newsItemRight">
-                    <img src="./images/news2.jpg" alt="新闻2">
+                    <a href="#">
+                        <img src="./images/news2.jpg" alt="新闻2">
+                    </a>
                 </div>
             </div>
-        </a>
-        <a href="#">
+
+
             <div class="newsItem">
                 <div class="newsItemLeft">
-                    <span class="anli">案例</span>
-                    <span class="newsText">
-                        守得云开见月明，多囊患者终于好孕。
-                    </span>
+                    <a href="#">
+                        <span class="anli">案例</span>
+                        <span class="newsText">
+                            守得云开见月明，多囊患者终于好孕。
+                        </span>
+                    </a>
                     <br>
                     <span class="readers">1036阅读</span>
                 </div>
                 <div class="newsItemRight">
-                    <img src="./images/news3.jpg" alt="新闻3">
+                    <a href="#">
+                        <img src="./images/news3.jpg" alt="新闻3">
+                    </a>
                 </div>
             </div>
-        </a>
+        </div>
+        <div class='readMore'>
+            <a href="#">查看更多</a>
+        </div>
     </div>
-    <div class='readMore'>
-        <a href="#">查看更多</a>
-    </div>
+
     <div class="shebao">
         <a href="#">
             <img src="./images/shebao.jpg" alt="定点社保" />
         </a>
     </div>
-    <div class="profersor">
-        <h3>
-            <span class="line2">|</span>长安环境</h3>
-    </div>
-    <div class="evm">
-        <div class="evmBox">
-            <a href="#">
-                <img src="./images/evm1.jpg" alt="环境1">
-            </a>
+    <div class="hj">
+        <div class="profersor">
+            <h3>
+                <span class="line2">|</span>长安环境</h3>
         </div>
-        <div class="evmBox">
-            <a href="#">
-                <img src="./images/evm2.jpg" alt="环境2">
-            </a>
-        </div>
-        <div class="evmBox">
-            <a href="#">
-                <img src="./images/evm3.jpg" alt="环境3">
-            </a>
-        </div>
-        <div class="evmBox">
-            <a href="#">
-                <img src="./images/evm4.jpg" alt="环境4">
-            </a>
-        </div>
-        <div class="evmBox">
-            <a href="#">
-                <img src="./images/evm5.jpg" alt="环境5">
-            </a>
-        </div>
-        <div class="evmBox">
-            <a href="#">
-                <img src="./images/evm6.jpg" alt="环境6">
-            </a>
+        <div class="evm">
+            <div class="evmBox">
+                <a href="#">
+                    <img src="./images/evm1.jpg" alt="环境1">
+                </a>
+            </div>
+            <div class="evmBox">
+                <a href="#">
+                    <img src="./images/evm2.jpg" alt="环境2">
+                </a>
+            </div>
+            <div class="evmBox">
+                <a href="#">
+                    <img src="./images/evm3.jpg" alt="环境3">
+                </a>
+            </div>
+            <div class="evmBox">
+                <a href="#">
+                    <img src="./images/evm4.jpg" alt="环境4">
+                </a>
+            </div>
+            <div class="evmBox">
+                <a href="#">
+                    <img src="./images/evm5.jpg" alt="环境5">
+                </a>
+            </div>
+            <div class="evmBox">
+                <a href="#">
+                    <img src="./images/evm6.jpg" alt="环境6">
+                </a>
+            </div>
         </div>
     </div>
     <!-- <div class="info">
@@ -786,6 +864,57 @@
         TouchSlide({
             slideCell: "#leftTabBox"
         });
+        var clicks = document.getElementsByClassName('click');
+        var circles = document.getElementsByClassName('circleyue');
+        setInterval(function () {
+            clicks[0].style.visibility = 'hidden'
+            setTimeout(function () {
+                clicks[0].style.visibility = 'visible'
+            }, 200)
+            clicks[1].style.visibility = 'hidden'
+            setTimeout(function () {
+                clicks[1].style.visibility = 'visible'
+            }, 200)
+            clicks[2].style.visibility = 'hidden'
+            setTimeout(function () {
+                clicks[2].style.visibility = 'visible'
+            }, 200)
+            clicks[3].style.visibility = 'hidden'
+            setTimeout(function () {
+                clicks[3].style.visibility = 'visible'
+            }, 200)
+            clicks[4].style.visibility = 'hidden'
+            setTimeout(function () {
+                clicks[4].style.visibility = 'visible'
+            }, 200)
+            clicks[5].style.visibility = 'hidden'
+            setTimeout(function () {
+                clicks[5].style.visibility = 'visible'
+            }, 200)
+
+        }, 500)
+        setInterval(function () {
+            circles[0].style.opacity = 0.45;
+            setTimeout(function () {
+                circles[0].style.opacity = 1;
+            }, 200)
+        }, 400)
+
+        function autoScroll(obj) {
+            $(obj).find('#list').animate({
+                marginTop: '-0.45rem'
+            }, 1000, function () {
+                $(this).css({
+                    marginTop: "0rem"
+                });
+                var li = $("#list").children().first().clone()
+                $("#list li:last").after(li);
+                $("#list li:first").remove();
+            })
+        }
+        $(function () {
+            setInterval('autoScroll("#news")', 2000);
+        })
     </script>
 </body>
 

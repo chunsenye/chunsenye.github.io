@@ -56,6 +56,8 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
 .navBar{
     width: 6.4rem;
     height: 3.5rem;
+    /* box-shadow: 0px 0px 0.03rem 0.02rem #f5f5f5; */
+    border-bottom: 0.01rem solid rgba(200,200,200,0.1);
     /* background: #ddd; */
 }
 
@@ -110,39 +112,44 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
 }
 .news{
     width: 6.4rem;
-    height: 1rem;
+    height: 0.8rem;
     /* background-color: #ddd; */
 }
 .newsLogo{
     position: relative;
     top: 0.1rem;
     left: 0.2rem;
+    width: 6rem;
+    height: 0.5rem;
 }
 .newsLogo img{
     width: 1.3rem;
     height: 0.6rem;
+    float: left;
 }
 .line{
     font-size: 0.3rem;
-    position: relative;
-    top: 0.05rem;
+    /* position: relative;
+    top: 0.05rem; */
     height: 0.6rem;
-    border: 1px solid rgba(0,0,0,0.1);
+    color:rgba(0,0,0,0.1);
 }
 .newText{
-    position: relative;
-    left: 0.2rem;
     font-size: 0.22rem;
+    width: 2rem;
+    height: 0.6rem;
 }
-.introduce{
-    width: 6.4rem;
-    height: 3.3rem;
-    /* background-color: #ddd; */
+#news{
+    float: left;
+    overflow:hidden;
+    line-height: 0.45rem;
+    height:0.5rem;
+    font-size: 0.2rem;
 }
+
 .introduceChild{
     position: relative;
-    margin-left: 0.2rem;
-    margin-bottom: 0.2rem;
+    margin: 0.2rem 0 0 0.2rem;
     width: 2.9rem;
     height: 1.5rem;
     background: #f7f7f7;
@@ -184,6 +191,7 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
 .profersor{
     width: 100%;
     height: 0.6rem;
+    margin-top: 0.2rem;
 }
 .profersor h3{
     line-height: 0.3rem;
@@ -192,6 +200,40 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
     width: 50%;
     font-size: 0.3rem;
   
+}
+.news{
+    width: 6.39rem;
+    box-shadow: 0px 0.05rem 0.15rem 0.01rem rgba(200,200,200,0.08) ;
+}
+.doctorBox {
+    width: 6rem;
+    height: 4.2rem;
+    border-bottom: 0.04rem solid rgba(200,200,200,0.06);
+    box-shadow: 0px 0rem 0.17rem 0.01rem rgba(200,200,200,0.15) ;
+}
+.video{
+    width: 100%;
+    height: 2rem;
+    box-shadow: 0px 0.06rem 0.17rem 0.01rem rgba(200,200,200,0.08) ;
+    clear: both;
+}
+
+.introduce{
+    width: 6.4rem;
+    height: 3.8rem;
+    overflow: hidden;
+}
+.baoxi{
+    box-shadow: 0px 0.1rem 0.17rem 0.01rem rgba(200,200,200,0.08) ;
+    margin-bottom: 0.3rem;
+}
+.hj{
+    margin-top: 0.1rem;
+    box-shadow: 0px 0.16rem 0.16rem 0.02rem rgba(200,200,200,0.08) ;
+    padding: 0.1rem 0 0.2rem 0;
+}
+.zj{
+    box-shadow: 0px 0.05rem 0.17rem 0.01rem rgba(200,200,200,0.08) ;
 }
 .line2{
     color: #199475;
@@ -208,26 +250,34 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
 .doctors{
     /* float: left; */
     /* margin-left: 0.2rem; */
-    margin: 0.2rem auto 0.2rem auto;
-    width: 6rem;
+    margin: 0.2rem 0 0.2rem 0;
+    width: 6.4rem;
     height: 4.2rem;
     /* background-color: #ddd; */
     /* border: 0.01rem solid gray; */
     margin-top: 0.3rem;
     /* border-top-left-radius: 0.2rem;
     border-top-right-radius: 0.2rem; */
+    /* box-shadow: 0px 0px 1px 5px #f5f5f5; */
+    border-radius: 0.04rem;
 }
 
 .doctor img{
     /* margin-left: 0.2rem; */
+    position: relative;
     float: left;
     width: 2.8rem;
     margin-bottom: 0.05rem;
 }
+.tabBox .bd ul{ padding:0.1rem 0 0 0.2rem;  }
+.tabBox .bd li{ height:0.33rem; line-height:0.33rem;   }
+.tabBox .bd li a{ color:#666; }
 .doctorInfo{
+    position: relative;
+    left: 0.3rem;
     margin-top: 0.05rem;
     float: left;
-    width: 3rem;
+    width: 2.7rem;
 }
 .doctorInfo p{
     font-size: 0.15rem;
@@ -258,15 +308,16 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
 .tag span{
     border:1px solid #199475;
     padding: 0.02rem 0.1rem;
-    /* border-radius: 0.15rem; */
+    border-radius: 0.08rem;
     font-size: 0.15rem;
+    margin-right: 0.1rem;
 }
 .tagchild{
     margin: 0.07rem 0;
 }
 .yuyue{
     position: relative;
-    left: -2.6rem;
+    left: -2.8rem;
     top: -0.18rem; 
     cursor: pointer;
 }
@@ -321,6 +372,7 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
 .video{
     width: 100%;
     height: 2rem;
+    /* margin-top: 1.2rem; */
     /* background-color: #ccc; */
     clear: both;
 }
@@ -397,20 +449,19 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
 .gtext{
     color: #199475;
 }
-.news{
-    width: 6rem;
-}
+
 .newsItem{
     width: 100%;
     height: 1.5rem;
     background-color: #fff;
 }
 .newsItemLeft{
+    /* visibility: hidden; */
     float: left;
     width: 3.4rem;
     height: 1.5rem;
     /* background: #ccc; */
-    border-bottom: 1px solid #f5f5f5;
+    border-bottom: 0.02rem solid #f5f5f5;
 }
 .newsItemRight{
     float: left;
@@ -485,12 +536,14 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
       height:0.2rem; 
       line-height:0.2rem;
       font-size:0.2rem;
-       position:relative;  }
+       position:relative;
+        top: -0.4rem;
+    }
 .tabBox .hd ul{
     position: relative; 
     /* height:0.41rem; */
     overflow:hidden;
-    margin: 0.1rem 2.2rem;
+    margin: 0.1rem 2.5rem 0.1rem 2.4rem;
     top: -0.1rem; 
     /* text-align: center; */
     }
@@ -500,13 +553,11 @@ body{max-width:640px;margin:0 auto;background-color:#ffffff; clear: both;}
     color:#666;
     /* height: 0.2rem; */
     border-radius: 50%;
-    border: 1px solid gray;
+    border: 1px solid #eee;
     margin: 0 0.05rem;
 }
 .tabBox .hd ul .on{background:#199475; border-color:#199475; }
-.tabBox .bd ul{ padding:0.1rem 0 0.1rem 0.1rem;  }
-.tabBox .bd li{ height:0.33rem; line-height:0.33rem;   }
-.tabBox .bd li a{ color:#666; }
+
 /* footer 手机站新尾部 */
 .footcss{background:url(../images/footbg.png) no-repeat 0 0.55rem/100% auto;padding:0.3rem 0 0.7rem 0;}
 .footcss .fttxt{padding:0.9rem 0.2rem 0.2rem 2.4rem;font-size:0.2rem;line-height:0.3rem;color:#333;}
