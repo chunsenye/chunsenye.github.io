@@ -1,337 +1,57 @@
 <!DOCTYPE html>
-<html lang=en>
-
+<html lang="en">
 <head>
-    <!-- so meta -->
-    <meta charset="utf-8">
-    <!-- 编码 -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--  IE=edge告诉IE使用最新的引擎渲染网页-->
-    <meta name="HandheldFriendly" content="True">
-    <!--  针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <!-- 缩放值 -->
-    <link rel="shortcut icon" href="css/images/favicon.ico">
-    <title>YE|Home</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="(max-width:1000px)" href="css/mobile.css">
-    <link rel="stylesheet" media="(min-width:1000px)" href="css/pc.css">
-
-    <script src="./js/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./image/favicon.ico">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>welcome</title>
 </head>
-<style>
-  
-</style>
-
-<body class="max-width mx-auto px3">
-    <div class="content index my4">
-        <header id="header">
-            <a href="#header">
-                <div id="logo" style="background-image: url(css/images/logo.png)"></div>
-                <div id="title">
-                    <h1>Ye|Home</h1>
-                </div>
-            </a>
-            <div id="nav">
-                <ul>
-                    <li class="icon">
-                        <a href="#">
-                            <i class="fas fa-bars fa-2x"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#home">主页</a>
-                    </li>
-                    <li>
-                        <a href="#about">小练习</a>
-                    </li>
-                    <li>
-                        <a href="#writing">项目</a>
-                    </li>
-                    <li>
-                        <a href="#">关于</a>
-                    </li>
-                </ul>
-            </div>
-        </header>
-        <section>
-            <p>Hi,朋友 ! </p>
-            <p>这是我的小窝!</p>
-            <p>需要慢慢改进，有想和我交流、提提意见的朋友可以联系我。微信和QQ:1604980041</p>
-        </section>
-        <section>
-            <span class="h1">
-                <a href="#"></a>
-            </span>
-            <span class="h1">
-                <a href="#">小练习</a>
-            </span>
-            <ul class="post-list">
-                <li class="post-item">
-                    <div class="meta">
-                        <time>2018-4-2</time>
-                    </div>
-                    <span>
-                        <a href="pages/画板.html">简易的画板工具：canvas</a>
-                        <!--<a  href="pages/home.html">具体的步骤</a>-->
-                    </span>
-                </li>
-                <li class="post-item">
-                    <div class="meta">
-                        <time>2018-4-6</time>
-                    </div>
-                    <span>
-                        <a href="pages/home.html">普通网站的一个首页：bootstrap(还没做手机版的样式，在1000px以下会有排版的问题)</a>
-                        <!--<a  href="pages/home.html">具体的步骤</a>-->
-                    </span>
-                </li>
-
-                <li class="post-item">
-                    <div class="meta">
-                        <time>2018-4-12</time>
-                    </div>
-                    <span>
-                        <a href="pages/计算器.html">简易的计算器：很久之前做的了，很多bug</a>
-                        <!--<a  href="pages/home.html">具体的步骤</a>-->
-                    </span>
-                </li>
-                <li class="post-item">
-                    <div class="meta">
-                        <time>2018-4-20</time>
-                    </div>
-                    <span>
-                        <a href="图片展示.html">图片展示效果：手风琴</a>
-                    </span>
-                </li>
-                <li class="post-item">
-                    <div class="meta">
-                        <time>2018-5-20</time>
-                    </div>
-                    <span>
-                        <a href="pages/book.html">vue和jsonp请求在线接口：书籍列表</a>
-                    </span>
-                </li>
-                <li class="post-item">
-                    <div class="meta">
-                        <time>2018-5-22</time>
-                    </div>
-                    <span>
-                        <a href="pages/square.html">three.js小demo1：旋转的正方体</a>
-                    </span>
-                </li>
-                <li class="post-item">
-                    <div class="meta">
-                        <time>2018-5-24</time>
-                    </div>
-                    <span>
-                        <a href="pages/square2.html">three.js小demo2：旋转的网格</a>
-                    </span>
-                </li>
-                <li class="post-item">
-                    <div class="meta">
-                        <time>2018-6-27</time>
-                    </div>
-                    <span>
-                        <a href="pages/bed.html">three.js小demo3：墙与床(可控制旋转)</a>
-                    </span>
-                </li>
-                <li class="post-item">
-                    <div class="meta">
-                        <time>2018-7-9</time>
-                    </div>
-                    <span>
-                        <a href="pages/threejsGeometry.html">three.js小demo4：一些几何体（geometry）</a>
-                    </span>
-                </li>
-                <li class="post-item">
-                    <div class="meta">
-                        <time>2018-7-9</time>
-                    </div>
-                    <span>
-                        <a href="pages/af贴图.html">three.js小demo5：全景贴图（aframe）</a>
-                    </span>
-                </li>
-                <li class="post-item">
-                    <div class="meta">
-                        <time>2018-5-24</time>
-                    </div>
-                    <span>
-                        <a href="pages/night.html">JQuery手工排的demo：心</a>
-                    </span>
-                </li>
-                <li class="post-item">
-                    <div class="meta">
-                        <time>2018-5-24</time>
-                    </div>
-                    <span>
-                        <a href="pages/表单.html">注册表单：无功能</a>
-                    </span>
-                </li>
-                <li class="post-item">
-                    <div class="meta">
-                        <time>2018-6-20</time>
-                    </div>
-                    <span>
-                        <a href="index3.html">画毛笔字</a>
-                    </span>
-                </li>
-                <li class="post-item">
-                    <div class="meta">
-                        <time>2018-6-29</time>
-                    </div>
-                    <span>
-                        <a href="pages/画圆-矩形-多边形.html">画图工具（canvas）：可以画圆·矩形·多边形</a>
-                    </span>
-                </li>
-                <li class="post-item">
-                    <div class="meta">
-                        <time>2018-7-26</time>
-                    </div>
-                    <span>
-                        <a href="./ycs/test/index.html">测试</a>
-                    </span>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <span class="h1">
-                <a href="#">项目</a>
-            </span>
-
-            <ul class="project-list">
-                <li class="project-item">
-                    <a href="./pages/ttm/index.html">图形拖拽工具，可以生成2d视图与3D视图</a>
-                </li>
-                <li class="project-item">
-                    <a href="#">仿爱范儿--官网</a>: （尚未完成）
-                </li>
-                <li class="project-item">
-                    <!--<a href="#">仿知晓程序&#45;&#45;微信小程序</a>: （尚未完成）-->
-                </li>
-                <li class="project-item">
-                    <!--<a href="#">仿appso&#45;&#45;webApp</a>: （尚未完成）-->
-                </li>
-            </ul>
-        </section>
-        <section>
-            <span class="h1">
-                <a href="#">周六的课</a>
-            </span>
-            <ul class="project-list">
-                <li class="project-item">
-                    2018-4-20
-                    <a href="pages/p_4_21.html">原生js代码实现简单动画</a>
-                </li>
-            </ul>
-        </section>
+<body>
+    <div class="card1" onclick="window.location='pages/h5.html'">
+        <img src="./image/h5e.png" alt="H5">
+        <h2>BASIC HTML</h2>
+        <p>description: some simple projects </p>
     </div>
-    <div id="side_nav">
-        <div>
-            <!--<img src="./css/images/favicon.ico" style="width: 20%;height: 20%;border-radius: 50%;margin: 0 auto">-->
-            <h1 align="center">叶春森</h1>
-            <hr>
-            <h2>技能:</h2>
-            <div class="skill">
-                HTML
-            </div>
-            <div class="skill" style="width: 70%">
-                CSS
-            </div>
-            <div class="skill" style="width: 60%">
-                JavaScript
-            </div>
-            <div class="skill" style="width: 50%">
-                JQuery
-            </div>
-            <div class="skill" style="width: 30%">
-                ajax
-            </div>
-            <div class="skill" style="width: 60%">
-                bootstrap
-            </div>
-            <div class="skill" style="width: 40%">
-                vue
-            </div>
-            <h2>了解:</h2>
-            <div class="skill" style="width: 80% ;height: auto;text-align: left;padding: 10px;background-color: #999999">
-                webpack node.js
-                <br> java python 安卓App
-            </div>
-            <hr>
-            <h2>爱好:</h2>
-            <div class="skill" style="width: 80% ;height: auto;text-align: left;padding: 10px;background-color: #999999">
-                敲代码 打篮球 游戏(手游) 撸猫
-            </div>
-        </div>
-
-        <div id="about">
-            <p id="about_p">隐藏我的信息</p>
-        </div>
-        <div id="menu">
-            <h5 id="menu_flag">收起</h5>
+    <div class="card1" onclick="window.location='pages/h5.html'">
+        <img src="./image/css3.png" alt="H5">
+        <h2>BASIC CSS</h2>
+        <p>description: some simple projects </p>
+    </div>
+    <div class="card1" onclick="window.location='pages/h5.html'">
+        <img src="./image/js.png" alt="H5">
+        <h2>BASIC JAVASCRIPT</h2>
+        <p>description: some simple projects </p>
+    </div>
+    <div class="card1" onclick="window.location='pages/h5.html'">
+        <img src="./image/vuejs.png" alt="H5">
+        <h2>VUE</h2>
+        <p>description: some simple projects </p>
+    </div>
+    <div class="card1" onclick="window.location='pages/h5.html'">
+        <img src="./image/computor.png" alt="H5">
+        <h2>PC</h2>
+        <p>description: some pc projects </p>
+    </div>
+    <div class="card1" onclick="window.location='pages/h5.html'">
+        <img src="./image/phone.png" alt="H5">
+        <h2>MOBILE</h2>
+        <p>description: some mobile projects </p>
+    </div>
+    <div class="card1" onclick="window.location='pages/h5.html'">
+        <img src="./image/books.png" alt="H5">
+        <h2>BOOKS</h2>
+        <p>description: some thoughts on reading </p>
+    </div>
+    <div class="card2">
+        <img  src="./image/foot.png" alt="">
+        <h2>FIND ME</h2>
+        <div class="fm">
+            <img src="./image/wechat.png" title="1604980041">
+            <img src="./image/tel.png" title="18819284042">
         </div>
     </div>
-    <footer id="footer">
-        <div class="footer-left">
-            Copyright &copy; 2018 yechunsen|Home
-            <!-- <a href="https://probberechts.github.io/hexo-theme-cactus/cactus-classic/public/">hexo:cactus-classic</a> -->
-        </div>
-        <div class="footer-right">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Writing</a>
-                    </li>
-                    <li>
-                        <a href="#">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
-    <script>
-        //鼠标移入与移出时展示个人信息
-        $('#side_nav').animate({
-            left: '0px',
-        });
-        var flag = 0;
-        about.onclick = function () {
-            if (flag) {
-                $('#side_nav').animate({
-                    left: '0px',
-                });
-                about_p.innerHTML = "隐藏我的信息";
-            } else {
-                $('#side_nav').animate({
-                    left: '-20%',
-                })
-                about_p.innerHTML = "展示我的信息";
-            }
-            flag = !flag;
-        }
-        // about.onmouseout = function () {
-        //     $('#side_nav').animate({
-        //         left: '-20%',
-        //     })
-        // }
-        var flag_menu = 1;
-        menu.onclick = function () {
-            // alert(1);
-            $('#about').slideToggle(1000);
-            if (flag_menu) {
-                menu_flag.innerHTML = "展开";
-            } else {
-                menu_flag.innerHTML = "收起";
-            }
-            flag_menu = !flag_menu;
-        }
-    </script>
+    
 </body>
-
 </html>
