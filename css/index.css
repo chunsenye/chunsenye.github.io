@@ -123,6 +123,61 @@ to {box-shadow: 0 0 10px 1px #41b883 inset;}
 @keyframes test8{
     0%{transform: rotateX(0deg) translateY(0px)}
     50%{transform: rotateX(180deg) translateY(-300px)}
-    100%{transform: rotateX(0deg) translateY(0px)}
+    100%{transform: rotateX(0deg) translateY(0px)}   
+}
+@media screen and (max-width: 640px) {
+    .card1 {
+        width: 88%;
+        height: 150px;
+        box-shadow: 0 0 10px 1px #41b883 inset;
+        border-radius: 10px;
+        position: relative;
+        cursor: pointer;
+        color: #41b883;
+        margin: 10px 4.9%;
+        animation: myfirst 2s;
+    }
+    .card1 img {
+        margin: 30px 30px;
+        width: 90px;
+    }
+    .card1 h2 {
+        position: absolute;
+        left: 150px;
+        top: 15px;
+        font-family: Times, TimesNR, 'New Century Schoolbook', Georgia, 'New York', serif;
+    }
     
+    .card1 p {
+        position: absolute;
+        left: 150px;
+        top: 60px;
+        padding-right: 20px;
+        font-size: 0.8rem;
+    }
+    
+    .card2 {
+        width: 88%;
+        height: 200px;
+        border-radius: 10px;
+        position: relative;
+        color: #41b883;
+        float: left;
+        margin: 20px 4.9%;
+    }
+    .card2 img {
+        margin: 30px 20px;
+        width: 90px;
+    }
+    .card2 h2 {
+        position: absolute;
+        left: 180px;
+        top: 30px;
+    }
+    .card2 .fm img{margin: 10px 23px;width: 25px;}
+    .card2 .fm{
+        position: absolute;
+        left: 160px;
+        top:80px;
+    }
 }
