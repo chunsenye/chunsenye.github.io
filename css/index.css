@@ -102,9 +102,9 @@ to {box-shadow: 0 0 10px 1px #41b883 inset;}
     100%{transform: rotateZ(0deg)}
 }
 @keyframes test4{
-    0%{transform: translateX(0px)}
-    50%{transform: translateX(30px)}
-    100%{transform: translateX(0px)}
+    0%{transform: translateX(0px);}
+    50%{transform: translateX(30px);}
+    100%{transform: translateX(0px);}
 }
 @keyframes test5{
     0%{transform: translateY(0px) rotateX(0deg) rotateY(0deg)}
