@@ -1,0 +1,113 @@
+*{margin: 0; padding: 0;}
+html{margin: 0 auto; padding: 0; height: 100%; background-color: #ebebeb; font-size: 100px; -webkit-tap-highlight-color: transparent;}
+body{color: #666; font-size: .24rem; font-family: Microsoft Yahei, arial; line-height: 1.5; background-color: #fff; clear: both;}
+#container{width: 6.4rem; margin: 0 auto; max-width: 640px;background: #fff5b9;overflow: hidden;}
+li,
+ol,
+ul{list-style: none;}
+em,
+i{font-style: normal;}
+img{border: none; vertical-align: top;}
+input[type=submit],
+input[type=button]{cursor: pointer}
+input{width: 100%}
+textarea:focus{outline: 0}
+a{color: #6E7D8B; text-decoration: none; outline: 0}
+a.current,
+a:active,
+a:hover{outline: 0}
+.banner img{width: 6.4rem;}
+.Box1{width: 100%;padding: 0 0 1.9rem 0;}
+.block1{width: 6rem;height: 6rem;position: relative;left: 0.2rem;top: 0.9rem;background: #fff;border-radius: 0.08rem;border: 1px solid #f8c172}
+.block1 .point{width: 0.1rem;height: 0.1rem;background: #f6c672;border-radius: 50%;position: absolute;}
+.block1 .p1{left: 0.2rem;top: 0.2rem;}
+.block1 .p2{right: 0.2rem;top: 0.2rem;}
+.block1 .p3{left: 0.2rem;bottom: 0.2rem;}
+.block1 .p4{right: 0.2rem;bottom: 0.2rem;}
+.block1 .log{ position: absolute;left:1.5rem;top: -0.3rem;width: 3.4rem;}
+.block1 h4{ position: absolute;left:1.5rem;top: -0.3rem;width: 3.4rem;text-align: center;font-size: 0.24rem;font-weight: normal;line-height: 0.3rem;padding-top: 0.05rem;color: #fdad1d;}
+.click{ position: absolute;left:1.5rem;bottom: -0.3rem;width: 3.4rem;}
+.click a{font-size: 0.2rem;height: 0.55rem;width: 3.1rem;display: block;line-height: 0.55rem;background: #fd9e62;border-radius: 0.28rem;text-align: center;color: #fff;position: relative;}
+.click a img{display: block;position: absolute;bottom: 0;right: 0;width: 0.3rem;}
+.click2{left:0.9rem;}
+.click4{left:0.7rem;}
+.click2 a{width: 4.2rem;}
+.click4 a{width: 4.6rem;}
+.block1 .player{height:1rem;}
+.block1 .player1{height:0.75rem;}
+.block1 .player2{height:0.75rem;}
+.block1 .player1 img,.block1 .player2 img{width: 0.6rem;border-radius: 50%;display: block;float: left;margin-top: 0.07rem;border: 1px solid #fac374;margin-left: 0.2rem;}
+.block1 .player2 img{float: right;margin-right: 0.2rem;}
+.block1 .player1 .p1Duihua{width: 3.75rem;height: 0.55rem;margin-top: 0.1rem;float: left;background: #f4f4f4;margin-left: 0.1rem;border-radius: 0 0.15rem 0.15rem 0.15rem;line-height: 0.55rem;color: #999;padding-left: 0.2rem;font-size: 0.2rem;}
+.block1 .player2 .p2Duihua{width: 2.8rem;height: 0.55rem;margin-top: 0.1rem;float: right;background: #d5eaff;border-radius: 0.15rem 0 0.15rem 0.15rem;line-height: 0.55rem;color: #999;padding-right: 0.2rem;font-size: 0.2rem;text-align: right;}
+.title img{width: 6rem;margin: 0 0.2rem;}
+.title {position: relative;}
+.title h4{position: absolute;top: 0.25rem;right: 1.2rem;color: #fff;font-size: 0.24rem;font-weight: normal;}
+.title .h1{line-height: 0.3rem;top: 0.12rem;text-align: center;left: 1.4rem;}
+.title .h1 span{font-size: 0.2rem;text-align: center;}
+.title .h2{left: 1.8rem;}
+.title5{margin-top: 1rem;}
+.title3{margin-top: 1rem;}
+.Box{width: 6rem;margin:0.2rem 0.2rem 0.7rem 0.2rem;border-radius: 0.08rem;background: #fff;} 
+.Box2{height:3.7rem;}
+.Box2 .points .point{position: relative;width: 0.1rem;height: 0.1rem;background: #fff5b9;border-radius: 50%;top: 0.1rem;float: left;margin-left: 0.33rem;}
+.Box2 .content{position: relative;}
+.Box2 .content .mum{margin-top: 0.3rem;margin-left: 0.4rem;float: left;width: 1.7rem;}
+.Box2 .content .text{font-size: 0.2rem;width: 3.3rem;height: 2.3rem;position: absolute;left: 2.3rem;top: 0.5rem;line-height: 0.36rem;}
+.Box2 .content .text .p1{color: #fdba35}
+.Box2 .content .text .p2{color: #666}
+.Box3,.Box4{height:4.1rem;position: relative;}
+.Box3 .img1{position: absolute;width: 0.25rem;transform: rotate(90deg);left: -0.12rem;top: 2rem;}
+.Box3 .img2{position: absolute;width: 0.4rem;right: -0.2rem;top: 2.5rem;}
+.Box3 .list{height: 1.05rem;margin-bottom: 0.05rem;}
+.Box3 .list1{padding-top: 0.35rem;}
+.Box3 .list p{font-size: 0.2rem;padding: 0.22rem 0.2rem;float: left;width: 4.2rem;}
+.Box3 .list img{float: left;width: 1rem;margin-left: 0.1rem;}
+.Box4 h4{font-size: 0.2rem;text-align: center;color: #ff7a7a;padding: 0.15rem 0;}
+.Box5{height:4.7rem;position: relative;}
+.Box5 h4{position: absolute;bottom: 0.65rem;left: 2.05rem;font-size: 0.26rem;color:#ff7a7a;}
+.Box5 .img{width: 2.1rem;position: absolute;bottom: 0.3rem;left: 1.95rem;}
+.Box5 .circle{width: 1.25rem;height: 1.25rem;position: absolute;border-radius: 50%;color: #fff;font-size: 0.2rem;text-align: center;padding-top: 0.2rem;}
+.Box5 .circle p{font-size: 0.18rem;text-align: center;}
+.Box5 .circle1{background: #e6c592;left: 0.1rem;top: 2.9rem;padding: 0;height: 1.25rem;}
+.Box5 .circle2{background: #86dfbf;left: 0.7rem;top: 1.2rem;}
+.Box5 .circle3{background: #fcd671;left: 2.6rem;top: 0.2rem;}
+.Box5 .circle4{background: #f4a488;left: 4.3rem;top: 1.2rem;}
+.Box5 .circle5{background: #8fd6d2;left: 4.6rem;top: 2.9rem;}
+.Box5 .circle7{background: #fff;left: 4.6rem;top: 3.3rem;}
+.Box5 .circle8{background: #fff;left: 0.2rem;top:3.3rem;}
+.Box5 .circle6{width: 4.7rem;height: 4.7rem;border-top: 2px dotted  #60c5bf;border-left: 2px dotted  #60c5bf;transform:rotate(45deg);position: absolute;border-radius: 50%;left: 0.65rem;top: 0.8rem;}
+.Box6{height:3.6rem;position: relative;border-bottom-right-radius: 0.5rem}
+.Box6 .img{position: absolute;left: -0.2rem;top: -0.2rem;width: 0.6rem;}
+.Box6 .img2{position: absolute;right:-0.2rem;top: -0.2rem;transform: rotate(90deg);width: 0.6rem;}
+.Box6 .img3{position: absolute;right:-0.08rem;bottom:-0.02rem;width: 0.8rem;}
+.Box6 h4{font-size: 0.2rem;text-align: left;font-weight: normal;color: #fdba35;padding-left: 0.25rem;padding-top: 0.2rem;}
+.Box6 p{font-size: 0.2rem;text-align: left;padding-left: 0.25rem;padding-top: 0.08rem;padding-right: 0.2rem;}
+th{border:solid #ffe6c3; border-width:0px 1px 1px 0px;font-size: 0.2rem;font-weight: normal;height: 0.46rem;text-align: center;}
+td{border:solid #ffe6c3; border-width:0px 1px 1px 0px;font-size: 0.2rem;color: #999;font-weight: normal;height: 0.46rem;text-align: center;}
+table{border:solid #ffe6c3; border-width:1px 0px 0px 1px;margin-left: 0.2rem;border-radius: 0.08rem}
+table thead tr th:nth-child(1){width: 1.1rem;}
+table thead tr th:nth-child(2){width: 2.2rem;}
+table thead tr th:nth-child(3){width: 2.25rem;}
+.ds{font-size: 0.2rem;background: #fff;padding: 0.2rem;width: 6rem;margin-left: 0.2rem;margin-top: 0.3rem;border-radius: 0.08rem 0.08rem 0 0;}
+.banner2 img{width: 6rem;margin-left: 0.2rem;}
+.dBox{width: 6rem;height: 3.5rem;padding: 0.4rem 0rem 0.2rem 0rem;background: #fff;margin-left: 0.2rem;}
+.dBox2{margin-bottom: 0.25rem;height: 3.9rem;border-radius: 0 0 0.08rem 0.08rem;}
+.Right{margin-left: 0.2rem; width: 2.3rem; height: 3.1rem; float: left; position: relative;}
+.Right .doctor{width: 2.3rem; margin-bottom: .05rem;}
+.doctorInfo{position: relative; left: .3rem; margin-top: .05rem; float: left;}
+.doctorInfo p{font-size: 0.18rem; margin: .05rem 0} 
+.doctorInfo h2{font-size: .3rem} 
+.doctorInfo h2 span{font-size: .22rem; font-weight: 400} 
+.doctorInfo h2 i{font-weight: 400} 
+.tagchild{margin: .07rem 0} 
+.yuyue{text-align: center; cursor: pointer} 
+.yuyue img{width: .25rem}
+.yuyue button{background-color: #f86455; color: #fff; font-size: .2rem; padding: .05rem .2rem; border-radius: .2rem; /* box-shadow: 0 0.1rem 0.1rem 0.02rem #f5f5f5; */ box-shadow: 0rem 0.05rem 0.05rem 0.01rem rgba(137, 49, 40, 0.1); border: 0; margin-left: 0.05rem;}
+.circleyue{position: absolute; top: 2.48rem; left: 1rem}
+.p{margin: 0.1rem 0; font-size: .18rem}
+.p img{width: 0.25rem}
+.goodIn{margin-top: 0.2rem; font-size: 0.2rem}
+.goodIn img:nth-child(3){margin-left: 0.2rem}
+.goodIn img{width: .3rem;}
+.goodIn img:nth-child(1){width: 0.3rem; height: 0.3rem; margin: 0}

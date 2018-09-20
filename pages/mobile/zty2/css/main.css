@@ -1,0 +1,546 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    background-color: #ebebeb;
+    font-size: 100px;
+    -webkit-tap-highlight-color: transparent;
+    /* overflow: hidden; */
+}
+
+body {
+    color: #666;
+    font-size: .24rem;
+    font-family: Microsoft Yahei, arial;
+    line-height: 1.5;
+    background-color: #fff;
+    clear: both;
+}
+
+#container {
+    width: 6.4rem;
+    margin: 0 auto;
+    max-width: 640px;
+}
+
+.bg {
+    background: #ffeee4;
+}
+
+li,
+ol,
+ul {
+    list-style: none;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+img {
+    border: none;
+    vertical-align: top;
+}
+
+input[type=submit],
+input[type=button] {
+    cursor: pointer
+}
+
+input {
+    width: 100%
+}
+
+textarea:focus {
+    outline: 0
+}
+
+a {
+    color: #6E7D8B;
+    text-decoration: none;
+    outline: 0
+}
+
+a.current,
+a:active,
+a:hover {
+    outline: 0
+}
+
+/* banner1 */
+
+.banner1 {
+    position: relative;
+    width: 6.4rem;
+    height: 3.2rem;
+    /* background-color: #ffeee4; */
+    background: url('../images/bg1.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.banner1 .tag img{
+    width: 0.3rem;
+    margin-right: 0.05rem;
+}
+.banner1 .tag{
+    color: #d47f41;
+    position: absolute;
+    bottom: 0.6rem;
+    right: 0.8rem;
+    font-size: 0.2rem;
+}
+.banner1 .tag a{
+    color: #d47f41;
+}
+/* banner2 */
+
+.banner2 {
+    padding: 0 0.2rem;
+}
+
+.banner2 .img  img{
+    display: block;
+    width: 6rem;
+}
+
+.banner2 p {
+    margin-top: 0.2rem;
+    font-size: 0.22rem;
+    color: #ba805c;
+}
+
+.banner2 .TClist .item{
+    width: 6rem;height: 1.62rem;
+    background: url('../images/bg2.jpg') no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 0.2rem;
+    position: relative;
+}
+.banner2 .TClist .item .itemTitle img{
+    margin-top: 0.2rem;
+    margin-left: 1.2rem;
+    width: 0.7rem;
+    display: block;
+    float: left;
+  
+}
+.banner2 .TClist .item .itemTitle h2{
+    margin-left: 0.05rem;
+    margin-top: 0.25rem;
+    font-size: 0.24rem;
+    float: left;
+    color: #fc8343;
+    font-weight: normal;
+}
+.banner2 .TClist .item .itemContext {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1.1rem;
+    /* background: #000; */
+}
+.banner2 .TClist .item .itemContext img{
+    display: block;
+    width: 1rem;
+    margin-top: -0.1rem;
+    margin-left: 0.05rem;
+    float: left;
+}
+.banner2 .TClist .item .itemContext .p{
+    margin-top: 0.26rem;
+    margin-left: 0.6rem;
+    padding: 0.02rem 0.2rem;
+   background: #fff6e9;
+   font-size: 0.18rem;
+   border-radius: 0.04rem
+}
+.banner2 .TClist .item .itemContext .p1{
+    margin-top: 0.1rem;
+}
+.banner2 .TClist .item .itemContext .p2{
+    line-height: 0.55rem;
+    margin-top: 0.2rem;
+}
+.banner2 .help{
+    height: 2.7rem;
+    position: relative;
+}
+.banner2 .help .three{
+    border-radius: 0.08rem;
+    margin:0.6rem 0.2rem 0 0.2rem;
+    background: #ffd8bb;
+    height: 1.75rem;
+    padding: 0 0.2rem;
+}
+.banner2 .help img{
+    margin-top: 0.3rem;
+    width: 1.6rem;
+    background-color: #fff6ea;
+    border-radius: 0.08rem;
+    margin-left: 0.06rem;
+    cursor: pointer;
+}
+.banner2 .pictrues{
+    overflow: hidden;
+    padding-bottom: 0.2rem;
+}
+.banner2 .help .b1{
+    position: absolute;
+    font-size: 0.24rem;
+    color: #fff;
+    background: #fead76;
+    border: 0;
+    line-height: 0.36rem;
+    padding:0 0.4rem ;
+    border-radius: 0.18rem;
+    left: 2.1rem;
+    top:-0.25rem;
+    cursor: pointer;
+}
+.banner2 .help .b2{  
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+    font-size: 0.24rem;
+    background: #ed5d54;
+    color: #fff;
+    border: 0;
+    padding: 0.1rem 0.4rem;
+    border-radius: 0.3rem;
+}
+.banner2 .help .b2 a{
+    color: #fff;
+}
+.banner2 .help .b2 .bb2{
+    margin: 0;
+    display: block;
+    float: left;
+    width: 0.25rem;
+    border-radius:0;
+    margin-right: 0.05rem;
+    margin-top: 0.02rem;
+    background: transparent;
+}
+
+.banner2 .pictrues .pictrue img{
+    width: 1.95rem;height: 2.1rem;
+    display: block;float: left;
+    margin-right: 0.05rem;
+    margin-bottom: 0.05rem;
+    
+}
+.banner2 .block .box{
+    width: 1.72rem;
+    height: 1.15rem;
+    background: #ffd8bb;
+    border-radius: 0.08rem;
+    float: left;
+ 
+}
+.banner2 .block2{
+    position: relative;
+}
+.banner2 .block2 .b2{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: 0.3rem;
+    font-size: 0.2rem;
+    background: #ed5d54;
+    color: #fff;
+    border: 0;
+    padding: 0.1rem 0.4rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    margin-bottom: 0.45rem;
+}
+.banner2  .b1 a{
+    color: #fff;
+}
+.banner2  .b1 img{
+    width: 0.2rem;
+}
+.banner2  .b1{
+    display: block;
+    position: relative;  
+    margin: 0 auto;
+    top: 0.3rem;
+    font-size: 0.2rem;
+    background: #ed5d54;
+    color: #fff;
+    border: 0;
+    padding: 0.1rem 0.4rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    margin-bottom: 0.45rem;
+}
+.banner2 .block2 .b2 a{
+    color: #fff;
+}
+.banner2 .block2 .b2 img{
+    width: 0.2rem;
+}
+.banner2 .block2 .box{
+    width: 2.9rem;
+    height: 3rem;
+    background: #ffd8bb;
+    border-radius: 0.08rem;
+    font-size: 0.18rem;
+    float: left;
+    margin-top: 0.85rem;
+    position: relative;
+}
+.banner2 .block2 .box .lBox{
+    font-size: 0.2rem;
+    line-height: 0.22rem;
+    text-align: center;
+    color: #fc7c3b;
+}
+.banner2 .block2 .box .cBox{
+    margin: 0.8rem 0.2rem 0.1rem 0.2rem;
+    text-align: center;
+    color: #ba805c;
+    /* font-size: 0.2rem; */
+}
+.banner2 .block2 .box:nth-child(1){
+    margin-right: 0.2rem;
+}
+.banner2 .block2 .box .lBox{
+    position: absolute;
+    width: 0.45rem;
+    height: 0.45rem;
+    background: url('../images/btn_bg.png');
+    background-color: #fff6ea;
+    border: 1px solid #fc7c3b;
+    border-radius: 50%;
+    left: 0.83rem;
+    top: -0.62rem;
+    padding: 0.4rem;
+}
+.banner2 .block .box .hezi{
+    width: 1.1rem;
+    height: 0.5rem;
+    background: #fff;
+    margin: 0.12rem 0.11rem;
+    padding: 0.2rem;    
+}
+.banner2 .block .box .hezi span{
+    display: block;
+   font-size: 0.2rem;
+   line-height: 0.22rem;  
+   margin-top: -0.05rem; 
+   text-align: center;
+}
+.banner2 .block .box .hezi .jiao{
+    width:0;
+    height:0;
+    border-width:0.12rem 0.12rem 0;
+    border-style:solid;
+    border-color:#ffd8bb transparent transparent;/*灰 透明 透明 */
+    position:relative;
+    left: -0.32rem;
+    top: -0.2rem;
+}
+.banner2 .block .box2{
+    width:0.4rem;
+    height: 0.7rem;
+    float: left;
+    margin-top: 0.45rem;
+    text-align: center;
+}
+/*六个医生*/
+
+
+.doctors .doctorBox {
+    width: 6rem;
+    border-bottom: .04rem solid rgba(200, 200, 200, .06);
+    box-shadow: 0 0 .17rem .01rem rgba(200, 200, 200, .15)
+}
+
+.doctors .doctorBox .doctor img {
+    position: relative;
+    float: left;
+    width: 2.3rem;
+    margin-bottom: .05rem;
+}
+
+.doctors .doctorBox .doctorInfo {
+    position: relative;
+    left: .3rem;
+    margin-top: .05rem;
+    float: left;
+    width: 3.4rem
+}
+
+.doctors .doctorBox .doctorInfo p {
+    font-size: 0.18rem;
+    margin: .05rem 0
+}
+
+.doctors .doctorBox .doctorInfo h2 {
+    font-size: .3rem
+}
+
+.doctors .doctorBox .doctorInfo h2 span {
+    font-size: .22rem;
+    font-weight: 400
+}
+
+.doctors .doctorBox .doctorInfo h2 i {
+    font-weight: 400
+}
+
+.doctors .doctorBox .doctorInfo h2 strong {
+    color: #199475
+}
+
+.doctors .doctorBox .tag {
+    margin-left: .05rem;
+    margin-top: .07rem;
+    height: 1.1rem;
+}
+
+.doctors .doctorBox .tag span {
+    display: block;
+    text-align: center;
+    float: left;
+    width: 1rem;
+    margin-bottom: 0.1rem;
+    border: 1px solid rgba(191, 231, 221, 0.5);
+    /* padding: .02rem .1rem; */
+    border-radius: .08rem;
+    font-size: .16rem;
+    margin-right: .05rem
+}
+
+.doctors .doctorBox .tagchild {
+    margin: .07rem 0
+}
+
+.doctors .doctorBox .yuyue {
+    position: relative;
+    left: -2.45rem;
+    top: -.5rem;
+    cursor: pointer
+}
+
+.doctors .doctorBox .yuyue img {
+    width: .25rem
+}
+
+.doctors .doctorBox .yuyue button {
+    background-color: #f86455;
+    color: #fff;
+    font-size: .2rem;
+    padding: .05rem .2rem;
+    border-radius: .2rem;
+    /* box-shadow: 0 0.1rem 0.1rem 0.02rem #f5f5f5; */
+    box-shadow: 0rem 0.05rem 0.05rem 0.01rem rgba(137, 49, 40, 0.1);
+    border: 0;
+}
+
+.doctors .doctorBox .circleyue {
+    position: relative;
+    top: -.3rem;
+    left: -1.2rem
+}
+
+.doctors .doctorBox .p {
+    margin: .1rem 0;
+    font-size: .18rem
+}
+
+.doctors .doctorBox .p img {
+    width: .25rem
+}
+
+.doctors .doctorBox .goodIn {
+    margin-top: .28rem;
+    font-size: .2rem
+}
+
+.doctors .doctorBox .goodIn img:nth-child(3) {
+    margin-left: .1rem
+}
+
+.doctors .doctorBox .goodIn img {
+    width: .3rem;
+}
+
+.doctors .doctorBox .goodIn img:nth-child(1) {
+    width: .3rem;
+    height: .3rem;
+    margin: 0
+}
+
+/* 底部信息 */
+
+.footcss {
+    background: url(../images/footbg.png) no-repeat 0 .55rem/100% auto;
+    padding: .3rem 0 .7rem 0
+}
+
+.footcss .fttxt {
+    padding: .9rem .2rem .2rem 2.4rem;
+    font-size: .2rem;
+    line-height: .3rem;
+    color: #333
+}
+
+.footcss .fttxt p {
+    margin-bottom: .1rem
+}
+
+.footcss .fttxt p strong {
+    color: #296642
+}
+
+.footcss .fttxt p a {
+    display: block;
+    width: 1.5rem;
+    text-align: center;
+    height: .42rem;
+    line-height: .42rem;
+    background: #3c875b;
+    color: #fff
+}
+
+.footcss .flogo {
+    text-align: center;
+    padding-bottom: .1rem
+}
+
+.footcss .flogo img {
+    width: 3rem
+}
+
+.footcss h3 {
+    font-size: .36rem;
+    line-height: .5rem;
+    color: #333;
+    text-align: center;
+    padding-bottom: .3rem
+}
+
+.footcss .tcp {
+    font-size: .2rem;
+    line-height: .3rem;
+    color: #333;
+    text-align: center
+}
+
+.footcss .zhibuyun {
+    text-align: center;
+    margin-bottom: .5rem
+}
+
+.footcss .zhibuyun img {
+    width: 2.9rem
+}

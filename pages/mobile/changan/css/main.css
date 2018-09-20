@@ -1,0 +1,2151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    background-color: #ebebeb;
+    font-size: 100px;
+    -webkit-tap-highlight-color: transparent;
+    /* overflow: hidden; */
+}
+
+body {
+    color: #666;
+    font-size: .24rem;
+    font-family: Microsoft Yahei, arial;
+    line-height: 1.5;
+    background-color: #fff;
+    clear: both;
+}
+#container{ 
+    width: 6.4rem;
+    margin: 0 auto;
+    max-width: 640px;
+}
+li,
+ol,
+ul {
+    list-style: none;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+img {
+    border: none;
+    vertical-align: top;
+}
+
+/* button,
+input[type=submit],
+input[type=text],
+input[type=button],
+select {
+    padding: .3rem 0 .7rem 0;
+    outline: 0;
+    outline: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+    blr: expression(this.onFocus=this.blur());
+    border: none
+} */
+
+input[type=submit],
+input[type=button] {
+    cursor: pointer
+}
+
+input {
+    width: 100%
+}
+
+textarea:focus {
+    outline: 0
+}
+
+a {
+    color: #6E7D8B;
+    text-decoration: none;
+    outline: 0
+}
+
+a.current,
+a:active,
+a:hover {
+    outline: 0
+}
+
+/* 头部导航栏 */
+
+.header {
+    width: 100%;
+    height: 0.95rem
+}
+
+.header .header_left {
+    height: 0.95rem;width: 0.95rem;
+    float: left;
+    background: url('../images/menu.png') no-repeat 50%/0.5rem  0.4rem;
+}
+
+.header .header_center {
+    height: 0.6rem;width: 3rem;
+    margin:0 auto;padding-top:0.12rem;
+}
+.header .header_center a {
+    width: 100%;display: block;
+}
+
+.header .header_center img {
+    width: 100%;display: block;
+}
+
+.header .header_right {
+    height: 0.95rem;width: 0.95rem;
+    float: right;
+    background: url('../images/phone.png') no-repeat 50%/0.6rem  0.6rem;
+}
+
+
+/* 母子海报 */
+
+.banner img {
+    width: 100%
+}
+
+.banner a {
+    display: block;
+}
+
+/* 选项卡 */
+
+.navBar {
+    height: 3.5rem;
+    border-bottom: 1px solid rgba(200, 200, 200, .1);
+   
+}
+
+.navBar .navBox {
+    width: 25%;
+    height: 1.4rem;
+    float: left;
+    display: block;
+    padding-top: .3rem;
+    color:#333;
+}
+
+.navBar .navBox .circleBox {
+    display: block;
+    width: .9rem;
+    height: .9rem;
+    border-radius: 50%;
+    margin:0 auto;
+
+}
+.navBar .navBox .text1 {
+    display: block;
+    text-align: center;
+    font-size: .2rem;
+    line-height: 0.5rem;
+}
+
+.navBar .navBox:nth-child(1) .circleBox {
+    background: url(../images/navBar1.png) no-repeat #ffc7e0 0 0/100% 100%
+}
+
+.navBar .navBox:nth-child(2) .circleBox {
+    background: url(../images/navBar2.png) no-repeat #ffe89b 0 0/100% 100%
+}
+
+.navBar .navBox:nth-child(3) .circleBox {
+    background: url(../images/navBar3.png) no-repeat #ffd9c0 0 0/100% 100%
+}
+
+.navBar .navBox:nth-child(4) .circleBox {
+    background: url(../images/navBar4.png) no-repeat #83ead9 0 0/100% 100%
+}
+
+.navBar .navBox:nth-child(5) .circleBox {
+    background: url(../images/navBar5.png) no-repeat #ffd9c0 0 0/100% 100%
+}
+
+.navBar .navBox:nth-child(6) .circleBox {
+    background: url(../images/navBar6.png) no-repeat #aacef9 0 0/100% 100%
+}
+
+.navBar .navBox:nth-child(7) .circleBox {
+    background: url(../images/navBar7.png) no-repeat #dcc5fc 0 0/100% 100%
+}
+
+.navBar .navBox:nth-child(8) .circleBox {
+    background: url(../images/navBar8.png) no-repeat #ffc7e0 0 0/100% 100%
+}
+
+/* 最新资讯 */
+
+.news {
+    width: 6.4rem;
+    height: .8rem
+}
+
+.news .newsLogo {
+    position: relative;
+    top: .1rem;
+    left: .2rem;
+    width: 6rem;
+    height: .5rem
+}
+
+.news .newsLogo img {
+    width: 1.3rem;
+    height: .6rem;
+    float: left
+}
+
+.news .newsLogo .line {
+    font-size: .3rem;
+    height: .6rem;
+    color: rgba(0, 0, 0, .1)
+}
+
+.news #news {
+    float: left;
+    overflow: hidden;
+    line-height: .45rem;
+    height: .5rem;
+    font-size: .2rem
+}
+
+/* 四个牌 */
+
+.introduce {
+    width: 6.4rem;
+    height: 3.6rem;
+    overflow: hidden
+}
+
+.introduce .introduceChild {
+    position: relative;
+    margin: .2rem 0 0 .2rem;
+    width: 2.9rem;
+    height: 1.5rem;
+    background: #f7f7f7;
+    float: left
+}
+
+.introduce .introduceChild .introduceTitle {
+    width: 1.7rem
+}
+
+.introduce .introduceChild div {
+    float: left
+}
+
+.introduce .introduceLogo {
+    width: .9rem;
+    height: 1.4rem
+}
+
+.introduce .introduceLogo img {
+    position: relative;
+    left: .2rem;
+    top: .3rem;
+    width: .8rem;
+    height: .8rem
+}
+
+.introduce .introduceTitle h1 {
+    position: relative;
+    left: .2rem;
+    top: .3rem;
+    font-size: .26rem;
+    font-weight: 400
+}
+
+.introduce .introduceTitle span {
+    position: relative;
+    left: .2rem;
+    top: .35rem;
+    font-size: .2rem;
+    color: #999
+}
+
+/*长安专家*/
+
+.profersor {
+    padding: 0 0.2rem;
+    height: .6rem;
+}
+
+.profersor h3 {
+    line-height: .36rem;
+    font-size: .26rem
+}
+
+.profersor h3:before{
+    content:"";display: block;
+    float:left;border-right:0.04rem solid #199475;
+    height:0.3rem;margin:0.03rem  0.06rem 0 0;
+}
+.profersor .newsReadMore{
+    font-size: 0.18rem;
+    font-weight: normal;
+    color: #54c6a9;
+    float:right;
+    line-height: .36rem;
+}
+
+.news {
+    width: 6.39rem;
+    box-shadow: 0 .05rem .15rem .01rem rgba(200, 200, 200, .08)
+}
+
+/*六个医生*/
+
+.doctors {
+    margin: .2rem 0 .2rem 0;
+    height: 4.2rem;
+    margin-top: .3rem;
+    border-radius: .04rem
+}
+
+.doctors .doctorBox {
+    width: 6rem;
+    height: 4.2rem;
+    border-bottom: .04rem solid rgba(200, 200, 200, .06);
+    box-shadow: 0 0 .17rem .01rem rgba(200, 200, 200, .15)
+}
+
+.doctors .doctorBox .doctor img {
+    position: relative;
+    float: left;
+    width: 2.8rem;
+    margin-bottom: .05rem;
+
+}
+
+.doctors .doctorBox .doctorInfo {
+    position: relative;
+    left: .3rem;
+    margin-top: .05rem;
+    float: left;
+    width: 2.7rem
+}
+
+.doctors .doctorBox .doctorInfo p {
+    font-size: .15rem;
+    margin: .05rem 0
+}
+
+.doctors .doctorBox .doctorInfo h2 {
+    font-size: .3rem
+}
+
+.doctors .doctorBox .doctorInfo h2 span {
+    font-size: .22rem;
+    font-weight: 400
+}
+
+.doctors .doctorBox .doctorInfo h2 i {
+    font-weight: 400
+}
+
+.doctors .doctorBox .doctorInfo h2 strong {
+    color: #199475
+}
+
+.doctors .doctorBox .tag {
+    margin-left: .05rem;
+    width: 2.6rem;
+    height: 1.5rem;
+    margin-top: .07rem
+}
+
+.doctors .doctorBox .tag span {
+    border: 1px solid rgba(191, 231, 221, 0.5);
+    padding: .02rem .1rem;
+    border-radius: .08rem;
+    font-size: .15rem;
+    margin-right: .1rem
+}
+
+.doctors .doctorBox .tagchild {
+    margin: .07rem 0
+}
+
+.doctors .doctorBox .yuyue {
+    position: relative;
+    left: -2.8rem;
+    top: -.18rem;
+    cursor: pointer
+}
+
+.doctors .doctorBox .yuyue .img {
+    width: .25rem
+}
+
+.doctors .doctorBox .yuyue button {
+    background-color: #f86455;
+    color: #fff;
+    font-size: .2rem;
+    padding: .05rem .2rem;
+    border-radius: .2rem;
+    /* box-shadow: 0 0.1rem 0.1rem 0.02rem #f5f5f5; */
+    box-shadow:  0rem 0.05rem 0.05rem 0.01rem rgba(137, 49, 40, 0.1);
+    border: 0;
+}
+
+.circleyue {
+    position: relative;
+    width: 0.25rem;
+    top: -.25rem;
+    left: -1.1rem
+}
+
+.doctors .doctorBox .p {
+    margin: .1rem 0;
+    font-size: .18rem
+}
+
+.doctors .doctorBox .p img {
+    width: .25rem
+}
+
+.doctors .doctorBox .goodIn {
+    margin-top: .28rem;
+    font-size: .2rem
+}
+
+.doctors .doctorBox .goodIn img:nth-child(3) {
+    margin-left: .5rem
+}
+
+.doctors .doctorBox .goodIn img {
+    margin: .05rem 0;
+    width: .2rem;
+    height: .2rem
+}
+
+.doctors .doctorBox .goodIn img:nth-child(1) {
+    width: .3rem;
+    height: .3rem;
+    margin: 0
+}
+
+/* 视频 */
+
+.video {
+    width: 100%;
+    height: 2rem;
+    box-shadow: 0 .06rem .17rem .01rem rgba(200, 200, 200, .08);
+    clear: both
+}
+
+.video {
+    clear: both
+}
+
+.video .videochild {
+    float: left;
+    margin-top: .2rem;
+    margin-left: .2rem;
+}
+
+.video .videochild img {
+    width: 2.9rem;
+    margin-bottom: .3rem;
+}
+
+/* 长安报喜 */
+
+.baoxi {
+    box-shadow: 0 .1rem .17rem .01rem rgba(200, 200, 200, .08);
+    margin-bottom: .3rem;
+    padding:0.3rem 0 0 0 ;
+}
+ .newsContent{
+    margin:0 0.2rem;
+    height: 4.2rem;
+    border-bottom: 1px solid #f5f5f5;
+}
+ .newsContent  .img{
+    width:100%;
+    display:block;
+   border-radius: 0.08rem;
+}
+
+ .newsContent h3{
+    font-size: 0.24rem;
+    font-weight: normal;
+    margin-top: 0.05rem;
+ }
+
+ .newsContentList{
+    height: 6.6rem;
+    background-color: #ccc;
+    clear: both;
+}
+
+  .newsList {
+    padding: 0 0.2rem;
+    clear:both;
+}
+ .newsList .newsItem{
+    overflow: hidden;
+}
+ .newsList .newsItem .newsLeftItem{
+    width: 2rem;
+    height: 2.2rem;
+    float: left;
+}
+ .newsList .newsItem .newsLeftItem img{
+    width: 1.8rem;
+    margin-top: 0.2rem;
+    border-radius: 0.08rem;
+}
+ .newsList .newsItem .newsRightItem{
+    height: 2.2rem;
+    float: right;
+    border-bottom: 1px solid #f5f5f5;
+}
+.newsContent h5{
+    font-size: 0.2rem;
+    font-weight: normal;
+    color: #aaa;
+}
+ .newsContent h4{
+    margin-top: 0.15rem;
+    padding:0.03rem 0 0.03rem 0;
+    border-radius: 0.1rem;
+    background: #f5f5f5;
+    font-size: 0.18rem;
+    font-weight: normal;
+}
+
+.baoxi .newsContent h4 img{
+    width: 0.3rem;
+    margin-left: 0.05rem;
+}
+.baoxi .newsContent h4 span{
+    color: #ef776f;
+    font-weight: normal;
+    margin-left: 53.5%;
+}
+.baoxi .newsContent h5 img{
+    width: 0.25rem;
+    margin-left: 0.2rem;
+    margin-top: 0.05rem;
+    margin-right: 0.05rem;
+}
+.baoxi .newsContent h5 span{
+    font-weight: normal;
+    margin-left: 3.67rem;
+    font-size: 0.2rem;
+}
+
+.baoxi .newsList .newsItem .newsRightItem h2{
+    font-size: 0.24rem;
+    font-weight: normal;
+    margin-top: 0.15rem;
+}
+.baoxi .newsList .newsItem .newsRightItem h3{
+    font-size: 0.24rem;
+    font-weight: normal;
+    margin-top: 0.05rem;
+}
+
+.baoxi .newsList .newsItem .newsRightItem h4{
+    margin-top: 0.1rem;
+    padding:0.03rem 0.1rem;
+    border-radius: 0.1rem;
+    background: #fafafa;
+    font-size: 0.18rem;
+    font-weight: normal;
+}
+.baoxi .newsList .newsItem .newsRightItem h4 span{
+    color: #ef776f;
+    font-weight: normal;
+    float: right;
+    font-size: 0.18rem;
+    line-height: 0.33rem;
+}
+.baoxi .newsList .newsItem .newsRightItem h4 img{
+    width: 0.3rem;
+}
+.baoxi .newsList .newsItem .newsRightItem h5{
+    font-size: 0.18rem;
+    font-weight: normal;
+    color: #aaa;
+    line-height: 0.3rem;
+    margin-top: 0.05rem;
+}
+.baoxi .newsList .newsItem .newsRightItem h5 span{
+    float: right;
+}
+.baoxi .newsList .newsItem .newsRightItem h5 img{
+    margin-top: 0.05rem;
+    margin-left: 0.05rem;
+    margin-right: 0.05rem;
+    width: 0.25rem;
+}
+
+.baoxi .newsContent .buyList{
+    height: 0.36rem;
+    border-radius: 0.1rem;
+    background: #fafafa;
+    font-size: 0.18rem;
+    margin-top: 0.15rem;
+    padding:0 0.1rem;
+}
+.baoxi  .newsContent .buyList img{
+    display: block;
+    float: left;
+    margin-right: 0.1rem;
+    margin-top: 0.03rem;
+    width: 0.3rem;
+}
+.baoxi  .newsContent .buyList span{
+    float: left;
+    display: block;
+}
+.baoxi  .newsContent .buyList .buyName{
+    line-height: 0.36rem;
+    width: 3rem;
+    text-align: left;
+    float: left;
+}
+.baoxi  .newsContent .buyList .money{
+    height: 0.36rem;
+    line-height: 0.36rem;
+    float: right;
+    color: #ef776f;
+}
+.baoxi .newsContent .readList{
+    height: 0.42rem;
+    margin-top: 0.1rem;
+    font-size: 0.18rem;
+    color: #999;
+    overflow: hidden;
+}
+.baoxi .newsContent .readList img{
+    width: 0.25rem;
+}
+.baoxi .newsContent .readList .readNumber{
+
+    width: 3rem;
+    line-height: 0.22rem;
+    text-align: left;
+    float: left;
+}
+.baoxi .newsContent .readList .Readdate{
+    width: 2.99rem;
+    text-align: right;
+    float: left;
+}
+
+
+/* 定点社保图片 */
+
+.shebao img {
+    clear: both;
+    width: 6.4rem;
+    margin-bottom: .2rem
+}
+
+/* 长安环境 */
+
+.hj {
+    margin-top: .1rem;
+    box-shadow: 0 .16rem .16rem .02rem rgba(200, 200, 200, .08);
+    padding: .1rem 0 .2rem 0
+}
+
+.hj .evm {
+    width: 6rem;
+    margin-left: .2rem;
+    height: 4rem
+}
+
+.hj .evm .evmBox {
+    float: left;
+    margin-left: .06rem;
+    margin-bottom: .1rem
+}
+
+.hj .evm .evmBox img {
+    width: 1.9rem
+}
+
+/* 长安专家  */
+
+.zj {
+    box-shadow: 0 .05rem .17rem .01rem rgba(200, 200, 200, .08)
+}
+
+.zj {
+    position: relative;
+    left: .2rem;
+    width: 6rem
+}
+
+.zj img {
+    width: 6rem
+}
+
+/* 侧滑栏 */
+
+.tabBox .bd ul {
+    padding: .1rem 0 0 .2rem
+}
+
+.tabBox .bd li {
+    height: .33rem;
+    line-height: .33rem
+}
+
+.tabBox .bd li a {
+    color: #666
+}
+
+.tabBox .hd {
+    height: .2rem;
+    line-height: .2rem;
+    font-size: .2rem;
+    position: relative;
+    top: -.4rem
+}
+
+.tabBox .hd ul {
+    position: relative;
+    overflow: hidden;
+    margin: .1rem 0rem .1rem 2.65rem;
+    top: -.1rem
+}
+
+.tabBox .hd ul li {
+    float: left;
+    padding: .05rem .05rem;
+    color: #666;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    margin: 0 .05rem
+}
+
+.tabBox .hd ul .on {
+    background: #199475;
+    border-color: #199475
+}
+
+/* 底部信息 */
+
+.footcss {
+    background: url(../images/footbg.png) no-repeat 0 .55rem/100% auto;
+    padding: .3rem 0 .7rem 0
+}
+
+.footcss .fttxt {
+    padding: .9rem .2rem .2rem 2.4rem;
+    font-size: .2rem;
+    line-height: .3rem;
+    color: #333
+}
+
+.footcss .fttxt p {
+    margin-bottom: .1rem
+}
+
+.footcss .fttxt p strong {
+    color: #296642
+}
+
+.footcss .fttxt p a {
+    display: block;
+    width: 1.5rem;
+    text-align: center;
+    height: .42rem;
+    line-height: .42rem;
+    background: #3c875b;
+    color: #fff
+}
+
+.footcss .flogo {
+    text-align: center;
+    padding-bottom: .1rem
+}
+
+.footcss .flogo img {
+    width: 3rem
+}
+
+.footcss h3 {
+    font-size: .36rem;
+    line-height: .5rem;
+    color: #333;
+    text-align: center;
+    padding-bottom: .3rem
+}
+
+.footcss .tcp {
+    font-size: .2rem;
+    line-height: .3rem;
+    color: #333;
+    text-align: center
+}
+
+.footcss .zhibuyun {
+    text-align: center;
+    margin-bottom: .5rem
+}
+
+.footcss .zhibuyun img {
+    width: 2.9rem
+}
+
+.bottomNav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 6.4rem;
+    margin-left: -3.2rem;
+    height: 1rem;
+    background-color: #f3f3f3;
+    z-index: 999;
+}
+
+.bottomNav .bottomNavbar {
+    width: 20%;
+    overflow: hidden;
+    float: left;
+    text-align: center
+}
+
+.bottomNav .bottomNavbar img {
+    width: 0.4rem;
+    margin: .1rem 0 0 0
+}
+
+.bottomNav .bottomNavbar span {
+    font-size: 0.18rem;
+    padding-right: 0.1rem;
+}
+
+/* 独立功能 */
+
+.box2 {
+    width: 100%;
+    height: .6rem
+}
+
+.box {
+    width: 100%;
+    height: .6rem;
+}
+
+.gtext {
+    color: #199475
+}
+
+.rtext {
+    color: #f75f89
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+/* 医生头像 */
+
+.tou {
+    width: 6.4rem;
+    height: 3.2rem;
+    background: url(../images/head_bg.jpg)
+}
+
+.tou .touContext {
+    width: 2rem;
+    height: 3.2rem;
+    margin: 0 auto
+}
+
+.tou .touContext .touContainer {
+    position: relative;
+    top: .4rem;
+    width: 1.5rem;
+    height: 2.3rem;
+    margin: 0 auto
+}
+
+.tou .touContext .touContainer .portrait {
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-bottom: .1rem;
+    background-color: #fff
+}
+
+.tou .touContext .touContainer .portrait img {
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem
+}
+
+.tou .touContext .touContainer .sl {
+    font-weight: 400
+}
+
+.tou .touContext .touContainer h3 {
+    text-align: center;
+    color: #199475
+}
+
+/* 三个卡片选项 */
+
+.inavBar {
+    width: 6rem;
+    height: 1.4rem;
+    padding: 0 .2rem 0 .2rem
+}
+
+.inavBar .inavBox {
+    width: 1.96rem;
+    height: 1.4rem;
+    float: left
+}
+
+.inavBar .inavBox img {
+    width: .59rem;
+    display: block;
+    margin: 0 auto;
+    padding: .2rem 0 0 0
+}
+
+.inavBar .inavBox span {
+    display: block;
+    text-align: center;
+    font-size: .24rem
+}
+
+.inavBar .iline1 {
+    border: 1px solid #fafafa;
+    width: 6rem;
+    height: 0;
+    position: relative;
+    top: 1.3rem
+}
+
+.inavBar .inavLine {
+    float: left;
+    border: 1px solid #fafafa;
+    width: 0;
+    height: .75rem;
+    position: relative;
+    top: .3rem
+}
+
+/* 擅长 */
+
+.igoodIn {
+    width: 6.4rem;
+    height: 1.8rem;
+    box-shadow: 0 .07rem .12rem .02rem #f5f5f5
+}
+
+.igoodIn .igoodInTitle {
+    margin-top: 0.15rem;
+    width: 6rem;
+    height: .4rem;
+    padding: .15rem .2rem 0 .2rem
+}
+
+.igoodIn .igoodInTitle img {
+    width: .3rem
+}
+
+.igoodIn .igoodInTitle span {
+    font-size: .3rem;
+    position: relative;
+    top: -.07rem
+}
+
+.igoodIn .igoodInContext {
+    padding: .2rem .2rem 0 .55rem;
+    font-size: .18rem
+}
+
+.igoodIn .igoodInContext div {
+    margin-bottom: .15rem;
+}
+
+.igoodIn .igoodInContext span {
+    font-size: 0.18rem;
+    border-radius: .2rem;
+    padding: .02rem .15rem .02rem .15rem;
+    border: 1px solid #ddd;
+    margin-right: 0.1rem;
+
+}
+
+/* 简介 */
+
+.iintroduce {
+    margin-top: .3rem;
+    box-shadow: 0 .07rem .12rem .02rem #f5f5f5
+}
+
+.iintroduce .iintroduceTitle {
+
+    width: 6rem;
+    height: .4rem;
+    padding: .15rem .2rem 0 .2rem
+}
+
+.iintroduce .iintroduceContext {
+    display: block;
+    padding: .2rem .2rem 0.2rem .2rem;
+    font-size: .18rem;
+    line-height: 0.4rem;
+}
+
+.iintroduce .iintroduceTitle img {
+    width: .3rem
+}
+
+.iintroduce .iintroduceTitle span {
+    font-size: .3rem;
+    position: relative;
+    top: -.07rem
+}
+
+/*  从医感言*/
+
+.recollections {
+    width: 6.4rem;
+    box-shadow: 0 .07rem .12rem .02rem #f5f5f5
+}
+
+.recollections .recollectionsTitle {
+    margin-top: 0.3rem;
+    width: 6rem;
+    height: .4rem;
+    padding: .15rem .2rem 0 .2rem
+}
+
+.recollections .recollectionsTitle img {
+    width: .3rem
+}
+
+.recollections .recollectionsTitle span {
+    font-size: .3rem;
+    position: relative;
+    top: -.07rem
+}
+.recollections .recollectionsContext span {
+    font-size: .18rem;
+    line-height: 0.2rem;
+}
+.recollections .recollectionsContext{
+    padding: 0.1rem 0.2rem 0.2rem 0.2rem;
+    line-height: 0.4rem;
+}
+
+.recollections .recollectionsContext img {
+    display: block;
+    margin: .3rem auto;
+    border-radius: .08rem;
+    width: 3.6rem
+}
+
+/* 预约挂号 */
+
+.register {
+    width: 6.4rem;
+    height: 5.8rem
+}
+
+.register .registerTitle {
+    margin-top: 0.2rem;
+    width: 6rem;
+    height: .4rem;
+    padding: .3rem .2rem 0 .2rem
+}
+
+.register .registerTitle span {
+    font-size: .26rem;
+position: relative;
+}
+
+.register .registerTitle b {
+    font-size: .16rem;
+    position: relative;
+    font-weight: 400;
+    color: #666;
+}
+
+.register .registerTitle img {
+    margin-top: 0.1rem;
+    width: .3rem
+}
+
+.register .registerTitle div {
+    float: left
+}
+
+.register .registerTitle .ttt {
+    float: left;
+    width: 5.6rem;
+    margin-left: .1rem;
+    border-bottom: 1px solid #cce0d4
+}
+
+.register .registerContainer {
+    position: relative;
+    left: .5rem;
+    width: 5.9rem;
+    height: 5.8rem;
+    clear: both;
+}
+
+.register .registerContainer .registerContext {
+    position: relative;
+    left: 0;
+    top: .5rem;
+    width: 5.4rem;
+    height: 4.5rem;
+    border-radius: .08rem;
+    box-shadow: 0 0 0.1rem 0.05rem #f9f9f9;
+}
+
+.register .registerContainer .registerContext .yuyueBox {
+    width: 4.6rem;
+    height: .64rem;
+    border: 1px solid #ddd;
+    margin-bottom: .2rem;
+    position: relative;
+    border-radius: .08rem;
+    left: .4rem;
+    top: .2rem
+}
+
+.register .registerContainer .registerContext .yuyueBox span {
+    position: relative;
+    left: .3rem;
+    top: 0.15rem;
+    font-size: .2rem
+}
+
+.register .registerContainer .registerContext .yuyueBox input {
+    position: relative;
+    left: 0.2rem;
+    top: 0.15rem;
+    font-size: 0.2rem;
+    width: 3rem;
+    border: 0;
+    background: #fff;
+    /* border-radius: 0.02rem; */
+    /* border-color: #f5f5f5; */
+}
+.register .registerContainer .registerContext .yuyueBox select {
+    position: relative;
+    left: 0.2rem;
+    top: 0.15rem;
+    font-size: 0.2rem;
+    width: 3.2rem;
+    border: 0;
+    background: #fff;
+}
+
+.register .registerContainer .registerContext .tiaozheng input {
+    top: 0.15rem;
+}
+
+.register .registerContainer .registerContext .tiaozheng span {
+    top: 0.15rem;
+}
+
+.register .registerContainer .registerContext .submit {
+    width: 4.6rem;
+    height: .5rem;
+    position: relative;
+    border-radius: .08rem;
+    left: .4rem;
+    top: .2rem;
+    background: #dc3434;
+    color: #fff;
+    line-height: .5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* doctorList.html */
+
+.pictrueDoctors {
+    width: 6.4rem;
+    height: 1.8rem;
+}
+
+.pictrueDoctors img {
+    width: 6.4rem;
+}
+
+.teyaoDoctors {
+    width: 6.4rem;
+    height: 3.2rem;
+    /* background: #ddd; */
+}
+.teyaoTitle h3{
+    margin-top: 0.3rem;
+    margin-left: 0.2rem;
+    font-weight: normal;
+}
+.teyaoDoctors h3 {
+    margin-top: 0.3rem;
+    margin-left: 0.2rem;
+    font-weight: normal;
+}
+
+.teyaoDoctors .doctorCard {
+    margin-top: 0.1rem;
+    width: 5.1rem;
+    height: 3.1rem;
+    background: #ffe3fc;
+    float: left;
+    border-radius: 0.18rem;
+}
+
+.teyaoDoctors .doctorCard  h1{
+
+    position: relative;
+    top: -0.2rem;
+    left: 0.2rem;
+    text-align: left;
+    font-size: 0.54rem;
+    color: #ffd9fb;
+}
+.teyaoDoctors .doctorCard  h2{
+    position: relative;
+    top: 0.3rem;
+    left: 0rem;
+    font-size: 0.38rem;
+}
+.teyaoDoctors .doctorCard  h2 span{
+    font-size: 0.24rem;
+    font-weight: normal;
+}
+.teyaoDoctors .doctorCard  h3{
+    position: relative;
+    left: -0.2rem;
+    top: 0rem;
+    font-size: 0.22rem;
+}
+
+
+.teyaoDoctors .doctorCard  img {
+    position: relative;
+    width: 2.17rem;
+    top: -0.16rem;
+    text-align: center;
+    font-size: 0.24rem;
+    border-radius: 0.08rem;
+}
+.teyaoDoctors .doctorCard2 {
+    width: 0.8rem;
+    height: 3rem;
+    background-color: #ccfef5;
+    float: left;
+}
+.bg1{
+    background:#ccfef5;
+}
+.benyuanDoctors {
+    width: 6.4rem;
+    height: 9rem;
+}
+
+.benyuanDoctors .h3 {
+    margin-top: 0.3rem;
+    margin-left: 0.2rem;
+    font-weight: normal;
+}
+
+.benyuanDoctors .Ethree {
+    padding: 0.2rem 0.2rem;
+    height:3.9rem;
+}
+
+.benyuanDoctors .Ethree .EthreeLeft {
+    width: 2.6rem;
+    height: 3.6rem;
+    background: #dce0fe;
+    float: left;
+    border-radius: 0.08rem;
+}
+
+.benyuanDoctors .Ethree .EthreeLeft h1 {
+    padding: 0 0;
+    text-align: center;
+    font-size: 0.50rem;
+    color: #d0d5fe;
+    line-height: 0.4rem;
+}
+
+.benyuanDoctors .Ethree .EthreeLeft h2 {
+    text-align: center;
+    font-size: 0.28rem;
+}
+
+.benyuanDoctors .Ethree .EthreeLeft h3 {
+    text-align: center;
+    font-size: 0.20rem;
+    color: #999;
+    font-weight: normal;
+}
+
+.benyuanDoctors .Ethree .EthreeLeft img {
+    margin-top: 0.08rem;
+    width: 2.6rem;
+    text-align: center;
+    border-radius: 0.08rem;
+}
+
+.benyuanDoctors .Ethree .EthreeRight1 {
+    width: 3.3rem;
+    height: 1.75rem;
+    background: #ccf5fe;
+    float: right;
+    border-radius: 0.08rem;
+}
+.benyuanDoctors .Ethree .EthreeRight1 h1 {
+    padding-left: 0.05rem;
+    text-align: left;
+    font-size: 0.5rem;
+    color: #bcf1fe;
+    line-height: 0.4rem;
+}
+.benyuanDoctors .Ethree .EthreeRight1 h2 {
+    text-align: left;
+    font-size: 0.24rem;
+    margin-left: 0.3rem;
+    margin-top: 0.05rem;
+}
+.benyuanDoctors .Ethree .EthreeRight1 h3 {
+    font-weight: normal;
+    text-align: left;
+    font-size: 0.2rem;
+    margin-left: 0.3rem;
+}
+.benyuanDoctors .Ethree .EthreeRight1 img {
+    position: relative;
+    top: -1.41rem;
+    left: 1.55rem;
+    width: 1.75rem;
+    border-radius: 0.08rem;
+}
+.benyuanDoctors .Ethree .EthreeRight2 {
+    width: 3.3rem;
+    height: 1.75rem;
+    background: #fee9da;
+    margin-top: 0.1rem;
+    float: right;
+    border-radius: 0.08rem;
+}
+.benyuanDoctors .Ethree .EthreeRight2 h1 {
+    color: #fedfcb;
+}
+.benyuanDoctors ._three {
+    width: 6.4rem;
+    height: 2rem;
+    margin-top: 0.1rem;
+}
+.benyuanDoctors ._three  .fl img{
+    background: #f7f8ff;
+}
+.benyuanDoctors ._three img {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-left: 0.2rem;
+    border-radius: 0.08rem;
+}
+
+.benyuanDoctors ._three ._threeRight {
+    float: left;
+    margin-left: 0.2rem;
+    width: 4rem;
+    height: 1.9rem;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.benyuanDoctors ._three ._threeRight h3 {
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+}
+
+.benyuanDoctors ._three ._threeRight h6 {
+    margin-left: 0.2rem;
+    margin-top: 0.02rem;
+    font-weight: normal;
+    font-size: 0.2rem;
+}
+
+.benyuanDoctors ._three ._threeRight .threeA {
+    display: block;
+    position: relative;
+    left: 3rem;
+    top: -1.1rem;
+    width: 0.6rem;
+    font-weight: normal;
+    background: #f7f8ff;
+    font-size: 0.22rem;
+    color: #4765fb;
+    border-radius: 0.21rem;
+    padding: 0.03rem 0.2rem 0.03rem 0.2rem;
+    text-align: center;
+}
+
+.benyuanDoctors ._three ._threeRight ._threetiaozheng {
+    top: -1.4rem;
+}
+
+.fl {
+    float: left;
+}
+
+ @media screen and (max-width: 420px) and (min-width: 400px) {
+    .benyuanDoctors .Ethree .EthreeRight1 img{
+        top: -1.39rem;
+    }
+    .benyuanDoctors .Ethree .EthreeLeft img {
+        margin-top: 0.12rem;
+    }
+}
+/*
+@media screen and (max-width: 400px) {
+    .benyuanDoctors .Ethree .EthreeRight1 h1 {
+        top: -0.18rem;
+    }
+    .benyuanDoctors .Ethree .EthreeRight1 img{
+        top: -1.80rem;
+    }
+    .benyuanDoctors .Ethree .EthreeLeft h1 {
+        top: -0.18rem;
+    }
+} */
+.test{
+    margin-left: 0.2rem;
+    width: 6rem;
+    height: 3rem;
+}
+
+/* 长安简介 */
+.bannerIntroduce img{
+    width: 6.4rem;
+}
+.titleIntroduce{
+    width: 6rem;
+    margin-left: 0.2rem;
+    padding: 0.5rem 0.2rem 0.15rem 0;
+    border-bottom:  1px solid rgba(200, 200, 200, .3);
+    text-align: center;
+    overflow: hidden;
+}
+.titleIntroduce h1{
+    font-size: 0.3rem;
+}
+.titleIntroduce h6{
+    font-size: 0.2rem;
+    font-weight: normal;
+    color: #aaa;
+}
+.contentIntroduce{
+    padding: 0.2rem 0.3rem;
+}
+.contentIntroduce h2{
+    font-size: 0.22rem;
+    text-align: center;
+    margin: 0.3rem 0 0.2rem 0;
+}
+.contentIntroduce h3{
+    font-size: 0.22rem;
+    text-align: left;
+    margin: 0rem 0 0.2rem 0;
+    margin-left: -0.1rem;
+    color: #ff3333;
+}
+.contentIntroduce h6{
+    font-size: 0.22rem;
+    font-weight: normal;
+}
+.contentIntroduce h5{
+    font-size: 0.2rem;
+    font-weight: normal;
+    margin-bottom: 0.2rem;
+}
+.contentIntroduce .next{
+    line-height: 0.3rem;
+    text-align: center;
+    display: block;
+    font-size: 0.2rem;
+    font-weight: normal;
+    background-color: #32a764;
+    color: #fff;
+    width: 0.95rem;
+    height: 0.3rem;
+}
+.bannerIntroduce2 img{
+    margin-left: 0.3rem;
+    width: 5.8rem;
+}
+.profersor .youhui{
+    margin-top: 0.3rem;
+    font-size: 0.26rem;
+}
+.youhuiList{
+    width: 6rem;
+    margin-left: 0.2rem;
+}
+.youhuiList ul li img{
+    width: 0.3rem;
+    margin-right: 0.1rem;
+}
+.youhuiList ul{
+    width: 50%;
+   font-size: 0.18rem;
+   float: left;
+   margin-bottom: 0.2rem;
+}
+.youhuiList ul li{
+   margin-top: 0.1rem;
+}
+.youhuiList ul li b{
+   color: #333;
+}
+.yhhd{
+    overflow: hidden;
+    box-shadow: 0 0.1rem .17rem .01rem rgba(200, 200, 200, .15);
+    padding-bottom: 0.2rem;
+}
+/* 路线 */
+.map img{
+    width: 6.4rem;
+}
+.roadSelect{
+    height: 5.3rem;
+    padding-top: 0.3rem;
+}
+.roadSelect .roads{
+    height: 4.7rem;
+    padding: 0 0.2rem;
+}
+.roadSelect .roads .roadNav{
+   width: 1rem;height: 4.6rem;
+   float: left;
+}
+.roadSelect .roads .roadNav ul li{
+   margin-top: 0.1rem;
+   cursor: pointer;
+}
+.roadSelect .roads .roadNav ul li  img{
+   width: 0.85rem;
+   border-radius: 0.08rem;
+   box-shadow: 0 0 0.16rem 0.01rem rgba(155, 155, 155, .1);
+}
+.roadSelect .roads .roadPanel{
+    margin-top: 0.1rem;
+   width: 4.75rem;height: 4.65rem;
+   float: right;
+   background: #fafafa;
+   border-radius: 0.08rem;
+}
+
+
+/*向左*/
+.roadSelect .roads .roadPanel .triangle_border_left{
+    width:0;
+    height:0;
+    border-width:0.3rem 0.4rem 0.3rem 0;
+    border-style:solid;
+    border-color:transparent #fafafa transparent transparent;/*透明 灰 透明 透明 */
+    position:relative;
+    top: 1.1rem;
+    left: -0.3rem;
+}
+.roadSelect .roads .roadPanel .roadContent{
+    width:4.55rem;
+    height:4.25rem;
+    margin-top: 0.2rem;
+    float: right;
+}
+.roadSelect .roads .roadPanel .roadContent h3{
+    font-weight: normal;
+    font-size: 0.2rem;
+    color: #980d00;
+
+}
+.roadSelect .roads .roadPanel .roadContent h4{
+    font-weight: normal;
+    font-size: 0.18rem;
+    margin: 0.1rem 0;
+}
+.roadSelect .roads .roadPanel .roadContent h4 span{
+    font-weight: normal;
+    font-size: 0.18rem;
+    color: #980d00;
+}
+/* 女性不孕 */
+.sterilityItem{
+    padding: 0.2rem;
+    height: 1.4rem;
+    /* box-shadow: 0 0 0.01rem 0.05rem #fafafa; */
+    border-bottom: 0.1rem solid #fafafa;
+}
+.sterilityItem .sterilityItemLeft{
+    float: left;
+    padding: 0 0.2rem 0.2rem 0;
+    width: 1.5rem;
+    height: 1.4rem;
+}
+.sterilityItem .sterilityItemLeft img{
+    display: block;
+    width: 0.8rem;
+    margin: 0 auto;
+}
+.sterilityItem .sterilityItemLeft h3{
+    margin-top: 0.1rem;
+    text-align: center;
+    font-size: 0.24rem;
+    font-weight: normal;
+    color: #999;
+}
+.sterilityItem .sterilityItemCenter{
+    float: left;
+    width: 2rem;
+    height: 1rem;
+    margin: 0.2rem 0;
+    border-left: 1px solid #f5f5f5;
+    border-right:1px solid #f5f5f5;
+    /* border-left: 1px solid rgba(155, 155, 155, .15);
+    border-right:1px solid rgba(155, 155, 155, .15); */
+}
+.sterilityItem .sterilityItemCenter div{
+    float: right;
+    width: 1.6rem;
+    height: 0.5rem;
+}
+.sterilityItem .sterilityItemCenter div:nth-child(1){
+    border-bottom:1px solid #f5f5f5;
+}
+.sterilityItem .sterilityItemCenter div:nth-child(2) h4{
+    margin-top: 0.14rem;
+}
+.sterilityItem .sterilityItemRight{
+    float: left;
+    width: 2.1rem;
+    height: 1rem;
+    margin: 0.2rem 0;
+}
+
+.sterilityItem .sterilityItemRight div:nth-child(1){
+    border-bottom:1px solid #f5f5f5;
+}
+.sterilityItem .sterilityItemRight div:nth-child(2) h4{
+    margin-top: 0.14rem;
+}
+.sterilityItem .sterilityItemRight div{
+    float: left;
+    width: 2.1rem;
+    height: 0.5rem;
+}
+.sterilityItem h4{
+    font-weight: normal;
+    color: #666;
+}
+.sterilityItem .sterilityItemRight div h4{
+    padding-left: 0.4rem;
+    font-size: 0.24rem;
+}
+.sterilityBanner1 img{
+    margin-top: 0.2rem;
+    width: 6.4rem;
+}
+.sterilityBanner2 img{
+    display: block;
+    margin: 0.2rem auto 0.1rem;
+    width: 6rem;
+}
+.sterilityA{
+    text-align: center;
+}
+.sterilityA a{
+    background-color: #f29b76;
+    color: #fff;
+    font-size: 0.2rem;
+    line-height: 0.3rem;
+    padding: 0.03rem 0.2rem ;
+    border-radius: 0.15rem;
+}
+.sterilityA a img{
+    margin:0.1rem auto ;
+    width: 0.25rem;
+}
+.sterilityA p{
+    padding: 0.2rem 0.2rem;
+    font-size: 0.2rem;
+    text-align: center;
+}
+.sterilityBoxs{
+    padding:0 0.2rem;
+    margin-top: -0.4rem;
+    margin-bottom: 0.2rem;
+    overflow: hidden;
+}
+.sterilityBoxs span{
+    font-size: 0.18rem;
+    color: #fff;
+    display: block;
+    line-height: 0.2rem;
+    text-align: center;
+}
+.sterilityBoxs .sterilityLeftBoxs{
+    width: 2rem;height: 1.5rem;
+    float: left;
+}
+.sterilityBoxs .sterilityLeftBoxs .sterilityBox1{
+    width: 0.55rem;height: 0.35rem;
+    float: left;padding: 0.3rem 0.2rem;
+    background: #fdd7bd;
+}
+.sterilityBoxs .sterilityLeftBoxs .sterilityBox2{
+    width: 0.75rem;height: 0.35rem;
+    float: left;margin-left: 0.05rem;
+    background: #fae9ae;
+    padding: 0.3rem 0.1rem;
+}
+.sterilityBoxs .sterilityLeftBoxs .sterilityBox3{
+    width: 1.95rem;height: 0.24rem;
+    float: left;margin-top: 0.05rem;
+    background: #dcc5fc;
+    padding: 0.12rem 0;
+}
+.sterilityBoxs .sterilityRightBoxs{
+    width: 4rem;height: 1.5rem;
+    float: right;
+}
+.sterilityBoxs .sterilityRightBoxs .sterilityBox1{
+    width: 2.25rem;height: 0.24rem;
+    float: left;
+    background: #ffc7e0;
+    padding: 0.12rem 0;
+}
+.sterilityBoxs .sterilityRightBoxs .sterilityBox2{
+    width: 1.7rem;height: 0.24rem;
+    float: right;
+    background: #fdd7bd;
+    padding: 0.12rem 0;
+}
+.sterilityBoxs .sterilityRightBoxs .sterilityBox3{
+    width: 1.05rem;height: 0.36rem;
+    float: left;margin-top: 0.05rem;
+    background: #83ead9;
+    padding: 0.3rem 0.6rem;
+}
+.sterilityBoxs .sterilityRightBoxs .sterilityBox4{
+    width: 1.7rem;height: 0.2rem;
+    float: right;margin-top: 0.05rem;
+    background: #c5e0fe;
+    padding: 0.38rem 0;
+}
+/* 荣誉资质 */
+.honerAll{
+    padding: 0 0.2rem;
+    height: 7.2rem;
+    /* background: #ddd; */
+}
+.honerAll p{
+    font-size: 0.18rem;
+}
+.honerAll img{
+    width: 1.88rem;
+}
+.honerAll .honerA img{
+    margin-top: 0.1rem;
+}
+.honerAll .honerC img{
+    margin-bottom: 0.1rem;
+}
+.honerAll .honerA{
+    float: left;
+    width: 2.4rem;
+    height: 7.2rem;
+}
+.honerAll .honerB{
+    float: left;
+    width: 1.2rem;
+    height: 7.2rem;
+    text-align: center;
+}
+.honerAll .honerB .honerBB{
+    float: left;
+    width: 0.59rem;
+    height: 6.9rem;
+}
+.honerAll .honerB .honerBB div{
+    float: left;
+    width: 0.45rem;
+    border-bottom: 1px solid #999;
+}
+
+.honerAll .honerB .honerBB .honerBB1{
+    height: 1rem;
+}
+.honerAll .honerB  span{
+    display: block;
+    width: 0.1rem;
+    height: 0.1rem;
+    border: 1px solid #999;
+    border-radius: 0.05rem;
+    background: #fff;
+}
+.honerAll .honerB .honerB1 span{
+    margin-top: 0.95rem;
+    position: relative;
+    left: 0.54rem;
+}
+.honerAll .honerB .honerBB2 span{
+    margin-top: 2.05rem;
+}
+.honerAll .honerB .honerBB3 span{
+    margin-top: 2.05rem;
+}
+
+
+.honerAll .honerB .honerBBR span{
+    margin-top: 1.5rem;
+    position: relative;
+    left: -0.21rem;
+}
+.honerAll .honerB .honerBB4 span{
+    margin-top: 1.45rem;
+}
+.honerAll .honerB .honerBB5 span{
+    margin-top: 2.05rem;
+}
+.honerAll .honerB .honerBB6 span{
+    margin-top: 2.05rem;
+}
+
+.honerAll .honerB .honerBB .honerBB2{
+    height: 2.1rem;
+}
+.honerAll .honerB .honerBB .honerBB3{
+    height: 2.1rem;
+}
+.honerAll .honerB .honerBB .honerBB4{
+    height: 1.5rem;
+    float: right;
+}
+.honerAll .honerB .honerBB .honerBB5{
+    height: 2.1rem;
+    float: right;
+}
+.honerAll .honerB .honerBB .honerBB6{
+    height: 2.1rem;
+    float: right;
+}
+.honerAll .honerB .honerB1{
+    border-right: 0.02rem solid #999;
+}
+
+.honerAll .honerC{
+    float: left;
+    width: 2.4rem;
+    height: 7.2rem;
+}
+.honerAll .honerA .honerBox1{
+    margin-top: 1rem;
+}
+.honerAll .honerC .honerBox4{
+    margin-top: 0.4rem;
+}
+.honerAll .honerA .honerBox,
+.honerAll .honerC .honerBox
+{
+    height: 1.7rem;
+    padding: 0 0.25rem;
+    margin-bottom: 0.4rem;
+    text-align: center;
+}
+/* hamburger */
+.hamburger{
+    position: fixed;
+    left:50%;
+    margin-left: -3.2rem;
+    top: 0;
+    width: 6.4rem;
+    height: 100%;
+    display: none;
+    overflow:scroll;
+    background:rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+.hamburger .hotDog{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 0rem;
+    height: 14.95rem;
+    background: #fff;
+    z-index: 9;
+
+}
+.hamburger .hotDog .searchDog{
+    height: 0.8rem;
+    background: #f2f2f2;
+    font-size: 0.2rem;
+}
+.hamburger .hotDog .searchDog img{
+    width: 0.2rem;
+    margin-top: 0.1rem;
+}
+.hamburger .hotDog .searchDog input{
+    outline:none;margin-top: -0.01rem;
+    ;width: 3.5rem; height: 0.5rem;
+    text-align: center; border: 0;
+    font-size: 0.2rem;
+    margin-top: -0.1rem;
+}
+.hamburger .hotDog .searchDog div{
+    position: relative;
+    left: 0.2rem;
+    top: 0.2rem;
+    height: 0.4rem;
+    text-align: center;
+    width: 4.1rem;
+    color: #999;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 0.2rem;
+    line-height: 0.4rem;
+}
+
+.hamburger .hotDog .femaleDog h6,
+.hamburger .hotDog .maleDog h6{
+    position: relative;
+    font-size: 0.26rem;
+    height: 0.4rem;
+    font-weight: normal;
+    text-align: left;
+    color: #333;
+    overflow: hidden;
+    margin-left: 0.2rem;
+    padding-top: 0.1rem;
+}
+.hamburger .hotDog .femaleDog img{
+    width: 0.25rem;
+    margin-top: 0.05rem;
+    margin-right: 0.05rem;
+}
+.hamburger .hotDog .maleDog{
+    height: 1.43rem;
+}
+.hamburger .hotDog .femaleDog{
+    height: 1.42rem;
+    background: #f2f2f2;
+}
+.hamburger .hotDog .contentDog{
+    width: 1.7rem;
+    float: left;
+}
+.hamburger .hotDog p{
+    font-size: 0.2rem;
+    margin-left: 0.2rem;
+    margin-top: 0.1rem;
+}
+
+
+.hamburger .hotDog2{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+/* .hamburger .hotDog3{
+    position: absolute;
+    left: 0;
+    top: 15rem;
+    width: 6.4rem;
+    height: 15rem;
+} */
+/*  */
+.activitiesBanner{
+    height: 2.8rem;
+    padding: 0.2rem;
+}
+.activitiesBanner img{
+    float: left;
+    display: block;
+}
+.activitiesBanner a:nth-child(1) img{
+    width: 3.46rem;
+}
+.activitiesBanner a:nth-child(2) img,
+.activitiesBanner a:nth-child(3) img{
+    float: right;
+    width: 2.4rem;
+}
+.activitiesBanner a:nth-child(3) img{
+    padding-top: 0.15rem;
+}
+.activities .activity{
+    width: 6rem;height: 1.6rem;
+    margin-left: 0.2rem;
+    border-bottom: 1px solid #f5f5f5;
+    margin-top: 0.2rem;
+    position: relative;
+}
+.activities .activity .aimg img{
+    width: 1.9rem;
+    display: block;
+    margin-top: 0.2rem;
+}
+.activities .activity .activityContent{
+    position: relative;
+    float: right;
+    /* margin-right: 0.2rem; */
+    width: 3.9rem;height: 1.3rem;
+    overflow: hidden;
+}
+.activities .activity .activityContent h5{
+    font-weight: normal;
+    font-size: 0.24rem;
+    color: #333;
+}
+
+.activities .activity .activityContent .activityBottom .activityLeft{
+    width: 50%;height: 0.2rem;
+    position: absolute;
+    font-weight: normal;
+    font-size: 0.18rem;
+    height: 0.3rem;
+    color: #aaa;
+    bottom: -0.05rem;
+    right: 0;
+    text-align: right;
+}
+.activities .activity .activityContent .activityBottom .activityRight {
+    width: 50%;height: 0.2rem;
+    position: absolute;
+    font-weight: normal;
+    font-size: 0.18rem;
+    height: 0.3rem;
+    color: #aaa;
+    bottom: -0.05rem;
+   
+}
+/* .activities .activity .activityContent .activityBottom .activityLeft img{
+    width: 0.25rem;
+}
+.activities .activity .activityContent .activityBottom .activityRight img{
+    margin-top: 0.04rem;
+    width: 0.25rem;
+} */
+.activitiesPages{
+    margin-top: 0.2rem;
+    height: 0.3rem;
+    width: 100%;
+}
+.activitiesPages .activitiesPage{
+    width: 3.2rem;
+    height: 100%;
+    margin-left: 1.6rem;
+}
+
+.activitiesPages ul li{
+    font-size: 0.2rem;
+    float: left;  
+    text-align: center;
+    line-height: 0.3rem;
+    border: 1px solid #999;
+    margin-right: 0.16rem;
+    color: #777;
+    cursor: pointer;
+}
+.activitiesPages ul li:nth-child(1){
+    width: 0.65rem;
+}
+.activitiesPages ul li:nth-child(2){
+    width: 0.3rem;
+    background: #199475;
+    color: #fff;
+    border: 1px solid #199475;
+}
+.activitiesPages ul li:nth-child(3){
+    width: 0.3rem;
+}
+.activitiesPages ul li:nth-child(4){
+    width: 0.3rem;
+}
+.activitiesPages ul li:nth-child(5){
+    width: 0.65rem;
+}
+/* happy */
+.happy  .activities .activity .aimg img{
+    width: 1.8rem;
+    border-radius: 0.08rem;
+}
+.happy  .activities .activity{
+    height: 2rem;
+    border: 0;
+}
+.happy  .activities .activity .activityContent{
+    height: 2rem;
+    border-bottom: 1px solid #f5f5f5;
+}
+.happy  .activities .activity .activityContent h6{
+    font-size: 0.2rem;font-weight: normal;
+    margin-top: 0.05rem;
+}
+
+.happy  .activities .activity .activityContent h4{
+    margin-top: 0.1rem;
+    padding:0.03rem 0.1rem;
+    border-radius: 0.1rem;
+    background: #fafafa;
+    font-size: 0.2rem;
+    font-weight: normal;
+}
+.happy  .activities .activity .activityContent h4 span{
+    color: #ef776f;
+    font-weight: normal;
+    float: right;
+    font-size: 0.18rem;
+    line-height: 0.33rem;
+}
+.happy  .activities .activity .activityContent h4 img{
+    width: 0.3rem;
+}
+.happy  .activities .activity .activityContent h3{
+    font-size: 0.18rem;
+    font-weight: normal;
+    color: #aaa;
+    line-height: 0.3rem;
+    margin-top: 0.05rem;
+}
+.happy  .activities .activity .activityContent h3 span{
+    float: right;
+}
+.happy  .activities .activity .activityContent h3 img{
+    margin-top: 0.05rem;
+    margin-left: 0.05rem;
+    margin-right: 0.05rem;
+    width: 0.25rem;
+}
+.AD img{
+    width: 6.4rem;
+    margin-bottom: 0.3rem;
+}

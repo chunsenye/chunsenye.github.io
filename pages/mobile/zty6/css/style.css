@@ -1,0 +1,106 @@
+html{font-size:62.5%;}
+body, p, h1, h2, h3, h4,h5, h6, ul, li, dl, dt, dd, form, div{margin:0;padding:0;list-style:none;vertical-align:bottom;-webkit-text-size-adjust:none; font-family:"microsoft yahei";}
+a{text-decoration:none;color:#676565;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+body{background-color:#fff;max-width:640px;min-width:320px;margin: auto;}
+a,a img{ border:0; text-decoration: none;}
+/* .container{background: #eee;} */
+img{
+  width: 100%;
+}
+.fl{float:left;}
+.fr{float:right;}
+.banner {width: 6.4rem;}
+
+.box1 .title1 {width: 5.25rem; margin: 0 auto; position: relative;}
+.box1 .title1 .title2{margin: 0 auto;width: 4.7rem;}
+.box1 .title1 .img1{width: 1.3rem;margin-top: 0.15rem;}
+.box1 .title1 .img2{width: 1.3rem;margin-top: 0.15rem;transform: rotateY(180deg)}
+.box1 .title1 .img3{width: 5.25rem;margin-bottom: 0.2rem;}
+.box1 .title1 .h2{font-size: 0.42rem;color: #d10703;padding: 0 0.18rem 0.1rem 0.2rem;}
+.box1 .title1 h3{font-size: 0.32rem;color: #fff;position: absolute;top: 0.78rem;left: 0.75rem;}
+.box1 p{font-size: 0.2rem;clear: both;padding: 0 0.2rem;line-height: 0.3rem;margin-bottom: 0.2rem;}
+.box1 .text{height: 1.1rem;}
+.box1 a{color: #fff}
+.box1 .title1 .white{color:#fff}
+.box1 .white{color:#fff}
+.box1 .text .Ltext {width: 3rem;position: relative;}
+.box1 .text .Ltext span{background: #d41915;display: block;width: 0.35rem;text-align: center;border-radius: 50%;color: #fff;position: absolute;left: 0.2rem;}
+.box1 .text .Ltext .line{background: #d41915;width: 2px;position: absolute;left: 0.37rem;height: 0.35rem;top: 0.35rem}
+.box1 .text .Ltext p{margin-left: 0.4rem;font-size: 0.18rem;padding: 0 0 0 0.2rem;}
+.box1  .btn{clear: both; margin:0.4rem 0 0.5rem 1.1rem; height: 0.8rem;margin-left: ;position: relative;}
+.box1  .btn a{font-size: 0.25rem;background: #ea8b03;color: #fff;height: 0.6rem;width: 4.25rem;display: table-cell;vertical-align: middle;text-align: center;border-radius: 0.08rem;}
+.box1  .btn img{width: 0.3rem;position: absolute;top: 0.2rem;right: 1.2rem;}
+.box1 .banner2{width: 6rem;margin-left: 0.2rem;}
+.box1 .spanBox{position: relative;}
+.box1 .spanBox span{font-size: 0.2rem;position: absolute;color: #fff}
+.box1 .spanBox .s1{left: 0.9rem;top: -0.9rem}
+.box1 .spanBox .s2{left: 4.45rem;top: -0.9rem}
+.box1 .spanBox .s3{left: 0.9rem;top: 3rem}
+.box1 .spanBox .s4{left: 4.3rem;top: 3rem}
+.box2 {background: #af0303;}
+.box3 {background: #fff;}
+.box4 {background: #af0303;}
+.box5 {background: #fff;}
+.box6 {background: #af0303;}
+.box2 .title1 {width: 6.4rem;}
+.box2 .title1 .title2{width: 6.15rem;}
+.box2 .title1 .img3{margin-left: 0.57rem;}
+.box2 .title1 h3{left: 1.1rem;color: #af0303}
+.box2 .banner{width: 6rem;margin-left: 0.2rem;margin-bottom: 0.2rem;}
+.box2 .tBtn{height: 1rem;position: relative;}
+.box2 .tBtn .btn1{width: 2.25rem;height: 0.75rem;background: #ea8b03;display: block;margin-left: 0.2rem;color: #fff;border-radius: 0.1rem;float: left;}
+.box2 .tBtn .btn1 img{width: 0.35rem;position: absolute;top: 0.08rem;left: 0.5rem;}
+.box2 .tBtn .btn1 span{margin-left: 0.5rem;display: block;text-align: center;line-height: 0.3rem;margin-top: 0.07rem;}
+.box2 .tBtn .btn2{width: 3.4rem;height: 0.75rem;background: #ea8b03;display: block;margin-left: 0.3rem;color: #fff;border-radius: 0.1rem;float: left;}
+.box2 .tBtn .btn2 img{width: 0.6rem;position: absolute;top: 0.07rem;left: 3rem;}
+.box2 .tBtn .btn2 span{display: block;text-align: left;margin-left: 1rem;line-height: 0.3rem;margin-top: 0.07rem;}
+.box2 .tBtn  span a{display: inline;font-size: 0.2rem;color: #fff;clear: both;}
+.box3 .title1 .title2{width: 6rem;}
+.box3 .title1 .h2{padding: 0  0.15rem 0.1rem 0.15rem;font-size: 0.38rem;}
+.box3 .title1 h3{left: 1.6rem;top:0.7rem;color: #fff}
+.box3 .tDoc{width: 6rem;height: 3.5rem;margin-left: 0.2rem;clear: both;}
+.box3 .tDoc .oneDoc {float: left;}
+.box3 .tDoc .oneDoc img{width: 2.97rem;}
+.box3 .tDoc .oneDoc p{width: 2.97rem;background: #ea8b03;height: 0.55rem;margin-top: -0.1rem;text-align: center;font-size: 0.36rem;line-height: 0.55rem;color: #fff;}
+.box3 .tDoc .oneDoc p a{color: #fff}
+.box3 .banner{margin-top: 0.2rem;margin-bottom: 0;}
+.box3 .fDoc{width: 6rem;height: 3.7rem;margin-left: 0.2rem;clear: both;}
+.box3 .fDoc .imgBox img{border-right: 1px solid #bdbdbe; display:block;width: 1.49rem;float: left;height: 3.33rem;}
+.box3 .text1 p{text-align: center;font-size: 0.3rem;line-height: 0.5rem;background: #fff5b9;width: 6rem;margin-left: 0.2rem;padding: 0.2rem 0;}
+.box4 .title1 .title2{width: 5.9rem;}
+.box3 .fDoc .btnBox{position: relative;top: -0.15rem;}
+.box3 .fDoc .btnBox a{background: #de0904;color: #fff;display: block;width: 1.37rem;height: 0.45rem;font-size: 0.18rem;text-align: center;line-height: 0.45rem;border-radius: 0.2rem;margin: 0 0.06rem;float: left;}
+.box4 .title1 .h2{font-size: 0.42rem;}
+.box4 .title1 h3{left: 1.85rem;top: 0.75rem;color: #af0303;}
+.box4 .ttext{width: 6rem;margin-left: 0.2rem;height: 2.5rem;}
+.box4 .ttext p{color: #fff; width: 1.35rem;margin-left: 0.2rem;font-size: 0.2rem;padding: 0;float: left;clear: none}
+.box4 .btn{margin-top: 0.2rem;}
+.box5 .title1 .title2{width: 6.4rem;}
+.box5 .title1 .h2{font-size: 0.38rem;}
+.box5 .title1 h3{left: 1.05rem;top: 0.7rem;color: #fff}
+.box5 .fBtn{height: 0.8rem;clear: both;}
+.box5 .fBtn a{color: #fff;font-size: 0.24rem;background: #d41915;height: 0.5rem;line-height: 0.5rem;width: 1.25rem;display: block;margin-left: 0.2rem;text-align: center;border-radius: 0.1rem;float: left;}
+.box5 .LRBox{padding: 0.2rem;}
+.box5 .LBox,.box5 .RBox{width: 3rem;height: 5.1rem;}
+.box5 .RBox p{margin-top: 0.3rem;margin-bottom: 0.65rem;}
+.box5 .LBox img{width: 3rem;}
+.box5 .btnRed{width: 6rem;height: 0.6rem;background: #d41915;display: block;clear: both;margin-left: 0.2rem;color: #fff;line-height: 0.6rem;text-align: center;font-size: 0.25rem;border-radius: 0.1rem;margin-bottom: 0.2rem;}
+.box5 .fBox{clear: both; width: 6rem;margin-left: 0.2rem;background: #aaa;}
+.box5 .fBox .oneBox{width: 2.8rem;float: left;position: relative;}
+.box5 .fBox .oneBox p{font-size: 0.2rem;padding: 0}
+.box5 .fBox .oneBox img{width: 2.8rem;height: 2.54rem;}
+.box5 .fBox .oneBox .s{font-size: 0.25rem; position: absolute;z-index: 666;top: 2.05rem;left: 0.7rem;color: #fff}
+.box5 .btn a{width: 6rem;}
+.box5 .btn{margin-left: 0.2rem;}
+.box5 .btn img{right: 0.5rem;}
+.box6 .title1 .title2{width: 4.5rem;}
+.box6 .title1 h3{left: 1.55rem;color: #af0303}
+.box6 .text6{width: 6.4rem;height: 2.3rem;clear: both;}
+.box6 .text6 p{text-align: center;font-size: 0.2rem;width: 4.2rem;margin: 0 auto;}
+.box6 h6{color: #fff; text-align: center;font-size: 0.36rem;font-weight: normal;}
+.box6 .btn img{right:1.65rem ;}
+.bian img{margin-bottom: -0.1rem;width: 6.4rem;}

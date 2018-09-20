@@ -1,0 +1,70 @@
+﻿* {margin:0;padding:0;box-sizing:border-box;-webkit-box-sizing:border-box;}
+#LRdiv0,#LRfloater0 {display:none}
+body {max-width:640px;margin:0 auto;font-family:"微软雅黑";font-size:14px;}
+.top_img{width:100%;max-width:640px;height:0.9rem;}
+.top_img a{width:100%;max-width:640px;position:fixed;top:0;display:block;z-index:9;}
+.top_img a img{width:100%;}
+.f_text {width:72%;height:2.5em;float:left;border:1px solid #cfcece;display:block;margin:3px;line-height:2.5em;color:#999999;text-indent:0.5em;text-decoration:none;border-radius:8px;margin-left:3%;margin-top:20px;font-size:1.2em;}
+.ly-header {position:fixed;top:0;z-index:10;width:100%;max-width:640px;margin:40px 0;}
+.ly-header nav {height:40px;background:#393a3f;}
+.ly-header nav a:nth-child(1) {float:left;width:50px;height:40px;background:url(../images/wechat.png) no-repeat scroll 20px 12px;}
+.ly-header nav a i {float:right;width:1px;height:20px;margin:10px 0 0 0;background:#2e2e32}
+.ly-header nav h2 {color:#FFF;font-size:16px;line-height:40px;text-indent:10px;}
+.ly-header nav a:nth-child(2) {float:right;width:50px;height:40px;background:url(../images/wechat.png) no-repeat scroll 14px -42px;}
+.ly-section1 {/*height:100%;*/padding:0 0 100px;background:#f6f6f6}
+.ly-section1 .line {margin:0 0 0 10px;}
+.ly-section1 .left {float:left;max-width:80%;margin:10px 0 0 0;}
+.ly-section1 .left div {position:relative;margin:0 0 0 55px;padding:10px;background:#FFF;color:#323232;border:1px solid #d5d5d5;border-radius:6px;}
+.ly-section1 .left div i {position:absolute;top:12px;left:-20px;width:20px;height:20px;background:url(../images/wechat.png) no-repeat scroll 0 -200px;transform:rotate(-180deg)}
+.ly-section1 .left img {float:left;margin:0 5px 0 0;border-radius:8px;}
+.ly-section1 .left div img {float:none;}
+.ly-section1 figure {width:100%;margin:0 0 15px;overflow:hidden;border-bottom:1px solid #CCCCCC;}
+.ly-section1 .zzh {width:100%;float:left;display:block;}
+.ly-section1 figcaption {width:68%;float:left;margin-left:2%;}
+.ly-footer {position:fixed;bottom:0;width:100%;max-width:640px;height:5.5em;background:#FFF;}
+.ly-footer div {width:100%;}
+.ly-footer div:nth-child(1) {max-width:50px;}
+.ly-footer div:nth-child(1) {max-width:50px;}
+.ly-footer div:nth-child(3) {max-width:50px;}
+.ly-footer div:nth-child(1) a {float:left;width:50px;height:50px;background:url(../images/wechat.png) no-repeat scroll 9px -89px;}
+.ly-footer div:nth-child(2) textarea {width:45%;height:36px;margin:7px 0 0 0px;color:#000;font-size:18px;line-height:35px;border:none;border-bottom:1px solid #d8d8d8;transition:0.3s;resize:none;overflow-y:auto;outline:none;}
+.ly-footer div:nth-child(2) textarea:focus {border:none;border-bottom:1px solid #45c01a;}
+.ly-footer div:nth-child(2) textarea.on {border-bottom:#45c01a}
+.ly-footer div:nth-child(2) i {}
+.ly-footer div:nth-child(3) a {position:absolute;top:0;right:0;width:21%;height:2.5em;margin:7px 3% 0 0;background:#fd8b15;color:#FFF;text-align:center;line-height:2.5em;border-radius:5px;cursor:pointer;transition:0.3s;text-decoration:none;margin-top:20px;font-size:1.2em;}
+/*.ly-footer div:nth-child(3) a:hover {background-color:#3aa814;}
+.ly-footer div:nth-child(4) a:hover {background-color:#3aa814;}
+*/.ly-footer div:nth-child(4) a {position:absolute;top:0;right:0;width:21%;height:2.5em;margin:7px 4% 0 0;background:#ec480e;color:#FFF;text-align:center;line-height:2.5em;border-radius:5px;cursor:pointer;transition:0.3s;text-decoration:none;font-size:1.2em;margin-top:20px;}
+.ly-clear {clear:both;}
+.ly-hide {display:none;}
+.ly-animation-bell {display:inline-block;color:#F00;transition:0.5s;}
+.ly-animation-bell.on {animation:ly-animation-bell 0.5s;}
+@keyframes ly-animation-bell {0% {transform:rotate(-5deg);}
+20% {transform:rotate(10deg);}
+40% {transform:rotate(-15deg);}
+60% {transform:rotate(20deg);}
+80% {transform:rotate(-15deg);}
+100% {transform:rotate(10deg);}
+}
+/*question*/.clear {clear:both;}
+.ly-section1 .question {width:100%;margin:0 auto;background-color:#fff;padding-left:2%;padding-right:2%;padding-top:13px;padding-bottom:3px;}
+.ly-section1 .question li,.ly-section1 .keyword li {float:left;list-style:none;margin-bottom:10px;}
+.ly-section1 .question li a {display:block;width:100%;height:35px;line-height:33px;font-size:14px;color:#363636;text-align:center;text-decoration:none;border-radius:5px;border:solid #bababa 1px;background:#fff;}
+.ly-section1 .question li{width:49%;}
+.ly-section1 .question li:nth-child(2n){float:right;}
+.ly-section1 .question li.red a {background:#0b9587;border:solid #0b9587 1px;color:#fff;font-weight:bold;}
+.ly-section1 .question li.sel a {color:red;}
+@media only screen and (min-width:365px) and (max-width:411px) {.ly-section1 .question li a {font-size:12.5px;}
+}
+@media only screen and (min-width:320px) and (max-width:364px) {.ly-section1 .question li a {font-size:11px;}
+}
+.nav{ width:100%; height:auto; background-color: #c13145; }.nav_item{ width:21.5%;  height:50px; text-align: center; color:#fff; line-height: 50px; float:left; font-size: 14px; text-decoration: none; }.nav_item.ys1{ width:14%; }.banner_wx {width:100%;margin:0 auto;display:block;overflow:hidden;position:relative;margin-bottom:10px;}.banner_wx .big-banner_wx{margin:0 auto;overflow:hidden;z-index:1;}.banner_wx .big-banner_wx li {float:left;margin:0 auto;overflow:hidden;}.banner_wx .big-banner_wx li img {width:100%;border:0;}.banner_wx .big-banner_wx li a{display:block;line-height:0;}.banner_wx.nav-banner_wx{position:absolute;left:50%;bottom:14px;margin-left:-16px;height:12px;line-height:12px;text-align:center;z-index:33;display:block;}.banner_wx .nav-banner_wx li {width:9px;height:9px;background:#aaa;margin:0 3px;display:inline-block;-webkit-border-radius:9px;border-radius:9px;text-indent:-9999px;cursor: pointer;}.banner_wx .nav-banner_wx li.on {background:red;}.banner_wx .nav-banner_wx {bottom: 2px;display: block;height: 12px;left: 50%;line-height: 12px;margin-left: -16px;position: absolute;text-align: center;z-index: 33;}
+
+   ul{
+    -webkit-padding-start: 0;
+   }
+
+   #askbox { display:none;}
+   .nav  a{ display:block;}
+   .nav a img { width:100%; display:block;}
+

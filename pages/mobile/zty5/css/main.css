@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    background-color: #fff;
+    font-size: 100px;
+    -webkit-tap-highlight-color: transparent;
+    /* overflow: hidden; */
+}
+
+body {
+    color: #666;
+    font-size: .24rem;
+    font-family: Microsoft Yahei, arial;
+    line-height: 1.5;
+    clear: both;
+}
+
+#container {
+    width: 6.4rem;
+    margin: 0 auto;
+    max-width: 640px;
+    background-color: #d3f4fd;
+}
+li,
+ol,
+ul {
+    list-style: none;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+img {
+    border: none;
+    vertical-align: top;
+}
+
+input[type=submit],
+input[type=button] {
+    cursor: pointer
+}
+
+input {
+    width: 100%
+}
+
+textarea:focus {
+    outline: 0
+}
+
+a {
+    color: #6E7D8B;
+    text-decoration: none;
+    outline: 0
+}
+
+a.current,
+a:active,
+a:hover {
+    outline: 0
+}
+
+/* banner1 */
+.banner1{position: relative;}
+.banner1 .img{width: 6.4rem;}
+.banner1 .h3{text-align: center; width: 100%;position: absolute;left: 0;top: 2.2rem;font-weight: normal;font-size: 0.18rem;color: #fff}
+.banner1 .h3 a{color: #fffb5d}
+.a{position: absolute;top: 2.5rem;width: 100%;}
+.a1{width: 5.6rem;}
+.a2{top: 3.8rem;width: 5.8rem;}
+.btn{background: #fca760;color: #fff; display: block;margin: 0 auto;width: 2rem;font-size: 0.18rem;text-align: center;position: relative;height: 0.3rem;line-height: 0.3rem;border-radius: 0.2rem}
+.btn2{width: 2.5rem; top:1.1rem;height: 0.45rem;line-height: 0.45rem;font-size: 0.2rem;}
+.btn .click{position: absolute;width: 0.15rem;bottom: 0;right: -0.01rem;}
+.btn2 .click{width: 0.25rem;}
+.banner3 img{width: 6.4rem;margin-top: 0.3rem;}
+.banner2 {
+    padding: 0 0.2rem;
+}
+.banner2 .title img{float: left;}
+.banner2 .title h3{float: left;line-height: 0.75rem; font-size: 0.26rem;font-weight: normal;color: #1b7089;}
+.banner2 .pictrues{
+    overflow: hidden;
+    padding-bottom: 0.2rem;
+}
+.banner2 .pictrues .pictrue img{
+    width: 1.95rem;height: 2.1rem;
+    display: block;float: left;
+    margin-right: 0.05rem;
+    margin-bottom: 0.05rem;  
+}
+.c2 img{
+    width: 6.4rem;
+}
+.Box1{
+    width: 6rem;
+    height: 4.5rem;
+    background: #8fe0ef;
+    border-radius: 0.08rem;
+    margin-left: 0.2rem;
+    box-shadow: 0 0 0.2rem 0.05rem #5ccfe5 inset;
+    position: relative;
+}
+.Box1 .t{
+    width: 6.4rem;
+    position: absolute;
+    left: -0.2rem;
+    bottom: -0.15rem;
+}
+.Box1 .box1{position: relative;}
+.Box1 .box1 .img1{
+    width: 4rem;
+    display: block;
+    margin: 0 auto;
+}
+.Box1 .box1 .F4{
+    margin-left: 0.5rem;
+}
+.Box1 .box1 .item{
+    float: left;
+    margin-right: 0.2rem;
+    background: #fff;
+}
+.Box1 .box1 .item img{
+    width: 1.09rem;
+}
+.Box1 .box1 .p1{
+    padding: 0.2rem 0.25rem;font-size: .2rem;color: #1ba7d0;
+}
+.Box1 .box1 .p2{
+    font-size: .18rem;width: 1.1rem;
+    color: #1ba7d0;margin-top: 0.05rem;
+}
+.Box2{
+    width: 6.4rem;height: 4rem;
+    background: #fff;
+}
+.Box2 .title{
+    padding: 0 0.4rem;
+    position: relative;
+}
+.Box2 .title img{
+    width: 0.75rem;
+}
+.Box2 .title .img3{
+    width: 5.7rem;
+}
+.Box2 .title .click{
+    width: 0.25rem;
+}
+.Box2 img{
+    float: left;
+}
+.Box2 .img2{
+    transform: rotateY(180deg)
+}
+.Box2 h3{
+    float: left;
+    line-height: 0.75rem;
+    font-size: 0.26rem;
+    font-weight: normal;
+    color: #1b7089;
+}
+.Box3 .box1 .p1{padding: 0.16rem;}
+.Box3 .box1 .p3{font-size: 0.18rem;text-align: center;padding-top: 0.15rem;line-height: 0.22rem;}
+.Box3 h5{margin-bottom: 0.2rem; text-align: center;font-size: 0.2rem;color: #1b7089;font-weight: normal;}
+.Box3 .F6{width: 100%;height: 1rem；}
+.Box3 .F6 .circle{width: 0.8rem;height: 0.8rem;border-radius: 50%;background: #b1e9f4;border: 0.02rem solid #74cbdf;margin-left: 0.17rem;float: left;color: #1ba7d0}
+.Box3 .a2{width: 6rem;}
+.Box4{height: 5.8rem;position: relative;}
+.Box4 .a1{top: 4.2rem;width: 6.4rem;}
+.Box4 .title{padding: 0 0.95rem;}
+.Box5 {height: 6rem;}
+.Box5 .box2 .img1{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.1rem;
+    width: 4.29rem;
+}
+.Box5 .box2 .F4{width: 5.6rem;height: 4.2rem;margin-left: 0.2rem;}
+.Box5 .box2 .item{width: 2.7rem;height: 1.8rem;border-radius: 0.08rem;background: #fffdf3;}
+.Box5 .box2 .item h4{width: 0.2rem;height: 1.4rem;line-height: 0.2rem;font-weight: normal;font-size: 0.2rem;float: left;margin-left: 0.4rem;margin-top: 0.2rem;color: #368096}
+.Box5 .box2 .item img{margin-left: 0.4rem;margin-top: 0.3rem;width: 1.3rem;}
+.Box5 .box2 .itemBox {float: left;margin-bottom: 0.2rem;}
+.Box5 .box2 .itemBox h3{font-size: 0.2rem;font-weight: normal;color: #1ba7d0}
+.Box5 .a1{top: 5.5rem;width: 6rem;}
+.Box6{position: relative;}
+.Box6 .title {padding: 0 0.1rem;}
+.Box6 .a1{width: 6.4rem;}
+.Box6 .text{line-height: 0.32rem; padding: 0.3rem 0.2rem; width: 6rem;height: 2.9rem;float: left;margin-left: 0.2rem;margin-top: 0.2rem;box-shadow: 0 0 0.2rem 0.05rem #f6fbfe;border-radius: 0.15rem}
+.Box6 .text p{font-size: 0.2rem;color: #1b7089}
+.Box7{height: 5.4rem;}
+.Box7 .ds{font-size: 0.2rem;color: #1ba7d0;padding: 0.2rem;}
+.Box7 .banner{width: 6rem;}
+.Box8{height: 5.3rem;}
+.Box8 .title {padding: 0 0.4rem;}
+.Box8 .pic{width: 6.05rem;height: 4.3rem;float: left;margin-left: 0.2rem;}
+.Box8 .pic img{width: 1.96rem;margin-right: 0.05rem;margin-bottom: 0.05rem;}
+.LRBox{width: 6.4rem;height: 0.85rem;float: left;margin-top: 0.2rem;}
+.LBox{position: relative;width: 2.5rem;height: 0.85rem;background: #7ed9ea;float: left;margin-left: 0.7rem;border-radius: 0.08rem 0 0 0.08rem;}
+.LRBox img{position: absolute;left: 1.05rem;top: 0.1rem;width: 0.4rem;}
+.LRBox p{color: #fff; font-size: 0.2rem; position: absolute;top: 0.5rem;width: 100%;text-align: center;}
+.RBox{position: relative;width: 2.5rem;height: 0.85rem;background: #8ed6ff;float: left;border-radius: 0 0.08rem 0.08rem 0 ;}/* .RBox img{position: absolute;left: 1.1rem;top: 0.1rem} */
+.List{width: 5.7rem;height: 3.2rem;margin-left: 0.35rem;float: left;margin-top: 0.2rem;}
+.List .ListL{width: 50%;float: left;height: 3.2rem;}
+.List  .text{color: #44afc3;font-size: 0.2rem;height: 0.3rem;text-align: center;line-height: 0.26rem;float: left;display: block;}
+.List  .step{color: #fff;background: #8eddeb;border-radius: 0.15rem;font-size: 0.18rem;display: block;width: 0.8rem;height: 0.3rem;text-align: center;line-height: 0.3rem;float: left;}
+.List  ul li{margin-bottom: 0.15rem; width: 2.6rem;border: 1px solid #c7eff7;height: 0.3rem;border-radius: 0.15rem}
+.List .ListR{width: 50%;float: left;height: 3.2rem;}
+.List .ListR .text{color: #3fb8fc;}
+.List .ListR .step{background: #a2deff;}
+.List .ListR ul li{border: 1px solid #c4e1fc;}
+.dBox{width: 6rem;height: 3.5rem;padding: 0.4rem 0rem 0.2rem 0rem;background: #e6fcff;margin-left: 0.2rem;}
+.dBox2{margin-bottom: 0.25rem;height: 3.9rem;border-radius: 0 0 0.08rem 0.08rem;}
+.Right{margin-left: 0.2rem; width: 2.3rem; height: 3.1rem; float: left; position: relative;}
+.Right .doctor{width: 2.3rem; margin-bottom: .05rem;}
+.doctorInfo{position: relative; left: .3rem; margin-top: .05rem; float: left;}
+.doctorInfo p{font-size: 0.18rem; margin: .05rem 0} 
+.doctorInfo h2{font-size: .3rem} 
+.doctorInfo h2 span{font-size: .22rem; font-weight: 400} 
+.doctorInfo h2 i{font-weight: 400} 
+.tagchild{margin: .07rem 0} 
+.yuyue{text-align: center; cursor: pointer} 
+.yuyue img{width: .25rem}
+.yuyue button{background-color: #f86455; color: #fff; font-size: .2rem; padding: .05rem .2rem; border-radius: .2rem; /* box-shadow: 0 0.1rem 0.1rem 0.02rem #f5f5f5; */ box-shadow: 0rem 0.05rem 0.05rem 0.01rem rgba(137, 49, 40, 0.1); border: 0; margin-left: 0.05rem;}
+.circleyue{position: absolute; top: 2.48rem; left: 1rem}
+.p{margin: 0.1rem 0; font-size: .18rem}
+.p img{width: 0.25rem}
+.goodIn{margin-top: 0.2rem; font-size: 0.2rem}
+.goodIn img:nth-child(3){margin-left: 0.2rem}
+.goodIn img{width: .25rem;margin-top: 0.02rem;}
+.goodIn img:nth-child(1){width: 0.3rem; height: 0.3rem; margin: 0}
+
+.ds{font-size: 0.2rem;width: 6rem;border-radius: 0.08rem 0.08rem 0 0;}
