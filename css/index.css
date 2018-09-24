@@ -81,6 +81,7 @@
     left: 330px;
     top: 90px;
 }
+#gift{position: absolute;left: 0;bottom: 0;}
 @keyframes myfirst
 {
 from {box-shadow: 0 0 50px 10px #41b883 inset;}
