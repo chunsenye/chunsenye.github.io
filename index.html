@@ -63,6 +63,7 @@
         </div>
     </div>
     <a id="gift" href="./pages/gift/night.html"><img src="./image/gift.png" style="left: 0;top: 0;" ></a>
+    <a id="mooncake" href="./pages/gift/songs.html"><img src="./image/mooncake.png" style="left: 0;top: 0;" ></a>
     <script>
         var gift =document.getElementById('gift');
         setInterval(function(){
@@ -71,6 +72,11 @@
             gift.style.left=a+'px';
             gift.style.top=b+'px';
         },500)
+        var mooncake =document.getElementById('mooncake');
+            let a=Math.random()*500
+            let b=Math.random()*500
+            mooncake.style.left=a+'px';
+            mooncake.style.top=b+'px';
     </script>
 </body>
 </html>
