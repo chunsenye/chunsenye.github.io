@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- 编码 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--  IE=edge告诉IE使用最新的引擎渲染网页-->
+    <meta name="HandheldFriendly" content="True">
+    <!--  针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- 缩放值 -->
+    <!-- <link rel="shortcut icon" href="../css/images/favicon.ico"> -->
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <title>这是一颗爱你的心</title>
+</head>
+<Style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body,
+    html {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        overflow: hidden;
+    }
+
+    #container {
+        width: 100%;
+        height: 100%;
+    }
+
+    #container div {
+        width: 5px;
+        height: 5px;
+        background: rgb(226, 15, 15);
+        position: absolute;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    #heart {
+        position: absolute;
+        left: 122px;
+        top: 262px;
+    }
+
+    h2 {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        bottom: 100px;
+    }
+</Style>
+
+<body>
+
+    <div id="container">
+        <h2>赖如梦，我喜欢你</h2>
+    </div>
+
+</body>
+<script>
+    //随机一个位置产生一个div
+    var num = 1;
+    var container = document.getElementById('container');
+    // var go_center=0;
+    function build() {
+        var div_id = 'div_id' + num++;
+        var left = parseInt(Math.random() * window.innerWidth);
+        var top = parseInt(Math.random() * window.innerHeight);
+        container.innerHTML += '<div id="' + div_id + '"></div>';
+        div_id = document.getElementById(div_id);
+        div_id.style.left = left + 'px';
+        div_id.style.top = top + 'px';
+        if (num >= 200) {
+            clearInterval(clock);
+            heart();
+        }
+    }
+    $('#container h2').hide()
+    var clock = setInterval(build, 30);
+    var kk = setInterval(peng, 1000);
+    //所有div拼成一个心
+    function heart() {
+        // var di =
+        for (var i = 52; i <= 200; i++) {
+            $('#container div').eq(i).animate({
+                background: 'red',
+                left: '-100px',
+                top: '-100px',
+            }, 2000);
+        }
+
+        // 前30个就位
+        $('#container div').eq(2).animate({
+            left: '188px',
+            top: '297px',
+        }, 400)
+        $('#container div').eq(0).animate({
+            background: 'red',
+            left: '192px',
+            top: '292px'
+        }, 600)
+        $('#container div').eq(1).animate({
+            background: 'red',
+            left: '196px',
+            top: '288px'
+        }, 800)
+        $('#container div').eq(3).animate({
+            background: 'red',
+            left: '200px',
+            top: '285px'
+        }, 1000)
+        $('#container div').eq(4).animate({
+            background: 'red',
+            left: '205px',
+            top: '282px'
+        }, 1200)
+        $('#container div').eq(5).animate({
+            background: 'red',
+            left: '210px',
+            top: '280px'
+        }, 1400)
+        $('#container div').eq(6).animate({
+            background: 'red',
+            left: '215px',
+            top: '280px'
+        }, 1600)
+        $('#container div').eq(7).animate({
+            background: 'red',
+            left: '220px',
+            top: '280px'
+        }, 1800)
+        $('#container div').eq(8).animate({
+            background: 'red',
+            left: '225px',
+            top: '282px'
+        }, 2000)
+        $('#container div').eq(9).animate({
+            background: 'red',
+            left: '230px',
+            top: '285px'
+        }, 2200)
+        $('#container div').eq(10).animate({
+            background: 'red',
+            left: '235px',
+            top: '289px'
+        }, 2400)
+        $('#container div').eq(11).animate({
+            background: 'red',
+            left: '238px',
+            top: '294px'
+        }, 2600)
+        $('#container div').eq(12).animate({
+            background: 'red',
+            left: '240px',
+            top: '300px'
+        }, 2800)
+        $('#container div').eq(13).animate({
+            background: 'red',
+            left: '241px',
+            top: '305px'
+        }, 3000)
+        $('#container div').eq(14).animate({
+            background: 'red',
+            left: '241px',
+            top: '310px'
+        }, 3200)
+        $('#container div').eq(15).animate({
+            background: 'red',
+            left: '240px',
+            top: '315px'
+        }, 3400)
+        $('#container div').eq(16).animate({
+            background: 'red',
+            left: '238px',
+            top: '320px'
+        }, 3600)
+        $('#container div').eq(17).animate({
+            background: 'red',
+            left: '235px',
+            top: '325px'
+        }, 3800)
+        $('#container div').eq(18).animate({
+            background: 'red',
+            left: '230px',
+            top: '330px'
+        }, 4000)
+        $('#container div').eq(19).animate({
+            background: 'red',
+            left: '225px',
+            top: '335px'
+        }, 4200)
+        $('#container div').eq(20).animate({
+            background: 'red',
+            left: '220px',
+            top: '340px'
+        }, 4400)
+        $('#container div').eq(21).animate({
+            background: 'red',
+            left: '215px',
+            top: '345px'
+        }, 4600)
+        $('#container div').eq(22).animate({
+            background: 'red',
+            left: '210px',
+            top: '350px'
+        }, 4800)
+        $('#container div').eq(23).animate({
+            background: 'red',
+            left: '205px',
+            top: '355px'
+        }, 5000)
+        $('#container div').eq(24).animate({
+            background: 'red',
+            left: '200px',
+            top: '360px'
+        }, 5200)
+        $('#container div').eq(25).animate({
+            background: 'red',
+            left: '195px',
+            top: '365px'
+        }, 5400)
+        $('#container div').eq(26).animate({
+            background: 'red',
+            left: '190px',
+            top: '370px'
+        }, 5600)
+        $('#container div').eq(27).animate({
+            background: 'red',
+            left: '183px',
+            top: '365px'
+        }, 5800)
+        $('#container div').eq(28).animate({
+            background: 'red',
+            left: '178px',
+            top: '360px'
+        }, 6000)
+        $('#container div').eq(29).animate({
+            background: 'red',
+            left: '173px',
+            top: '355px'
+        }, 6200)
+        $('#container div').eq(30).animate({
+            background: 'red',
+            left: '168px',
+            top: '350px'
+        }, 6400)
+        $('#container div').eq(31).animate({
+            background: 'red',
+            left: '163px',
+            top: '345px'
+        }, 6600)
+        $('#container div').eq(32).animate({
+            background: 'red',
+            left: '158px',
+            top: '340px'
+        }, 6800)
+        $('#container div').eq(33).animate({
+            background: 'red',
+            left: '152px',
+            top: '335px'
+        }, 7000)
+        $('#container div').eq(34).animate({
+            background: 'red',
+            left: '146px',
+            top: '330px'
+        }, 7200)
+        $('#container div').eq(35).animate({
+            background: 'red',
+            left: '142px',
+            top: '325px'
+        }, 7400)
+        $('#container div').eq(36).animate({
+            background: 'red',
+            left: '137px',
+            top: '320px'
+        }, 7600)
+        $('#container div').eq(37).animate({
+            background: 'red',
+            left: '134px',
+            top: '315px'
+        }, 7800)
+        $('#container div').eq(38).animate({
+            background: 'red',
+            left: '132px',
+            top: '310px'
+        }, 8000)
+        $('#container div').eq(39).animate({
+            background: 'red',
+            left: '132px',
+            top: '305px'
+        }, 8200)
+        $('#container div').eq(40).animate({
+            background: 'red',
+            left: '133px',
+            top: '300px'
+        }, 8400)
+        $('#container div').eq(41).animate({
+            background: 'red',
+            left: '135px',
+            top: '295px'
+        }, 8600)
+        $('#container div').eq(42).animate({
+            background: 'red',
+            left: '138px',
+            top: '290px'
+        }, 8800)
+        $('#container div').eq(43).animate({
+            background: 'red',
+            left: '142px',
+            top: '286px'
+        }, 9000)
+        $('#container div').eq(44).animate({
+            background: 'red',
+            left: '147px',
+            top: '283px'
+        }, 9200)
+        $('#container div').eq(45).animate({
+            background: 'red',
+            left: '152px',
+            top: '281px'
+        }, 9400)
+        $('#container div').eq(46).animate({
+            background: 'red',
+            left: '157px',
+            top: '280px'
+        }, 9600)
+        $('#container div').eq(47).animate({
+            background: 'red',
+            left: '163px',
+            top: '280px'
+        }, 9800)
+        $('#container div').eq(48).animate({
+            background: 'red',
+            left: '169px',
+            top: '281px'
+        }, 10000)
+        $('#container div').eq(49).animate({
+            background: 'red',
+            left: '175px',
+            top: '284px'
+        }, 10200)
+        $('#container div').eq(50).animate({
+            background: 'red',
+            left: '179px',
+            top: '288px'
+        }, 10400)
+        $('#container div').eq(51).animate({
+            background: 'red',
+            left: '183px',
+            top: '293px'
+        }, 10600)
+    }
+
+    function peng() {
+        $('#container div').animate({
+            background: 'red',
+            width: '10px',
+            height: '10px',
+        }, 1000);
+        $('#container div').animate({
+            background: 'red',
+            width: '5px',
+            height: '5px',
+        }, 1000);
+    }
+    setTimeout(function(){
+        $('#container h2').show(2000);
+    },15000)
+</script>
+
+</html>
