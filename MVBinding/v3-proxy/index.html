@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bidreactional binding</title>
+</head>
+<style>
+    div {
+        width: 40%;
+        float: left;
+        border: 1px dashed;
+        padding: 20px;
+        height: 100vh;
+    }
+</style>
+
+<body>
+    <div>
+        <p>View:</p>
+        <p>username: <input id="username" /></p>
+        <p>password: <input id="password" /></p>
+        <p>sex: <input id="sex" /></p>
+        <p>验证方法：</p>
+        <p>在input输入，看model是否改变</p>
+        <p>在console中改变proxy.username的值，看View是否改变</p>
+    </div>
+    <div>
+        <p>Model:</p>
+        <span id="model"></span>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
