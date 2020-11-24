@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>闭包计数器</title>
+</head>
+<body>
+    <span id ="num1"> 0</span>
+    <button onclick="getCount()">+</button>
+    <span id ="num2"> 0</span>
+    <button onclick="getCount2()">+</button>
+    <button onclick="release()">重置数据</button>
+    <script>
+        const num1 = document.body.querySelector('#num1');
+        const num2 = document.body.querySelector('#num2');
+        let getCount = plus(num1,0);
+        let getCount2 = plus(num2,0);
+        function plus(dom,initNum){
+            let count = initNum;
+            return () =>{
+                count =  count + 1;
+                dom.innerHTML = count;
+            }           
+        }
+        function release(dom){
+            getCount = plus(num1,-1);
+            getCount();     
+            getCount2 = plus(num2,-1);     
+            getCount2();     
+        }
+    </script>
+</body>
+</html>
